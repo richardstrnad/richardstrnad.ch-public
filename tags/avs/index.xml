@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AVS on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/avs/</link>
+    <description>Recent content in AVS on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Jun 2015 08:54:21 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/avs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco ACI – AVS Upgrade through CLI</title>
+      <link>https://www.richardstrnad.ch/2015/06/17/avs-upgrade-through-cli/</link>
+      <pubDate>Wed, 17 Jun 2015 08:54:21 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/06/17/avs-upgrade-through-cli/</guid>
+      <description>First grab the release from the cisco page here
+Then put it through scp from you Download place to the ESX Server
+1 2 3  scp CiscoAVS_1.5-5.2.1.SV3.1.5-pkg.zip root@10.32.5.150:/tmp Password: CiscoAVS_1.5-5.2.1.SV3.1.5-pkg.zip 100% 35MB 806.2KB/s 00:45   Next you Login to the ESX through SSH and check the current version
+1 2 3 4  ~ # vemcmd show version VEM Version: 5.2.1.3.1.3.0-3.2.1 System Version: VMware ESXi 5.5.0 Releasebuild-2068190 ESX Version Update Level: 0   Then i unzipped the archives and upgraded the vib</description>
+    </item>
+    
+  </channel>
+</rss>

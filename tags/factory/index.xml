@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Factory on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/factory/</link>
+    <description>Recent content in Factory on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Dec 2015 17:00:38 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/factory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco ACI – Reset a APIC</title>
+      <link>https://www.richardstrnad.ch/2015/12/19/cisco-aci-reset-a-apic/</link>
+      <pubDate>Sat, 19 Dec 2015 17:00:38 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/12/19/cisco-aci-reset-a-apic/</guid>
+      <description>If you want to reset one or all of your APIC Controllers to factory default, there is a easy command for that &amp;lsquo;eraseconfig setup&amp;rsquo;
+1 2 3 4 5 6 7  → ssh admin@10.127.129.50 Application Policy Infrastructure Controller admin@10.127.129.50&amp;#39;s password: apic1# bash ---&amp;gt; Only required with Version 1.2+ admin@apic1:~&amp;gt; eraseconfig setup Do you want to cleanup the initial setup data? The system will be REBOOTED. (Y/n):   When your intention is to reset a whole fabric, it&amp;rsquo;s recommended to reset the switches first:</description>
+    </item>
+    
+  </channel>
+</rss>

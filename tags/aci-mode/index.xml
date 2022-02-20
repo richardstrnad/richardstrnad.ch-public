@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aci mode on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/aci-mode/</link>
+    <description>Recent content in aci mode on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Apr 2017 21:13:17 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/aci-mode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ACI/N9K – How to convert a Nexus 9000 from NX-OS to ACI</title>
+      <link>https://www.richardstrnad.ch/2017/04/12/acin9k-how-to-convert-a-nexus-9000-from-nx-os-to-aci/</link>
+      <pubDate>Wed, 12 Apr 2017 21:13:17 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2017/04/12/acin9k-how-to-convert-a-nexus-9000-from-nx-os-to-aci/</guid>
+      <description>Some time ago i posted how to convert a ACI switch to NX-OS, now the other way around.
+Copy the file to the NX-OS Mode N9k
+1 2 3 4 5 6 7  switch# copy scp: bootflash: Enter source filename: Downloads/aci-n9000-dk9.12.2.1o.bin Enter vrf (If no input, current vrf &amp;#39;default&amp;#39; is considered): management Enter hostname for the scp server: 192.168.0.5 Enter username: USER Password: aci-n9000-dk9.12.2.1o.bin 1% 15MB 3.8MB/s 04:34 ETA   Change the boot mode to aci</description>
+    </item>
+    
+  </channel>
+</rss>

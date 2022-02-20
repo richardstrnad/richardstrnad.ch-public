@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Replacement on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/replacement/</link>
+    <description>Recent content in Replacement on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Feb 2022 08:00:00 +0100</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/replacement/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ACI: Spine replacement in a single Spine fabric</title>
+      <link>https://www.richardstrnad.ch/2022/02/10/aci-spine-replacement-in-a-single-spine-fabric/</link>
+      <pubDate>Thu, 10 Feb 2022 08:00:00 +0100</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2022/02/10/aci-spine-replacement-in-a-single-spine-fabric/</guid>
+      <description>A colleague has exchanged a spine at a customer. This is a lab fabric which runs in a minimal setup, 1 x APIC, 1 x Spine, 4 x Leaf.
+In principle, the exchange of a Spine within an ACI fabric is a very simple undertaking, ACI does all the heavy lifting for you :)
+However, in a scenario where a Leaf has only one path to the APIC (thus connected to a single Spine), the exchange of the Spine leads to problems.</description>
+    </item>
+    
+  </channel>
+</rss>

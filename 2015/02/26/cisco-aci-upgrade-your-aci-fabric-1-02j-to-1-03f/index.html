@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='How to upgrade your ACI fabric'><title>Cisco ACI –  Upgrade your ACI Fabric (1.0(2j) to 1.0(3f))</title>
+
+<link rel='canonical' href='https://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/'>
+
+<link rel="stylesheet" href="/scss/style.min.b949db8bead9abdc40291b93383b8da6abc3aa62e74f5580356c06ddbb792dab.css"><meta property='og:title' content='Cisco ACI –  Upgrade your ACI Fabric (1.0(2j) to 1.0(3f))'>
+<meta property='og:description' content='How to upgrade your ACI fabric'>
+<meta property='og:url' content='https://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/'>
+<meta property='og:site_name' content='RichardStrnad.ch'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='1.0(2j)' /><meta property='article:tag' content='1.0(3f)' /><meta property='article:tag' content='ACI' /><meta property='article:tag' content='cisco' /><meta property='article:tag' content='Fabric' /><meta property='article:tag' content='Leaf' /><meta property='article:tag' content='Nexus 9000' /><meta property='article:tag' content='Spine' /><meta property='article:tag' content='Upgrade' /><meta property='article:published_time' content='2015-02-26T08:09:48&#43;00:00'/><meta property='article:modified_time' content='2015-02-26T08:09:48&#43;00:00'/>
+<meta name="twitter:title" content="Cisco ACI –  Upgrade your ACI Fabric (1.0(2j) to 1.0(3f))">
+<meta name="twitter:description" content="How to upgrade your ACI fabric">
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-47744166-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>Back</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/aci/" >
+                ACI
+            </a>
+        
+            <a href="/categories/cisco/" >
+                Cisco
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/">Cisco ACI –  Upgrade your ACI Fabric (1.0(2j) to 1.0(3f))</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        How to upgrade your ACI fabric
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">26 Feb, 2015</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    6 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>I did a upgrade of our ACI Lab Fabric last week and documented all the steps. The upgrade is really straightforward, but hopefully this guide still helps you 🙂</p>
+<p>First you have to catch the desired Software, get them directly from cisco. You need APIC Release image for 1.0(3f) release (aci-apic-dk9.1.0.3f.iso) and the Cisco Nexus 9000 Series ACI Mode Switch Software Release 11.0(3f) (aci-n9000-dk9.11.0.3f.bin). Get them here:<br>
+<a href="https://software.cisco.com/download/release.html?mdfid=285968390&softwareid=286278832&release=1.0(3f)&relind=AVAILABLE&rellifecycle=&reltype=all" target="_blank">Cisco ACI Version 1.0(3f)</a></p>
+<p>I always check the MD5 sum, just to be sure that everything went right with my download.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$ md5 aci-apic-dk9.1.0.3f.iso
+MD5 (aci-apic-dk9.1.0.3f.iso) = 6e747378ec4225ead0f27cb23aa54f02
+</code></pre></td></tr></table>
+</div>
+</div><div id="attachment_105" style="width: 1290px" class="wp-caption alignnone">
+  <a href="https://www.richardstrnad.ch/wp-content/uploads/2015/02/2015-02-18_14-44-59.png"><img aria-describedby="caption-attachment-105" loading="lazy" class="size-full wp-image-105" src="https://www.richardstrnad.ch/wp-content/uploads/2015/02/2015-02-18_14-44-59.png" alt="Cisco ACI 1.0(3f) MD5 Hash" width="1280" height="626" /></a>
+  <p id="caption-attachment-105" class="wp-caption-text">
+    Cisco ACI 1.0(3f) MD5 Hash
+  </p>
+</div>
+<p>The MD5 hash looks right. Check the same for the Nexus 9000 Image!</p>
+<h2 id="upgrade-of-the-apic-controllers">Upgrade of the APIC Controllers</h2>
+<p>We start with the upgrade of the APIC Controller, all APIC Controllers of your Fabric have to be upgraded first.<br>
+I did the whole upgrade through CLI, it&rsquo;s also possible with the GUI but i prefer the CLI way.</p>
+<ul>
+<li>Copy the Software to the APIC Controller</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; scp richy@10.32.32.179:Downloads/aci-apic-dk9.1.0.3f.iso .
+Password:
+aci-apic-dk9.1.0.3f.iso 100% 3175MB 102.4MB/s 00:31
+</code></pre></td></tr></table>
+</div>
+</div><p>Hint: Maybe you need an additional &lsquo;/&rsquo; after the &lsquo;:&rsquo; like &lsquo;user@host:/path&rsquo;<br>
+Thanks @Jonas Walker for the information!</p>
+<ul>
+<li>Add the new firmware to the repository</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; firmware add aci-apic-dk9.1.0.3f.iso
+Firmware Image aci-apic-dk9.1.0.3f.iso is added to the repository
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>After adding the new firmware, it&rsquo;s &ldquo;removed&rdquo; from the upload directory</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; ls
+aci debug mit
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Wait a couple of seconds and you can now see the new added firmware in the repository</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; firmware list
+Name : aci-apic-dk9.1.0.3f.bin
+Type : controller
+Version : 1.0(3f)
+Size(Bytes) : 3329372160
+Release-Date : 2015-02-10T03:46:53.000+02:00
+Download-Date : 2015-02-18T16:37:29.580+02:00
+
+Name : aci-catalog-dk9.1.0.3f.bin
+Type : catalog
+Version : 1.0(3f)
+Size(Bytes) : 18064
+Release-Date : 2015-02-10T02:27:12.000+02:00
+Download-Date : 2015-02-18T16:37:31.554+02:00
+
+Name : aci-catalog-dk9.1.0.2j.bin
+Type : catalog
+Version : 1.0(2j)
+Size(Bytes) : 17493
+Release-Date : 2014-11-11T18:58:18.000+02:00
+Download-Date : 2015-01-31T05:57:47.354+02:00
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Now you can start the controller upgrade, it&rsquo;s automatically done on all APIC Controllers, one at a time</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; firmware upgrade controllers aci-apic-dk9.1.0.3f.bin
+Firmware Upgrade on Controllers has been scheduled.
+The upgrade will be performed on one controller at a time in the background.
+To check the upgrade status, use &#39;firmware upgrade status node &lt;node-id&gt;&#39;
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Then you can check the status of the upgrade</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; firmware upgrade status
+Node-Id Role Current-Firmware Target-Firmware Upgrade-Status Progress-Percent(if inprogress)
+----------------------------------------------------------------------------------------------------------------------
+&lt;strong&gt;1 controller 1.0(2j) apic-1.0(3f) inqueue 0&lt;/strong&gt;
+101 spine n9000-11.0(2j) notscheduled 0
+111 leaf n9000-11.0(2j) notscheduled 0
+112 leaf n9000-11.0(2j) notscheduled 0
+
+Legend:
+notscheduled - Upgrade has NOT been scheduled
+scheduled - Upgrade has been scheduled at a future time
+queued - Node is waiting for token from scheduler(permission to upgrade)
+inprogress - Image installation is currently in progress on node
+completeok - Upgrade successful
+completenok - Upgrade failed
+unknown - Node unreachable
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>After some minutes</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; firmware upgrade status
+Node-Id Role Current-Firmware Target-Firmware Upgrade-Status Progress-Percent(if inprogress)
+----------------------------------------------------------------------------------------------------------------------
+&lt;strong&gt;1 controller 1.0(2j) apic-1.0(3f) inprogress 75
+&lt;/strong&gt;101 spine n9000-11.0(2j) notscheduled 0
+111 leaf n9000-11.0(2j) notscheduled 0
+112 leaf n9000-11.0(2j) notscheduled 0
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>The Controllers do an automatic reboot, so if you just have one APIC in your Fabric, you definitely will be kicked off</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt;
+Broadcast message from root@aci-lab-apic01
+(unknown) at 15:47 ...
+
+The system is going down for reboot NOW!
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>As soon as the APIC Controller is back up you can check the firmware upgrade status</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; firmware upgrade status node 1
+Node-Id Role Current-Firmware Target-Firmware Upgrade-Status Progress-Percent(if inprogress)
+----------------------------------------------------------------------------------------------------------------------
+1 controller apic-1.0(3f) apic-1.0(3f) completeok 100
+
+</code></pre></td></tr></table>
+</div>
+</div><p> </p>
+<h2 id="upgrade-of-the-nexus-9000-spine-and-leaf-switches">Upgrade of the Nexus 9000 Spine and Leaf switches</h2>
+<p>After all the Fabric Controllers are updated, you can proceed to upgrade your Nexus 9000 Spine and Leaf Switches.</p>
+<ul>
+<li>Copy the Nexus 9000 Software to the APIC Controller</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; scp richy@10.32.32.179:Downloads/aci-n9000-dk9.11.0.3f.bin .
+Password:
+aci-n9000-dk9.11.0.3f.bin 100% 495MB 99.1MB/s 00:05
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Also add the Nexus 9000 Software to the Firmware Repository</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; firmware add aci-n9000-dk9.11.0.3f.bin
+Firmware Image aci-n9000-dk9.11.0.3f.bin is added to the repository
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Check that the software was added succesfully to the repository</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; firmware list
+Name : aci-n9000-dk9.11.0.3f.bin
+Type : switch
+Version : 11.0(3f)
+Size(Bytes) : 519376842
+Release-Date : 2015-02-10T02:47:47.000+01:00
+Download-Date : 2015-02-18T15:53:28.874+01:00
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>You now can start the upgrade on the switches, in a production environment you should split the upgrade to make it undisruptive. As this is just my lab, i booted all the switches at the same time</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; firmware upgrade switch node 101 aci-n9000-dk9.11.0.3f.bin
+Firmware Installation on Switch Scheduled
+To check the upgrade status, use &#39;firmware upgrade status node &lt;node-id&gt;&#39;
+
+admin@aci-lab-apic01:~&gt; firmware upgrade switch node 111 aci-n9000-dk9.11.0.3f.bin
+Firmware Installation on Switch Scheduled
+To check the upgrade status, use &#39;firmware upgrade status node &lt;node-id&gt;&#39;
+
+admin@aci-lab-apic01:~&gt; firmware upgrade switch node 112 aci-n9000-dk9.11.0.3f.bin
+Firmware Installation on Switch Scheduled
+To check the upgrade status, use &#39;firmware upgrade status node &lt;node-id&gt;&#39;
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>You can check the upgrade status with the same command here</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; firmware upgrade status
+Node-Id Role Current-Firmware Target-Firmware Upgrade-Status Progress-Percent(if inprogress)
+----------------------------------------------------------------------------------------------------------------------
+1 controller apic-1.0(3f) apic-1.0(3f) completeok 100
+101 spine n9000-11.0(2j) n9000-11.0(3f) inprogress 5
+111 leaf n9000-11.0(2j) n9000-11.0(3f) inprogress 5
+112 leaf n9000-11.0(2j) n9000-11.0(3f) inprogress 5
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>The switches also do an automatic reboot after the upgrade</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; firmware upgrade status
+Node-Id Role Current-Firmware Target-Firmware Upgrade-Status Progress-Percent(if inprogress)
+----------------------------------------------------------------------------------------------------------------------
+1 controller apic-1.0(3f) apic-1.0(3f) completeok 100
+101 spine unknown unknown unknown unknown
+111 leaf unknown unknown unknown unknown
+112 leaf unknown unknown unknown unknown
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>After all the switches booted, you should see them all with a status of &ldquo;completeok&rdquo;</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; firmware upgrade status
+Node-Id Role Current-Firmware Target-Firmware Upgrade-Status Progress-Percent(if inprogress)
+----------------------------------------------------------------------------------------------------------------------
+1 controller apic-1.0(3f) apic-1.0(3f) completeok 100
+101 spine n9000-11.0(3f) n9000-11.0(3f) completeok 100
+111 leaf n9000-11.0(3f) n9000-11.0(3f) completeok 100
+112 leaf n9000-11.0(3f) n9000-11.0(3f) completeok 100
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Final check of the current software version</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; show version
+# Executing command: &#39;version&#39;
+node type node id node name version
+---------- ------- --------------- --------------
+controller 1 aci-lab-apic01 1.0(3f)
+spine 101 aci-lab-spine01 n9000-11.0(3f)
+leaf 111 aci-lab-leaf01 n9000-11.0(3f)
+leaf 112 aci-lab-leaf02 n9000-11.0(3f)
+</code></pre></td></tr></table>
+</div>
+</div><p> </p>
+<h3 id="thats-it-you-just-upgraded-your-aci-fabric-with-success">That&rsquo;s it! You just upgraded your ACI Fabric with success.</h3>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/1.02j/">1.0(2j)</a>
+        
+            <a href="/tags/1.03f/">1.0(3f)</a>
+        
+            <a href="/tags/aci/">ACI</a>
+        
+            <a href="/tags/cisco/">cisco</a>
+        
+            <a href="/tags/fabric/">Fabric</a>
+        
+            <a href="/tags/leaf/">Leaf</a>
+        
+            <a href="/tags/nexus-9000/">Nexus 9000</a>
+        
+            <a href="/tags/spine/">Spine</a>
+        
+            <a href="/tags/upgrade/">Upgrade</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/2016/11/07/cisco-aci-run-commands-on-the-switches-from-your-apic/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI – Run Commands on the Switches from your APIC</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2015/02/18/cisco-aci-connect-to-the-leafspine-switches/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI – Connect to the leaf/spine switches</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI – The new and nice GUI way to Upgrade your ACI Fabric</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2016/11/06/cisco-aci-connect-to-the-leafspine-switches-with-the-nx-os/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI – Connect to the leaf/spine switches with the NX-OS bash</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2016/10/27/acitoolkit-get-all-nodes/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Acitoolkit – Get all Nodes</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "richardstrnad" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2014 - 
+        
+        2022 RichardStrnad.ch
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.8.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#upgrade-of-the-apic-controllers">Upgrade of the APIC Controllers</a></li>
+    <li><a href="#upgrade-of-the-nexus-9000-spine-and-leaf-switches">Upgrade of the Nexus 9000 Spine and Leaf switches</a>
+      <ol>
+        <li><a href="#thats-it-you-just-upgraded-your-aci-fabric-with-success">That&rsquo;s it! You just upgraded your ACI Fabric with success.</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

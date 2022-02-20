@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Serial on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/serial/</link>
+    <description>Recent content in Serial on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Nov 2015 06:14:13 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/serial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recognise the Production Date of your Cisco Equipment based on the Serial</title>
+      <link>https://www.richardstrnad.ch/2015/11/26/recognise-the-production-date-of-your-cisco-equipment-based-on-the-serial/</link>
+      <pubDate>Thu, 26 Nov 2015 06:14:13 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/11/26/recognise-the-production-date-of-your-cisco-equipment-based-on-the-serial/</guid>
+      <description>Today i learnt that the Production Year and Week is &amp;lsquo;hidden&amp;rsquo; in the Cisco Serials 🙂
+The format of the serial is always like &amp;lsquo;xxxYYWWxxxx&amp;rsquo;, &amp;lsquo;YY&amp;rsquo; is Code for the Year, but not the Year itself! &amp;lsquo;WW&amp;rsquo; is the week of manufacture.
+   Code Year     01 1997   02 1998   03 1999   04 2000   05 2001   06 2002   07 2003   08 2004   09 2005   10 2006   11 2007   12 2008   13 2009   14 2010   15 2011   16 2012   17 2013   18 2014   19 2015   20 2016       Code Week     1-5 January   6-9 February   10-14 March   15-18 April   19-22 May   23-27 June   28-31 July   32-35 August   36-40 September   41-44 October   45-48 November   49-52 December    </description>
+    </item>
+    
+  </channel>
+</rss>

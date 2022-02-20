@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hacks on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/hacks/</link>
+    <description>Recent content in hacks on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 May 2015 07:35:53 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/hacks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sublime – Use Control&#43;W to delete Word to the left</title>
+      <link>https://www.richardstrnad.ch/2015/05/17/sublime-use-controlw-to-delete-word-to-the-left/</link>
+      <pubDate>Sun, 17 May 2015 07:35:53 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/05/17/sublime-use-controlw-to-delete-word-to-the-left/</guid>
+      <description>I&amp;rsquo;m a pretty big fan of Sublime Text (v3), will blog more about my setup details. But this morning i really missed the Control+W to delete the first word on the left side, so i found this Solution:
+Sublime Text -&amp;gt; Preferences -&amp;gt; Key Bindings - User:
+1 2 3  [ { &amp;#34;keys&amp;#34;: [&amp;#34;ctrl+w&amp;#34;], &amp;#34;command&amp;#34;: &amp;#34;delete_word&amp;#34;, &amp;#34;args&amp;#34;: {&amp;#34;forward&amp;#34;: false, &amp;#34;sub_words&amp;#34;: true}}, ]   An that&amp;rsquo;s it, you can now delete words with Control+W 🙂</description>
+    </item>
+    
+    <item>
+      <title>Use ? “literal” in IOS</title>
+      <link>https://www.richardstrnad.ch/2014/05/07/use-literal-in-ios/</link>
+      <pubDate>Wed, 07 May 2014 16:07:41 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2014/05/07/use-literal-in-ios/</guid>
+      <description>As we all know, the Question mark in IOS is used as interactive help, but what about a ? in a password?
+This could for example be a task in your CCIE Lab or at least in on of the many preparation labs.
+To use the ? literal just enter crtl+v and then ?
+1 2  Rack1SW3(config)#username cisco password SECR? LINE &amp;lt;cr&amp;gt;   ctrl+v ?
+1 2  Rack1SW3(config)#username cisco password SECR?</description>
+    </item>
+    
+  </channel>
+</rss>

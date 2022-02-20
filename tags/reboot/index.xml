@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reboot on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/reboot/</link>
+    <description>Recent content in reboot on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Feb 2015 15:52:24 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/reboot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco ACI – Reboot an APIC</title>
+      <link>https://www.richardstrnad.ch/2015/02/19/cisco-aci-reboot-an-apic/</link>
+      <pubDate>Thu, 19 Feb 2015 15:52:24 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/02/19/cisco-aci-reboot-an-apic/</guid>
+      <description>As i had some struggle to find the right command, i will share it here 🙂
+1 2 3 4 5  admin@aci-lab-apic01:~&amp;gt; acidiag reboot Broadcast message from root@aci-lab-apic01 (unknown) at 15:31 ... The system is going down for reboot NOW!   So be ready, there is no warning/confirmation!</description>
+    </item>
+    
+  </channel>
+</rss>

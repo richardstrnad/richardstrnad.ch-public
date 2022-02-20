@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Upgrade on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/upgrade/</link>
+    <description>Recent content in Upgrade on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Dec 2015 17:00:17 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/upgrade/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco IOS XE – Install the New release 16.1.1 (Denali) on 3850</title>
+      <link>https://www.richardstrnad.ch/2015/12/21/cisco-ios-xe-install-the-new-release-16-1-1-denali-on-3850/</link>
+      <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/12/21/cisco-ios-xe-install-the-new-release-16-1-1-denali-on-3850/</guid>
+      <description>Cisco continues its strategy to merge the whole Campus Switch platform to a single Image, the newest step in this process is IOS XE 16.1.1. Currently only available for the Cat3k Platform (3650, 3850) but releases for the other Catalyst platforms should follow.
+In this post i show you how to upgrade your Cisco 3650/3850 Switch from 3.x to 16.1.1
+Frist, grab the software here:
+IOS XE Denali 16.1.1 on Cisco.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – The new and nice GUI way to Upgrade your ACI Fabric</title>
+      <link>https://www.richardstrnad.ch/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/</link>
+      <pubDate>Sun, 09 Aug 2015 18:45:37 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/</guid>
+      <description>Some time ago i posted how to do a upgrade of your ACI Fabric through CLI.
+Cisco made this process now way easier, with some cool new features.
+In this short guide i used the current ACI release 1.1(1o), that you can grab directly from cisco here.
+Upload the Firmware to the APIC You can now upload directly through your browser, no longer the need for a SCP/FTP Server!</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – AVS Upgrade through CLI</title>
+      <link>https://www.richardstrnad.ch/2015/06/17/avs-upgrade-through-cli/</link>
+      <pubDate>Wed, 17 Jun 2015 08:54:21 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/06/17/avs-upgrade-through-cli/</guid>
+      <description>First grab the release from the cisco page here
+Then put it through scp from you Download place to the ESX Server
+1 2 3  scp CiscoAVS_1.5-5.2.1.SV3.1.5-pkg.zip root@10.32.5.150:/tmp Password: CiscoAVS_1.5-5.2.1.SV3.1.5-pkg.zip 100% 35MB 806.2KB/s 00:45   Next you Login to the ESX through SSH and check the current version
+1 2 3 4  ~ # vemcmd show version VEM Version: 5.2.1.3.1.3.0-3.2.1 System Version: VMware ESXi 5.5.0 Releasebuild-2068190 ESX Version Update Level: 0   Then i unzipped the archives and upgraded the vib</description>
+    </item>
+    
+    <item>
+      <title>Cisco Prime Infrastructure – Update from 2.1 to 2.2</title>
+      <link>https://www.richardstrnad.ch/2015/05/05/cisco-prime-infrastructure-update-from-2-1-to-2-2/</link>
+      <pubDate>Tue, 05 May 2015 21:15:08 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/05/05/cisco-prime-infrastructure-update-from-2-1-to-2-2/</guid>
+      <description>Overview I did the Upgrade from Prime Infrastructure 2.1 to Prime Infrastructure 2.2 last week for one of our customers. Unfortunately this upgrade isn&amp;rsquo;t possible &amp;lsquo;in place&amp;rsquo;, you have to install a new Prime Infrastructure 2.2 Server and then import your old configuration.
+As described in the Prime Infrastructure 2.2 Quickstart Guide you have to be on one of the following versions that the backup can be used in 2.2:</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACS – Patch Install error (% Manifest file not found in the bundle)</title>
+      <link>https://www.richardstrnad.ch/2015/03/01/cisco-acs-patch-install-error-manifest-file-not-found-in-the-bundle/</link>
+      <pubDate>Sun, 01 Mar 2015 11:29:29 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/03/01/cisco-acs-patch-install-error-manifest-file-not-found-in-the-bundle/</guid>
+      <description>I&amp;rsquo;m sure that it&amp;rsquo;s not the first time i felt for this …
+Tried to install a ACS Patch this morning and got an error:
+&amp;ldquo;% Manifest file not found in the bundle&amp;rdquo;
+First i used the wrong command:
+patch install 5-4-0-46-5.tar.gpg FTP
+1 2 3 4 5 6  ACS01/admin# patch install 5-4-0-46-5.tar.gpg FTP Save the current ADE-OS running configuration? (yes/no) [yes] ? Generating configuration... Saved the ADE-OS running configuration to startup successfully Initiating Application Patch installation.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI –  Upgrade your ACI Fabric (1.0(2j) to 1.0(3f))</title>
+      <link>https://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/</link>
+      <pubDate>Thu, 26 Feb 2015 08:09:48 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/</guid>
+      <description>I did a upgrade of our ACI Lab Fabric last week and documented all the steps. The upgrade is really straightforward, but hopefully this guide still helps you 🙂
+First you have to catch the desired Software, get them directly from cisco. You need APIC Release image for 1.0(3f) release (aci-apic-dk9.1.0.3f.iso) and the Cisco Nexus 9000 Series ACI Mode Switch Software Release 11.0(3f) (aci-n9000-dk9.11.0.3f.bin). Get them here:
+Cisco ACI Version 1.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3650 on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/3650/</link>
+    <description>Recent content in 3650 on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Dec 2015 17:00:17 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/3650/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco IOS XE – Install the New release 16.1.1 (Denali) on 3850</title>
+      <link>https://www.richardstrnad.ch/2015/12/21/cisco-ios-xe-install-the-new-release-16-1-1-denali-on-3850/</link>
+      <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/12/21/cisco-ios-xe-install-the-new-release-16-1-1-denali-on-3850/</guid>
+      <description>Cisco continues its strategy to merge the whole Campus Switch platform to a single Image, the newest step in this process is IOS XE 16.1.1. Currently only available for the Cat3k Platform (3650, 3850) but releases for the other Catalyst platforms should follow.
+In this post i show you how to upgrade your Cisco 3650/3850 Switch from 3.x to 16.1.1
+Frist, grab the software here:
+IOS XE Denali 16.1.1 on Cisco.</description>
+    </item>
+    
+  </channel>
+</rss>

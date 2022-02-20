@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ESX on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/esx/</link>
+    <description>Recent content in ESX on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Dec 2020 19:00:24 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/esx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Custom Hyperflex ESX Image</title>
+      <link>https://www.richardstrnad.ch/2020/12/16/custom-hyperflex-esx-image/</link>
+      <pubDate>Wed, 16 Dec 2020 19:00:24 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2020/12/16/custom-hyperflex-esx-image/</guid>
+      <description>Cisco provides a custom ESXi Image/ISO to (re)install Hyperflex Servers. As i&amp;rsquo;m currently working on fully automating the deployment of a large quantity of there servers, i looked for a way to automate the reinstall of these Hyperflex Servers.
+Unfortunately the ESXi Image provided by Cisco requires a confirmation at some point, i wanted to get rid of this. First i downloaded the current ISO file from Cisco (HX-ESXi-6.7U3-16316930-Cisco-Custom-6.7.3.5-install-only.iso).
+Create the Image 1 2 3 4 5 6 7 8 9 10 11  cd /tmp mkdir iso cd iso mkdir ro_iso mkdir custom device=$(hdiutil attach -nomount ~/Downloads/HX-ESXi-6.</description>
+    </item>
+    
+  </channel>
+</rss>

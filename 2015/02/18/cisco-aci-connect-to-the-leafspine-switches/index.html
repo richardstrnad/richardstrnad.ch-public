@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='This post provides details on how to connect to a ACI node'><title>Cisco ACI – Connect to the leaf/spine switches</title>
+
+<link rel='canonical' href='https://www.richardstrnad.ch/2015/02/18/cisco-aci-connect-to-the-leafspine-switches/'>
+
+<link rel="stylesheet" href="/scss/style.min.b949db8bead9abdc40291b93383b8da6abc3aa62e74f5580356c06ddbb792dab.css"><meta property='og:title' content='Cisco ACI – Connect to the leaf/spine switches'>
+<meta property='og:description' content='This post provides details on how to connect to a ACI node'>
+<meta property='og:url' content='https://www.richardstrnad.ch/2015/02/18/cisco-aci-connect-to-the-leafspine-switches/'>
+<meta property='og:site_name' content='RichardStrnad.ch'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='ACI' /><meta property='article:tag' content='APIC' /><meta property='article:tag' content='BGP' /><meta property='article:tag' content='cisco' /><meta property='article:tag' content='Fabric' /><meta property='article:tag' content='Leaf' /><meta property='article:tag' content='Spine' /><meta property='article:published_time' content='2015-02-18T10:44:55&#43;00:00'/><meta property='article:modified_time' content='2015-02-18T10:44:55&#43;00:00'/>
+<meta name="twitter:title" content="Cisco ACI – Connect to the leaf/spine switches">
+<meta name="twitter:description" content="This post provides details on how to connect to a ACI node">
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-47744166-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>Back</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/aci/" >
+                ACI
+            </a>
+        
+            <a href="/categories/cisco/" >
+                Cisco
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/2015/02/18/cisco-aci-connect-to-the-leafspine-switches/">Cisco ACI – Connect to the leaf/spine switches</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        This post provides details on how to connect to a ACI node
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">18 Feb, 2015</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    3 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>With the introduction of the NX-OS Cli, cisco changed the way how you connect to leaf/spine switches.<br>
+<a class="link" href="https://www.richardstrnad.ch/2016/11/06/cisco-aci-connect-to-the-leafspine-switches-with-the-nx-os/"  target="_blank" rel="noopener"
+    >Find my updated post here.</a></p>
+<p>There are several scenarios where you want to connect to your leaf and spine switches of the ACI fabric.<br>
+In this example we want to checkout the BGP Status.</p>
+<p>First you connect to your APIC Controller through SSH:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$ ssh admin@10.32.5.100
+Application Policy Infrastructure Controller
+admin@10.32.5.100&#39;s password:
+admin@aci-lab-apic01:~&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="easy-way-to-connect">Easy way to connect</h3>
+<p>Claes Leufven just gave me a hint that you can also use &ldquo;attach&rdquo;, the same as on other cisco products 🙂</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt;
+admin@aci-lab-apic01:~&gt; attach aci-lab-
+aci-lab-apic01   aci-lab-leaf01   aci-lab-leaf02   aci-lab-spine01
+
+admin@aci-lab-apic01:~&gt; attach aci-lab-leaf01
+# Executing command: ssh aci-lab-leaf01
+Warning: Permanently added &#39;aci-lab-leaf01&#39; (RSA) to the list of known hosts.
+Nexus 9000 Switch
+Password:
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (c) 2002-2015, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under
+license. Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or the GNU
+Lesser General Public License (LGPL) Version 2.1. A copy of each
+such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://www.opensource.org/licenses/lgpl-2.1.php
+aci-lab-leaf01#
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="alternative-way">Alternative way!</h3>
+<p>If you know the tep address of your leaf/spine, you can directly connect, otherwise you can get an overview of the tep addresses:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; acidiag fnvread
+      ID             Name    Serial Number         IP Address    Role        State   LastUpdMsgId
+-------------------------------------------------------------------------------------------------
+     101  aci-lab-spine01      XXXXXXXXXXX   10.255.120.94/32   spine       active   0
+     111   aci-lab-leaf01      XXXXXXXXXXX   10.255.120.95/32    leaf       active   0
+     112   aci-lab-leaf02      XXXXXXXXXXX   10.255.120.93/32    leaf       active   0
+
+Total 3 nodes
+
+admin@aci-lab-apic01:~&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>Now you just connect through ssh directly from the APIC Controller. No User required, PW is the same as for the APIC.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">admin@aci-lab-apic01:~&gt; ssh 10.255.120.94
+Password:
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (c) 2002-2014, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under
+license. Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or the GNU
+Lesser General Public License (LGPL) Version 2.1. A copy of each
+such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://www.opensource.org/licenses/lgpl-2.1.php
+aci-lab-spine01#
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="run-commands-on-the-leafspine">Run commands on the Leaf/Spine</h3>
+<p>And now you can run the avaiable commands on the ACI NX-OS</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">aci-lab-spine01# show bgp sessions vrf overlay-1
+Total peers 2, established peers 2
+ASN 65444
+VRF overlay-1, local ASN 65444
+peers 2, established peers 2, local router-id 10.255.120.94
+State: I-Idle, A-Active, O-Open, E-Established, C-Closing, S-Shutdown
+
+Neighbor        ASN    Flaps LastUpDn|LastRead|LastWrit St Port(L/R)  Notif(S/R)
+10.255.120.95    65444 0     02w17d  |never   |never    E  179/52384  0/0
+10.255.120.93    65444 0     02w17d  |never   |never    E  179/36010  0/0
+</code></pre></td></tr></table>
+</div>
+</div>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/aci/">ACI</a>
+        
+            <a href="/tags/apic/">APIC</a>
+        
+            <a href="/tags/bgp/">BGP</a>
+        
+            <a href="/tags/cisco/">cisco</a>
+        
+            <a href="/tags/fabric/">Fabric</a>
+        
+            <a href="/tags/leaf/">Leaf</a>
+        
+            <a href="/tags/spine/">Spine</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/2016/11/07/cisco-aci-run-commands-on-the-switches-from-your-apic/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI – Run Commands on the Switches from your APIC</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI –  Upgrade your ACI Fabric (1.0(2j) to 1.0(3f))</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2016/11/06/cisco-aci-connect-to-the-leafspine-switches-with-the-nx-os/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI – Connect to the leaf/spine switches with the NX-OS bash</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2016/10/27/acitoolkit-get-all-nodes/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Acitoolkit – Get all Nodes</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI – The new and nice GUI way to Upgrade your ACI Fabric</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "richardstrnad" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2014 - 
+        
+        2022 RichardStrnad.ch
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.8.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#easy-way-to-connect">Easy way to connect</a></li>
+        <li><a href="#alternative-way">Alternative way!</a></li>
+        <li><a href="#run-commands-on-the-leafspine">Run commands on the Leaf/Spine</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

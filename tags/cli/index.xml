@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CLI on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/cli/</link>
+    <description>Recent content in CLI on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Dec 2015 14:00:46 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco ACI – NX-OS Style CLI</title>
+      <link>https://www.richardstrnad.ch/2015/12/16/cisco-aci-nx-os-style-cli/</link>
+      <pubDate>Wed, 16 Dec 2015 14:00:46 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/12/16/cisco-aci-nx-os-style-cli/</guid>
+      <description>Cisco introduced a NX-OS like CLI for the Cisco ACI Solution with release 1.2(1i).
+In this post i will demonstrate some of the things that can be achieved through the NX-OS CLI.
+!Important!
+There is no safety net, if you issue something like &amp;lsquo;no tenant XXX&amp;rsquo; the configuration is gone!
+No commit, warning or similar!
+!Important!
+Basics The NX-OS like CLI is the new default if you connect via SSH to the APIC</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nexus on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/nexus/</link>
+    <description>Recent content in nexus on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Apr 2017 21:13:17 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/nexus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ACI/N9K – How to convert a Nexus 9000 from NX-OS to ACI</title>
+      <link>https://www.richardstrnad.ch/2017/04/12/acin9k-how-to-convert-a-nexus-9000-from-nx-os-to-aci/</link>
+      <pubDate>Wed, 12 Apr 2017 21:13:17 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2017/04/12/acin9k-how-to-convert-a-nexus-9000-from-nx-os-to-aci/</guid>
+      <description>Some time ago i posted how to convert a ACI switch to NX-OS, now the other way around.
+Copy the file to the NX-OS Mode N9k
+1 2 3 4 5 6 7  switch# copy scp: bootflash: Enter source filename: Downloads/aci-n9000-dk9.12.2.1o.bin Enter vrf (If no input, current vrf &amp;#39;default&amp;#39; is considered): management Enter hostname for the scp server: 192.168.0.5 Enter username: USER Password: aci-n9000-dk9.12.2.1o.bin 1% 15MB 3.8MB/s 04:34 ETA   Change the boot mode to aci</description>
+    </item>
+    
+    <item>
+      <title>Unable to create San-Port-Channel Between Nexus 5548UP and UCS(-Mini)</title>
+      <link>https://www.richardstrnad.ch/2017/03/30/unable-to-create-san-port-channel-between-nexus-5548up-and-ucs-mini/</link>
+      <pubDate>Thu, 30 Mar 2017 17:00:55 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2017/03/30/unable-to-create-san-port-channel-between-nexus-5548up-and-ucs-mini/</guid>
+      <description>The Issue We implemented a new UCS-Mini for a customer with existing Nexus 5548UP (5.1(3)N1(1a)), on the SAN Part we faced some strange issues:
+1 2 3 4 5  2017 Mar 25 12:11:30 NEX5548-2 %PORT-5-IF_DOWN_PORT_CHANNEL_MEMBERS_DOWN: %$VSAN 300%$ Interface san-port-channel 200 is down (No operational members) 2017 Mar 25 12:11:31 NEX5548-2 Mar 25 12:11:31 %KERN-3-SYSTEM_MSG: fc2_nsh_tx_frame: FC2 s_id/d_id/vsan error: sid=0xfffffe,did=0x0,vsan=300,rctl:0x23,type:0x1,oxid 0x4d,rxid:0xff25 - kernel 2017 Mar 25 12:12:10 NEX5548-2 %PORT-5-IF_PORT_QUIESCE_FAILED: Interface fc1/20 port quiesce failed due to failure reason: Force Abort Due to Link Failure (NOS/LOS) (0x119) 2017 Mar 25 12:12:10 NEX5548-2 %PORT-5-IF_DOWN_OLS_RCVD: %$VSAN 300%$ Interface fc1/20 is down (OLS received) san-port-channel 200 2017 Mar 25 12:12:10 NEX5548-2 Mar 25 12:12:10 %KERN-3-SYSTEM_MSG: fc2_nsh_tx_frame: FC2 s_id/d_id/vsan error: sid=0xfffffe,did=0x0,vsan=300,rctl:0x23,type:0x1,oxid 0x5a,rxid:0xff32 - kernel   The san-port-channel was really basic and added to just one VSAN</description>
+    </item>
+    
+    <item>
+      <title>Nexus 1000v – Port-Profile Error ‘MSP-5-PP_UPDATE_FAILED’</title>
+      <link>https://www.richardstrnad.ch/2016/10/18/nexus-1000v-port-profile-error-msp-5-pp_update_failed/</link>
+      <pubDate>Tue, 18 Oct 2016 10:00:02 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/10/18/nexus-1000v-port-profile-error-msp-5-pp_update_failed/</guid>
+      <description>I tried to create a new port-profile on a Nexus 1000V and got the error
+1  2016 Oct 14 10:33:35 N1Kv %MSP-5-PP_UPDATE_FAILED: Update of port-profile &amp;#39;New-Port-Group&amp;#39; on the vCenter Server failed. Please verify port-profile config.   This error can appear if you configure more max-ports on the port-profiles than you specified in the &amp;lsquo;svs connection vcenter&amp;rsquo;. In my case i had overprovisioned the port-profiles with &amp;lsquo;max-group 512&amp;rsquo;, so i just reduced the max-port on some port-profiles and this solved the issue.</description>
+    </item>
+    
+    <item>
+      <title>ACI/N9K – How to convert a Nexus 9000 from ACI Mode to NX-OS (Standalone)</title>
+      <link>https://www.richardstrnad.ch/2016/02/29/acin9k-how-to-convert-a-nexus-9000-from-aci-mode-to-standalone/</link>
+      <pubDate>Mon, 29 Feb 2016 13:27:06 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/02/29/acin9k-how-to-convert-a-nexus-9000-from-aci-mode-to-standalone/</guid>
+      <description>Get the standalone software here
+First you have to copy the new nexus 9000 standalone firmware to the APIC:
+1 2  admin@apic1:~&amp;gt; scp richy@YOURIP:Downloads/nxos.7.0.3.I2.2a.bin . nxos.7.0.3.I2.2a.bin 100% 513MB 9.2MB/s 00:56   And now you can push it to the appropriate Nexus 9000. (The user/password matches the APIC)
+1 2 3  admin@apic1:~&amp;gt; scp nxos.7.0.3.I2.2a.bin admin@leaf02:bootflash Password: nxos.7.0.3.I2.2a.bin 100% 513MB 7.0MB/s 01:13   Now reboot the switch and break into the load prompt, this can be done with Control+C in Putty.</description>
+    </item>
+    
+  </channel>
+</rss>

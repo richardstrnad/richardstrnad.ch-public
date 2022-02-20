@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TACACS on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/tacacs/</link>
+    <description>Recent content in TACACS on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Jul 2021 18:05:58 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/tacacs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AAA (TACACS&#43;) configuration for NDB</title>
+      <link>https://www.richardstrnad.ch/2021/07/30/aaa-tacacs-configuration-for-ndb/</link>
+      <pubDate>Fri, 30 Jul 2021 18:05:58 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2021/07/30/aaa-tacacs-configuration-for-ndb/</guid>
+      <description>Today I integrated a NDB Controller VM with the ISE (TACACS) of a customer. As it wasn&amp;rsquo;t that easy to find the correct shell profile config, i thought that I will post it here as documentation 🙂
+Possible cisco-av-pair&amp;rsquo;s for the NDB controller VM.
+Write (Admin)
+1  shell:roles=network-admin   Read (Admin)
+1  shell:roles=network-operator   </description>
+    </item>
+    
+  </channel>
+</rss>

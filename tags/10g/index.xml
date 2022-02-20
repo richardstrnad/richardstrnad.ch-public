@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>10G on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/10g/</link>
+    <description>Recent content in 10G on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Oct 2018 18:00:28 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/10g/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco ACI – Convert Leaf Ports (Uplink to Downlink)</title>
+      <link>https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/</link>
+      <pubDate>Mon, 01 Oct 2018 18:00:28 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/</guid>
+      <description>Since ACI release 3.1(1) it&amp;rsquo;s possible to use some of the Leaf Uplinks as Downlink Ports. This could help you out if there is a need for some 40/100G ports but you are currently only running 10/25G Leafs.
+Currently the following Leafs support the conversion:
+N9K-C9348GC-FXP  N9K-C93180LC-EX   N9K-C93180YC-FX  N9K-C93180YC-EX and N9K-C93180YC-EXU  N9K-C93108TC-EX  N9K-C93108TC-FX  N9K-C9336C-FX2 (only downlink to uplink conversion supported)   There are some limitations, check them out on the Cisco Page.</description>
+    </item>
+    
+  </channel>
+</rss>

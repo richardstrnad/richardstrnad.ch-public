@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>run on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/run/</link>
+    <description>Recent content in run on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Nov 2016 08:32:33 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/run/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco ACI – Run Commands on the Switches from your APIC</title>
+      <link>https://www.richardstrnad.ch/2016/11/07/cisco-aci-run-commands-on-the-switches-from-your-apic/</link>
+      <pubDate>Mon, 07 Nov 2016 08:32:33 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/11/07/cisco-aci-run-commands-on-the-switches-from-your-apic/</guid>
+      <description>With the introduction of the NX-OS like CLI Cisco also added the option to run commands on the switches directly from your apic. It&amp;rsquo;s now even easier to get some infos from one or multiple switches in your fabric.
+Show switchname on a single fabric switch
+1 2 3 4 5  apic1# fabric leaf01 show switchname ---------------------------------------------------------------- Node 101 (leaf01) ---------------------------------------------------------------- leaf01   You can also run commands on multiple devices</description>
+    </item>
+    
+  </channel>
+</rss>

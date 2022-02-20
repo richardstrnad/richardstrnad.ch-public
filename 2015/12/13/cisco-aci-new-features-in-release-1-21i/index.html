@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Quick glance over the new features in ACI release 1.2(1i)'><title>Cisco ACI – New Features in Release 1.2(1i)</title>
+
+<link rel='canonical' href='https://www.richardstrnad.ch/2015/12/13/cisco-aci-new-features-in-release-1-21i/'>
+
+<link rel="stylesheet" href="/scss/style.min.b949db8bead9abdc40291b93383b8da6abc3aa62e74f5580356c06ddbb792dab.css"><meta property='og:title' content='Cisco ACI – New Features in Release 1.2(1i)'>
+<meta property='og:description' content='Quick glance over the new features in ACI release 1.2(1i)'>
+<meta property='og:url' content='https://www.richardstrnad.ch/2015/12/13/cisco-aci-new-features-in-release-1-21i/'>
+<meta property='og:site_name' content='RichardStrnad.ch'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='1.2(1i)' /><meta property='article:tag' content='ACI' /><meta property='article:tag' content='cisco' /><meta property='article:published_time' content='2015-12-13T14:48:47&#43;00:00'/><meta property='article:modified_time' content='2015-12-13T14:48:47&#43;00:00'/>
+<meta name="twitter:title" content="Cisco ACI – New Features in Release 1.2(1i)">
+<meta name="twitter:description" content="Quick glance over the new features in ACI release 1.2(1i)">
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-47744166-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+    </head>
+    <body class="
+    article-page 
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        on-phone--column extended
+    
+">
+    
+        <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huce997842da9319950b76616671eeec9e_2344603_300x0_resize_q75_box.jpeg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">💻</span>
+                
+            </figure>
+            
+        
+        
+        <h1 class="site-name"><a href="/">RichardStrnad.ch</a></h1>
+        <h2 class="site-description">CCIE #43536. Coding. Python. Automation. Golang.</h2><ol class="social-menu">
+                
+                    <li>
+                        <a 
+                            href='https://github.com/richardstrnad'
+                            target="_blank"
+                            title="GitHub"
+                        >
+                            
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a 
+                            href='https://www.linkedin.com/in/richard-strnad-47772a3b'
+                            target="_blank"
+                            title="Linkedin"
+                        >
+                            
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+   <line x1="8" y1="11" x2="8" y2="16"></line>
+   <line x1="8" y1="8" x2="8" y2="8.01"></line>
+   <line x1="12" y1="16" x2="12" y2="11"></line>
+   <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+</svg>
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a 
+                            href='https://twitter.com/RichardStrnad'
+                            target="_blank"
+                            title="Twitter"
+                        >
+                            
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                            
+                        </a>
+                    </li>
+                
+            </ol></header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/categories/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-section" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M20 20h.01"></path>
+   <path d="M4 20h.01"></path>
+   <path d="M8 20h.01"></path>
+   <path d="M12 20h.01"></path>
+   <path d="M16 20h.01"></path>
+   <path d="M20 4h.01"></path>
+   <path d="M4 4h.01"></path>
+   <path d="M8 4h.01"></path>
+   <path d="M12 4h.01"></path>
+   <path d="M16 4l0 0"></path>
+   <rect x="4" y="8" width="16" height="8" rx="1"></rect>
+</svg>
+                
+                <span>Categories</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/aci/" >
+                ACI
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/2015/12/13/cisco-aci-new-features-in-release-1-21i/">Cisco ACI – New Features in Release 1.2(1i)</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Quick glance over the new features in ACI release 1.2(1i)
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">13 Dec, 2015</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    7 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>Cisco released the newest ACI Software this Week, called 1.2(1i).<br>
+There are a lot of great new features that i will try to cover in more detail in the future, for now the overview from the release notes.</p>
+<p>To install this new software, you can follow one of my blog posts:<br>
+<a href="http://www.richardstrnad.ch/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/" target="_blank">Through GUI</a> or <a href="http://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/" target="_blank">Through CLI</a></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+<th>Guidelines and Restrictions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basic GUI and Advanced GUI for the APIC</td>
+<td>The APIC GUI now has two operating modes: the Basic GUI and Advanced GUI.The Basic GUI is simplified compared to the Advanced GUI, which provides for easier and faster configuration of ACI constructs. The Basic GUI has intelligence embedded that enables the APIC to create some of the ACI model constructs automatically for you, and the Basic GUI provides validations to ensure consistency in the configuration. This functionality reduces and prevents faults.The Advanced GUI is equivalent to the GUI of the previous releases. You should use the Advanced GUI to manage any policy that you created prior to release 1.2.For more information, see the Cisco APIC Getting Started Guide.</td>
+<td>The performance for some Layer 3 configurations using the Basic GUI can be slow.</td>
+</tr>
+<tr>
+<td>NX-OS-Style CLI for APIC</td>
+<td>The APIC CLI is now similar to the NX-OS CLI. The NX-OS CLI has intelligence embedded that enables the APIC to create some of the ACI model constructs automatically for you, and the CLI provides validations to ensure consistency in the configuration. This functionality reduces and prevents faults.For more information, see the Cisco APIC Getting Started Guide and Cisco APIC NX-OS Style Command-Line Interface Configuration Guide.</td>
+<td>The performance for some CLI commands can be slow in a scale setup. For more information, see Verified Scalability Limits.</td>
+</tr>
+<tr>
+<td>Common Pervasive Gateway</td>
+<td>This feature enables you to configure multiple ACI fabrics with an IPv4 common gateway on a per bridge domain basis. Doing so enables moving one or more virtual machine (VM) or conventional hosts across the fabrics while the host retains its IP address. VM host moves across fabrics can be done automatically by the VM hypervisor. The ACI fabrics can be co-located, or provisioned across multiple sites. The Layer 2 connection between the ACI fabrics can be a local link, or can be across a routed WAN link.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Common Tenant</td>
+<td>In the troubleshooting wizard, you can now configure a session with a bridge domain and context in the “Common” tenant.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Class of Service Preservation</td>
+<td>The ACI fabric enables preserving 802.1p class of service (CoS) within the fabric. Enable the fabric global QoS policy dot1p-preserve option to guarantee that the 802.1p value in packets which enter and transit the ACI fabric is preserved.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Direct Server Return</td>
+<td>The direct server return feature enables a server to respond directly to clients without having to go through the load balancer, which eliminates a bottleneck in the server-to-client path.For more information, see the Cisco APIC Layer 4 to Layer 7 Services Deployment Guide.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Ingress Policy Enforcement for Layer 3 Out Scale</td>
+<td>Starting with release 1.2(1), ingress-based policy enforcement enables defining policy enforcement for Layer 3 Out traffic with regard to egress and ingress directions. The default is ingress. During an upgrade to release 1.2(1) or higher, existing Layer 3 Out configurations are set to egress so that the behavior is consistent with the existing configuration; no special upgrade sequence needs to be planned. After the upgrade, an administrator changes the global property value to ingress. Once changed, the system reprograms the rules and prefix entries. Rules are removed from the egress leaf and installed on the ingress leaf, if not already present. If not already configured, an Actrl prefix entry is installed on the ingress leaf. Direct server return (DSR), and attribute-based EPGs require ingress-based policy enforcement. vzAny and taboo ignore ingress-based policy enforcement. Transit rules are applied at ingress.In Ingress Policy enforcement mode, if a contract is defined between an L3InstP and an endpoint group, all of the prefixes of the L3InstP are installed in a non-border leaf where that endpoint group is present.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Local Policy Enforcement</td>
+<td>This feature enforces a physical leaf’s policy on traffic that is across the fabric.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Maximum Prefix Limit</td>
+<td>Tenant networking protocol policies for BGP l3extOut connections can be configured with a maximum prefix limit that enables monitoring and restricting the number of route prefixes received from a peer. Once the max prefix limit is exceeded, a log entry can be recorded, further prefixes can be rejected, the connection can be restarted if the count drops below the threshold in a fixed interval, or the connection is shut down. Only one option can be used at a time. The default setting is a limit of 20,000 prefixes, after which new prefixes are rejected. When the reject option is deployed, BGP accepts one more prefix beyond the configured limit and the APIC raises a fault.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Microsegmentation for Microsoft Virtualization</td>
+<td>This feature supports virtual machine attribute-based endpoint groups for virtual endpoints that are attached to a VMM domain that has Microsoft SCVMM associated with it.This feature is dependent the Microsoft System Center UR9 release and the appropriate APIC agent.For more information, see the Cisco ACI Virtualization Guide.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Microsegmentation with IP-based Endpoint Groups</td>
+<td>This feature supports IP-based endpoint groups for physical or virtual endpoints as they are admitted into the fabric. This policy is applied at the physical node level.For more information, see the Cisco ACI Virtualization Guide.</td>
+<td>You must use any of the following hardware to use this feature:· Nexus 9372PX-E· Nexus 9372TX-E· N9K-M6PQ-E</td>
+</tr>
+<tr>
+<td>Role-Based Access Control Rule Enhancements</td>
+<td>Layer 4 to Layer 7 policy configurations in a multi-tenant environment required administrator intervention to create certain objects that cannot be created by tenant administrators using the classic role-based access control (RBAC) domains and roles model definition. An Application Policy Infrastructure Controller (APIC) provides more granular RBAC privileges in the management information tree (MIT) such that you can grant tenant administrators the privileges that are required to create the objects. Tenant administrators can also create RBAC rules through self-service without administrator intervention to grant permissions for resources under their tenant subtree to other tenants and users in the system.For more information, see the Cisco APIC Layer 4 to Layer 7 Services Deployment Guide.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Shared Layer 3 Out</td>
+<td>A shared Layer 3 Out configuration provides routed connectivity to external networks as a shared service. An l3extInstP endpoint group (EPG) provides routed connectivity to external networks. It can be can be provisioned as a shared service in any tenant (user, common, infra, or mgmt.). Prior to release 1.2(1x), this configuration was only supported in the user and common tenants. An EPG in any tenant can use a shared services contract to connect with an l3extInstP EPG regardless of where in the fabric that l3extInstP EPG is provisioned. This simplifies the provisioning of routed connectivity to external networks; multiple tenants can share a single l3extInstP EPG for routed connectivity to external networks. Sharing an l3extInstP EPG is more efficient because it consumes only one session on the switch regardless of how many EPGs use the single shared l3extInstP EPG.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Simple Network Management Protocol support for APIC</td>
+<td>The Simple Network Management Protocol (SNMP) is now supported for APIC.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Fabric Secure Mode</td>
+<td>Fabric secure mode enhances physical fabric security by enforcing checks for leafs, spines, and APICs that join the fabric by requiring manual approval before they can join the fabric.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Static Route with Weights</td>
+<td>The ACI fabric static route preference feature keeps static route preferences intact across leaf switches so that route selection happens based on this preference.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Unmanaged Mode</td>
+<td>The unmanaged mode for services enables you to choose the APIC&rsquo;s behavior for allocating network resources and programming the fabric. When enabled, the unmanaged mode restricts the APIC to allocate only the network resources for a service appliance and to program only the fabric (leaf). The configuration of the device is left to be done externally by you.For more information, see the Cisco APIC Layer 4 to Layer 7 Services Deployment Guide.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>vRealize Integration</td>
+<td>You can integrate ACI with VMWare&rsquo;s vRealize Orchestration (vRO), vRealize Automation (vRA), and vCenter.For more information, see the Cisco ACI Virtualization Guide.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>vSphere vMotion support across two vSphere Distributed Switches (vDSs)vSphere vMotion support across two vCenters</td>
+<td>vSphere vMotion capabilities have been enhanced in this release, enabling users to perform live migration of virtual machines across virtual switches, and vCenter Server systems.For more information, see the VMware vSphere 6.0 Release Notes.</td>
+<td>None</td>
+</tr>
+</tbody>
+</table></div>
+<p>Source:<br>
+<a href="http://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/1-x/release/notes/apic_rn_121i.html" target="_blank">Release Notes</a></p>
+<p>Link to the Software:<br>
+<a href="https://software.cisco.com/download/release.html?i=!y&mdfid=285968390&softwareid=286278832&release=1.2(1i)" target="_blank">Cisco Download Page</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/1.21i/">1.2(1i)</a>
+        
+            <a href="/tags/aci/">ACI</a>
+        
+            <a href="/tags/cisco/">cisco</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/2015/12/16/cisco-aci-nx-os-style-cli/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI – NX-OS Style CLI</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2016/11/11/error-error-executing-command-on-leaf02-error-code-255/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Error: Error executing command on leaf02. Error Code: 255</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2016/11/07/cisco-aci-run-commands-on-the-switches-from-your-apic/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI – Run Commands on the Switches from your APIC</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2016/10/27/acitoolkit-get-all-nodes/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Acitoolkit – Get all Nodes</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2015/12/19/cisco-aci-reset-a-apic/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI – Reset a APIC</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "richardstrnad" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2014 - 
+        
+        2022 RichardStrnad.ch
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.8.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

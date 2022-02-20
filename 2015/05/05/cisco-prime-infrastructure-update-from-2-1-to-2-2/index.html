@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Tutorial on how to upgrade your Prime Infrastructure to 2.2'><title>Cisco Prime Infrastructure – Update from 2.1 to 2.2</title>
+
+<link rel='canonical' href='https://www.richardstrnad.ch/2015/05/05/cisco-prime-infrastructure-update-from-2-1-to-2-2/'>
+
+<link rel="stylesheet" href="/scss/style.min.b949db8bead9abdc40291b93383b8da6abc3aa62e74f5580356c06ddbb792dab.css"><meta property='og:title' content='Cisco Prime Infrastructure – Update from 2.1 to 2.2'>
+<meta property='og:description' content='Tutorial on how to upgrade your Prime Infrastructure to 2.2'>
+<meta property='og:url' content='https://www.richardstrnad.ch/2015/05/05/cisco-prime-infrastructure-update-from-2-1-to-2-2/'>
+<meta property='og:site_name' content='RichardStrnad.ch'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='2.1' /><meta property='article:tag' content='2.2' /><meta property='article:tag' content='cisco' /><meta property='article:tag' content='Infrastructure' /><meta property='article:tag' content='Prime' /><meta property='article:tag' content='Upgrade' /><meta property='article:published_time' content='2015-05-05T21:15:08&#43;00:00'/><meta property='article:modified_time' content='2015-05-05T21:15:08&#43;00:00'/>
+<meta name="twitter:title" content="Cisco Prime Infrastructure – Update from 2.1 to 2.2">
+<meta name="twitter:description" content="Tutorial on how to upgrade your Prime Infrastructure to 2.2">
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-47744166-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>Back</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/prime-infrastructure/" >
+                Prime Infrastructure
+            </a>
+        
+            <a href="/categories/cisco/" >
+                Cisco
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/2015/05/05/cisco-prime-infrastructure-update-from-2-1-to-2-2/">Cisco Prime Infrastructure – Update from 2.1 to 2.2</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Tutorial on how to upgrade your Prime Infrastructure to 2.2
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">05 May, 2015</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    6 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="overview"> Overview</h2>
+<p>I did the Upgrade from Prime Infrastructure 2.1 to Prime Infrastructure 2.2 last week for one of our customers. Unfortunately this upgrade isn&rsquo;t possible &lsquo;in place&rsquo;, you have to install a new Prime Infrastructure 2.2 Server and then import your old configuration.</p>
+<p>As described in the Prime Infrastructure <a href="http://www.cisco.com/c/en/us/td/docs/net_mgmt/prime/infrastructure/2-2/quickstart/guide/cpi_qsg.html#pgfId-113783" target="_blank">2.2 Quickstart Guide</a> you have to be on one of the following versions that the backup can be used in 2.2:</p>
+<li class="pBu1_Bullet1">
+  Cisco Prime Infrastructure 2.1.2 (with the UBF patch)
+</li>
+<li class="pBu1_Bullet1">
+  Cisco Prime Infrastructure 2.1.1 (with the UBF patch)
+</li>
+<li class="pBu1_Bullet1">
+  Cisco Prime Infrastructure 2.1.0.0.87
+</li>
+<li class="pBu1_Bullet1">
+  Cisco Prime Infrastructure 1.4.2
+</li>
+<li class="pBu1_Bullet1">
+  Cisco Prime Infrastructure 1.4.1
+</li>
+<li class="pBu1_Bullet1">
+  Cisco Prime Infrastructure 1.4.0.45
+</li>
+<p>Luckily we were on 2.1.0.0.87, so it wasn&rsquo;t necessary to do a minor upgrade first.</p>
+<h2 id="install-a-prime-infrastructure-22-server"> Install a Prime Infrastructure 2.2 Server</h2>
+<p>First you need a new Server, for me this was again a VM (like the 2.1 installation)<br>
+You can download the Image <a href="https://software.cisco.com/download/release.html?mdfid=286236028&softwareid=284272932&release=2.2&relind=AVAILABLE&rellifecycle=&reltype=latest" target="_blank">here</a>, just pick the right one for your case. For me it was:<br>
+<em><strong>Cisco Prime Infrastructure 2.2 Virtual Appliance</strong></em><br>
+<em>PI-VA-2.2.0.0.158.ova</em></p>
+<p>If you also use the VM, check the different Virtual Appliance options out in this table:<br>
+<a class="link" href="http://www.richardstrnad.ch/wp-content/uploads/2015/05/cisco_prime_infrastructure_vm_scaleing.png"  target="_blank" rel="noopener"
+    ><img loading="lazy" class="alignnone size-full wp-image-146" src="http://www.richardstrnad.ch/wp-content/uploads/2015/05/cisco_prime_infrastructure_vm_scaleing.png" alt="Cisco Prime Infrastructure 2.2 VM Scaleing" width="603" height="784" /></a></p>
+<p>This should help you to pick the right VM.</p>
+<p>Now you can just install the image through the vsphere console and finish the basic setup. I used a different IP first and changed it before i did the restore.</p>
+<h2 id="backup-of-your-prime-infrastructure-21">Backup of your Prime Infrastructure 2.1</h2>
+<p>After you ensured that you have one of the compatible versions, you start with the backup.<br>
+The easiest way is to use a remote repository, just configure one from the CLI like these</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">repository ftp
+ url ftp://your.ftp.server/path/
+ user username password plain plain
+</code></pre></td></tr></table>
+</div>
+</div><p>You&rsquo;re now ready to perform the backup, this took some time for me.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sv00019/admin# backup PI_Backup repository ftp application NCS
+% Creating backup with timestamped filename: PI_Backup-150430-1120.tar.gpg
+ Backup Started at : 04/30/15 11:20:29
+ Stage 1 of 7: Database backup ...
+ Database size: 81G
+ -- completed at 04/30/15 11:37:09
+ Stage 2 of 7: Database copy ...
+ -- completed at 04/30/15 11:37:09
+ Stage 3 of 7: Backing up support files ...
+ -- completed at 04/30/15 11:37:17
+ Stage 4 of 7: Compressing Backup ...
+ -- completed at 04/30/15 11:37:29
+ Stage 5 of 7: Building backup file ...
+ -- completed at 04/30/15 11:47:04
+ Stage 6 of 7: Encrypting backup file ...
+ -- completed at 04/30/15 11:50:01
+ Stage 7 of 7: Transferring backup file ...
+ -- completed at 04/30/15 11:51:32
+ Total Backup duration is: 0h:31m:3s
+</code></pre></td></tr></table>
+</div>
+</div><p>After that, you are ready to restore the Backup.</p>
+<h2 id="restore-the-backup-of-your-prime-infrastructure-21">Restore the Backup of your Prime Infrastructure 2.1</h2>
+<p>We assume here that your new Prime Infrastructure 2.2 Server is ready. First step would be to shut down the 2.1 Server and configure this IP on the 2.2 Server.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sv00283/admin# application stop NCS
+
+Stopping Prime Infrastructure...
+
+This may take a few minutes...
+
+Prime Infrastructure successfully shutdown.
+
+
+Plug and Play Gateway is being shut down..... Please wait!!!
+
+Stop of Plug and Play Gateway Completed!!
+Stopping SAM daemon...
+Checking for SAM daemon again ...
+SAM Daemon not found...
+Stopping DA daemon ...
+Checking for DA daemon again ...
+DA Daemon not found...
+Stopping strongSwan IPsec...
+
+
+sv00283/admin(config)# interface GigabitEthernet 0
+sv00283/admin(config-GigabitEthernet)# ip address 10.192.2.30 255.255.255.0
+
+Changing the hostname or IP may result in undesired side effects,
+such as installed application(s) being restarted.
+Are you sure you want to proceed? [y/n] y
+</code></pre></td></tr></table>
+</div>
+</div><p>I stopped the application first, just prevent any possible issues.<br>
+Then i added the same remote repository as i used for the backup</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">repository ftp
+url ftp://your.ftp.server/path/
+user username password plain plain
+</code></pre></td></tr></table>
+</div>
+</div><p>After this step, you are ready for the restore. Plan some time for this to finish!</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sv00283/admin# restore PI_Backup-150430-1120.tar.gpg repository nas001 application NCS
+
+* NOTE *
+If the system console is disconnected or got cleared on session timeout
+run &#39;show restore log&#39; to see the output of the last restore session.
+
+Restore will restart the application services. Continue? (yes/no) [yes] ?
+
+DO NOT press ^C while the restoration is in progress
+Aborting restore with a ^C may leave the system in a unrecoverable state
+
+Initiating restore. Please wait...
+Restore Started at 04/30/15 14:10:47
+Stage 1 of 9: Transferring backup file ...
+-- completed at 04/30/15 14:11:58
+Stage 2 of 9: Decrypting backup file ...
+-- completed at 04/30/15 14:16:04
+Stage 3 of 9: Unpacking backup file ...
+-- completed at 04/30/15 14:16:05
+Stopping strongSwan IPsec failed: starter is not running
+Stage 4 of 9: Decompressing backup ...
+-- completed at 04/30/15 14:17:10
+Stage 5 of 9: Restoring Support Files ...
+-- completed at 04/30/15 14:17:12
+Stage 6 of 9: Restoring Database Files ...
+-- completed at 04/30/15 14:17:45
+Stage 7 of 9: Recovering Database ...
+-- completed at 04/30/15 15:13:01
+Stage 8 of 9: Updating Database Schema ...
+Stage 1 of 5: Pre Migration Schema Upgrade ...
+-- completed at: 2015-04-30 15:38:25.126, Time Taken : 0 hr, 19 min, 10 sec
+Stage 2 of 5: Schema Upgrade ...
+: This could take long time based on the existing data size.
+-- completed at: 2015-04-30 15:41:42.862, Time Taken : 0 hr, 3 min, 17 sec
+Stage 3 of 5: Post Migration Schema Upgrade ...
+-- completed at: 2015-04-30 16:04:13.639, Time Taken : 0 hr, 22 min, 30 sec
+Stage 4 of 5: Enabling DB Constraints ...
+-- completed at: 2015-04-30 16:04:34.163, Time Taken : 0 hr, 0 min, 12 sec
+Stage 5 of 5: Finishing Up ...
+-- completed at: 2015-04-30 16:04:41.941, Time Taken : 0 hr, 0 min, 7 sec
+-- completed at 04/30/15 16:06:03
+Stage 9 of 9: Re-enabling Database Settings ...
+-- completed at 04/30/15 16:06:03
+Total Restore duration is: 01h:55m:16s
+INFO: Restore completed successfully.
+Starting PI Server... This may take some time
+
+Starting Prime Infrastructure...
+
+This may take a while (10 minutes or more) ...
+
+Prime Infrastructure started successfully.
+
+Starting strongSwan 5.0.1 IPsec [starter]...
+
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="and-thats-it-you-are-running-now-prime-infrastructure-22">And that&rsquo;s it, you are running now Prime Infrastructure 2.2</h3>
+<p><a class="link" href="http://www.richardstrnad.ch/wp-content/uploads/2015/05/cisco_prime_infrastructure_2_2.png"  target="_blank" rel="noopener"
+    ><img loading="lazy" class="alignnone size-full wp-image-147" src="http://www.richardstrnad.ch/wp-content/uploads/2015/05/cisco_prime_infrastructure_2_2.png" alt="Cisco Prime Infrastructure 2.2 Login Screen" width="1600" height="727" /></a></p>
+<p> </p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/2.1/">2.1</a>
+        
+            <a href="/tags/2.2/">2.2</a>
+        
+            <a href="/tags/cisco/">cisco</a>
+        
+            <a href="/tags/infrastructure/">Infrastructure</a>
+        
+            <a href="/tags/prime/">Prime</a>
+        
+            <a href="/tags/upgrade/">Upgrade</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/2015/12/21/cisco-ios-xe-install-the-new-release-16-1-1-denali-on-3850/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco IOS XE – Install the New release 16.1.1 (Denali) on 3850</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI – The new and nice GUI way to Upgrade your ACI Fabric</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2015/06/17/avs-upgrade-through-cli/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI – AVS Upgrade through CLI</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2015/03/01/cisco-acs-patch-install-error-manifest-file-not-found-in-the-bundle/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACS – Patch Install error (% Manifest file not found in the bundle)</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI –  Upgrade your ACI Fabric (1.0(2j) to 1.0(3f))</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "richardstrnad" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2014 - 
+        
+        2022 RichardStrnad.ch
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.8.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#overview"> Overview</a></li>
+    <li><a href="#install-a-prime-infrastructure-22-server"> Install a Prime Infrastructure 2.2 Server</a></li>
+    <li><a href="#backup-of-your-prime-infrastructure-21">Backup of your Prime Infrastructure 2.1</a></li>
+    <li><a href="#restore-the-backup-of-your-prime-infrastructure-21">Restore the Backup of your Prime Infrastructure 2.1</a>
+      <ol>
+        <li><a href="#and-thats-it-you-are-running-now-prime-infrastructure-22">And that&rsquo;s it, you are running now Prime Infrastructure 2.2</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

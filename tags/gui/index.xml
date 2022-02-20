@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GUI on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/gui/</link>
+    <description>Recent content in GUI on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Aug 2015 18:45:37 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/gui/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco ACI – The new and nice GUI way to Upgrade your ACI Fabric</title>
+      <link>https://www.richardstrnad.ch/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/</link>
+      <pubDate>Sun, 09 Aug 2015 18:45:37 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/</guid>
+      <description>Some time ago i posted how to do a upgrade of your ACI Fabric through CLI.
+Cisco made this process now way easier, with some cool new features.
+In this short guide i used the current ACI release 1.1(1o), that you can grab directly from cisco here.
+Upload the Firmware to the APIC You can now upload directly through your browser, no longer the need for a SCP/FTP Server!</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Restart the GUI (Websocket Error)</title>
+      <link>https://www.richardstrnad.ch/2015/02/23/cisco-aci-restart-the-gui-websocket-error/</link>
+      <pubDate>Mon, 23 Feb 2015 16:08:40 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/02/23/cisco-aci-restart-the-gui-websocket-error/</guid>
+      <description>I got some strange Websocket Errors on the Gui Login Page, the following fixed the problem for me
+1 2  admin@aci-lab-apic01:~&amp;gt; acidiag restart mgmt {u&amp;#39;dme&amp;#39;: {u&amp;#39;output&amp;#39;: u&amp;#39;mgmt start/running\n&amp;#39;, u&amp;#39;error_code&amp;#39;: 0, u&amp;#39;error_string&amp;#39;: u&amp;#39;&amp;#39;}}   </description>
+    </item>
+    
+  </channel>
+</rss>

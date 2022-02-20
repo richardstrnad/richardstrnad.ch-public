@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>automation on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/automation/</link>
+    <description>Recent content in automation on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Nov 2021 12:41:48 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco RestConf Cheatsheet</title>
+      <link>https://www.richardstrnad.ch/2021/11/24/cisco-restconf-cheatsheet/</link>
+      <pubDate>Wed, 24 Nov 2021 12:41:48 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2021/11/24/cisco-restconf-cheatsheet/</guid>
+      <description>All new stuff is directly added to my netwrk.ch blog: https://netwrk.ch/posts/restconf/
+I decided to migrate this blog here, which was based on wordpress for the past 8 years, to hugo. For this reason, all technical information stays here 😁
+This post is a work in progress, as i&amp;rsquo;m currently using Restconf for different customer, I want to save/post some of the infos i discovered. Get a Portchannel Subinterface
+Base URL for all the following examples</description>
+    </item>
+    
+  </channel>
+</rss>

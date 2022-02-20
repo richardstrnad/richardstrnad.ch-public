@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BGP on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/bgp/</link>
+    <description>Recent content in BGP on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Mar 2017 18:30:47 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/bgp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BFD and IP redirects</title>
+      <link>https://www.richardstrnad.ch/2017/03/23/bfd-and-ip-redirects/</link>
+      <pubDate>Thu, 23 Mar 2017 18:30:47 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2017/03/23/bfd-and-ip-redirects/</guid>
+      <description>We faced some strange ICMP redirect messages today on one of our devices after we configured BFD for BGP.
+Device1
+1 2 3 4 5 6  ICMP: bogus redirect from 192.168.100.1 - for 192.168.100.2 use gw 192.168.100.2 gateway address is one of our addresses ICMP: bogus redirect from 192.168.100.1 - for 192.168.100.2 use gw 192.168.100.2 gateway address is one of our addresses ICMP: bogus redirect from 192.168.100.1 - for 192.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Connect to the leaf/spine switches</title>
+      <link>https://www.richardstrnad.ch/2015/02/18/cisco-aci-connect-to-the-leafspine-switches/</link>
+      <pubDate>Wed, 18 Feb 2015 10:44:55 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/02/18/cisco-aci-connect-to-the-leafspine-switches/</guid>
+      <description>With the introduction of the NX-OS Cli, cisco changed the way how you connect to leaf/spine switches.
+Find my updated post here.
+There are several scenarios where you want to connect to your leaf and spine switches of the ACI fabric.
+In this example we want to checkout the BGP Status.
+First you connect to your APIC Controller through SSH:
+1 2 3 4  $ ssh admin@10.32.5.100 Application Policy Infrastructure Controller admin@10.</description>
+    </item>
+    
+  </channel>
+</rss>

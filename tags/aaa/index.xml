@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AAA on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/aaa/</link>
+    <description>Recent content in AAA on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Oct 2016 14:10:30 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/aaa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>APIC-EM – External Authentication ‘Invalid Login Credentials’</title>
+      <link>https://www.richardstrnad.ch/2016/10/12/apic-em-external-authentication-invalid-login-credentials/</link>
+      <pubDate>Wed, 12 Oct 2016 14:10:30 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/10/12/apic-em-external-authentication-invalid-login-credentials/</guid>
+      <description>I struggled to configure external authentication on a APIC-EM Controller, i followed the official cisco guide. According to the guide the radius server should return &amp;lsquo;Scope: Scope:ALL, Role:ROLE_ADMIN&amp;rsquo; but this is wrong!
+Correct is Scope=ALL: Role=ROLE_ADMIN
+Before that i always got a &amp;lsquo;Invalid Login Credentials&amp;rsquo;, not the best error message 🙂</description>
+    </item>
+    
+  </channel>
+</rss>

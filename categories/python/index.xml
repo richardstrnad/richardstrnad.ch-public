@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/categories/python/</link>
+    <description>Recent content in Python on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Oct 2016 16:56:16 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Acitoolkit – Get all Nodes</title>
+      <link>https://www.richardstrnad.ch/2016/10/27/acitoolkit-get-all-nodes/</link>
+      <pubDate>Thu, 27 Oct 2016 16:56:16 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/10/27/acitoolkit-get-all-nodes/</guid>
+      <description>Example script to print all your fabric nodes.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  from acitoolkit.acitoolkit import Session from acitoolkit.aciphysobject import Node url = &amp;#39;https://apic&amp;#39; user = &amp;#39;user&amp;#39; pw = &amp;#39;pw&amp;#39; session = Session(url, user, pw) session.login() nodes = Node.get(session) for node in nodes: print(&amp;#39;=&amp;#39; * 50) print(&amp;#39;Pod: {}&amp;#39;.format(node.pod)) print(&amp;#39;Node: {}&amp;#39;.format(node.node)) print(&amp;#39;Mode: {}&amp;#39;.format(node.mode)) print(&amp;#39;Model: {}&amp;#39;.format(node.model)) print(&amp;#39;Vendor: {}&amp;#39;.</description>
+    </item>
+    
+    <item>
+      <title>Python – Building a Cisco Type 7 Decrypt Tool</title>
+      <link>https://www.richardstrnad.ch/2016/10/12/python-building-a-cisco-type-7-decrypt-tool/</link>
+      <pubDate>Wed, 12 Oct 2016 10:00:03 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/10/12/python-building-a-cisco-type-7-decrypt-tool/</guid>
+      <description>I wrote a small python script that can decrypt cisco type 7 passwords.
+Cisco7Decrypt on Github
+You can decrypt password directly through the CLI:
+1 2  → python cisco7decrypt.py 12090404011C03162E password   If you want the command accessible from anywhere, just link it to a folder that&amp;rsquo;s included in your Path. In this example &amp;lsquo;~/bin&amp;rsquo;
+1  ln-sn`pwd`/cisco7decrypt.py~/bin/cisco7decrypt  </description>
+    </item>
+    
+  </channel>
+</rss>

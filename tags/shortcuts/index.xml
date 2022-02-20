@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shortcuts on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/shortcuts/</link>
+    <description>Recent content in shortcuts on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 May 2014 22:11:53 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/shortcuts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco IOS shortcuts</title>
+      <link>https://www.richardstrnad.ch/2014/05/06/cisco-ios-shortcuts/</link>
+      <pubDate>Tue, 06 May 2014 22:11:53 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2014/05/06/cisco-ios-shortcuts/</guid>
+      <description>Nice overview of Cisco IOS shortcuts, will try to add more!
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  Ctrl + A - Beginning Line Ctrl + B - Backward Character Ctrl + C - Clear line Ctrl + D - Delete Character to the Right Ctrl + E - End Line Ctrl + F - Forward Character Ctrl + H - Backspace Character to the Left Ctrl + I - Refresh Line and Goto End Ctrl + J - Return Ctrl + K - Delete everything on the Right of cursor Ctrl + L - Refresh Line Ctrl + M - Return Ctrl + N - Next Command Ctrl + P - Previous Command Ctrl + R - Refresh Line Ctrl + T - Flip Last 2 Characters Ctrl + U - Clear Line and Put in Buffer Ctrl + V - Allows A Control Character To Be Typed Ctrl + W - Delete Word Backwards and Put in Buffer Ctrl + X - Clear Line to the Left and Put in Buffer Ctrl + Y - Paste Buffer Contents   </description>
+    </item>
+    
+  </channel>
+</rss>

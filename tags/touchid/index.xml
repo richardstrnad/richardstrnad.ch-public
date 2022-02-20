@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TouchID on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/touchid/</link>
+    <description>Recent content in TouchID on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Feb 2022 07:45:46 +0100</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/touchid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apple macOS Touch ID for Sudo</title>
+      <link>https://www.richardstrnad.ch/2022/02/16/apple-macos-touch-id-for-sudo/</link>
+      <pubDate>Wed, 16 Feb 2022 07:45:46 +0100</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2022/02/16/apple-macos-touch-id-for-sudo/</guid>
+      <description>If you are like me and a bit lazy, the touch id is a really nice addition from Apple. It allows for easy lock/unlock of the mac itself and for some authentication within.
+By default the touch id is not used for sudo commands in the terminal. For which you will be asked for a password as usual. But it is possible to use the touch id for sudo commands as well, for this you need an extension of the /etc/pam.</description>
+    </item>
+    
+  </channel>
+</rss>

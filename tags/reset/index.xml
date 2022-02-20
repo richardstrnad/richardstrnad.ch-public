@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reset on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/reset/</link>
+    <description>Recent content in reset on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Dec 2015 17:00:38 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/reset/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco ACI – Reset a APIC</title>
+      <link>https://www.richardstrnad.ch/2015/12/19/cisco-aci-reset-a-apic/</link>
+      <pubDate>Sat, 19 Dec 2015 17:00:38 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/12/19/cisco-aci-reset-a-apic/</guid>
+      <description>If you want to reset one or all of your APIC Controllers to factory default, there is a easy command for that &amp;lsquo;eraseconfig setup&amp;rsquo;
+1 2 3 4 5 6 7  → ssh admin@10.127.129.50 Application Policy Infrastructure Controller admin@10.127.129.50&amp;#39;s password: apic1# bash ---&amp;gt; Only required with Version 1.2+ admin@apic1:~&amp;gt; eraseconfig setup Do you want to cleanup the initial setup data? The system will be REBOOTED. (Y/n):   When your intention is to reset a whole fabric, it&amp;rsquo;s recommended to reset the switches first:</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Reset a ACI Spine/Leaf Switch to default</title>
+      <link>https://www.richardstrnad.ch/2015/10/23/reset-a-aci-spineleaf-switch-to-default/</link>
+      <pubDate>Fri, 23 Oct 2015 15:52:19 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/10/23/reset-a-aci-spineleaf-switch-to-default/</guid>
+      <description>Login via SSH or Console to the switch
+Make sure that there is an image on the leaf/spine
+1 2  leaf01# dir /bootflash/aci-n9000* /bootflash/aci-n9000-dk9.11.0.2j.bin   Make sure that this image is used as bootvar
+1 2 3 4  leaf01# cat /mnt/cfg/0/boot/grub/menu.lst.local boot aci-n9000-dk9.11.0.2j.bin leaf01# cat /mnt/cfg/1/boot/grub/menu.lst.local boot aci-n9000-dk9.11.0.2j.bin   If this Image is not set as bootvar, there is a script for that 🙂
+1  leaf01# setup-bootvars.</description>
+    </item>
+    
+  </channel>
+</rss>

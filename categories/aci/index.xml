@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ACI on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/categories/aci/</link>
+    <description>Recent content in ACI on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Feb 2022 08:00:00 +0100</lastBuildDate><atom:link href="https://www.richardstrnad.ch/categories/aci/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ACI: Spine replacement in a single Spine fabric</title>
+      <link>https://www.richardstrnad.ch/2022/02/10/aci-spine-replacement-in-a-single-spine-fabric/</link>
+      <pubDate>Thu, 10 Feb 2022 08:00:00 +0100</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2022/02/10/aci-spine-replacement-in-a-single-spine-fabric/</guid>
+      <description>A colleague has exchanged a spine at a customer. This is a lab fabric which runs in a minimal setup, 1 x APIC, 1 x Spine, 4 x Leaf.
+In principle, the exchange of a Spine within an ACI fabric is a very simple undertaking, ACI does all the heavy lifting for you :)
+However, in a scenario where a Leaf has only one path to the APIC (thus connected to a single Spine), the exchange of the Spine leads to problems.</description>
+    </item>
+    
+    <item>
+      <title>How to read out the used ACI basic parameters</title>
+      <link>https://www.richardstrnad.ch/2021/10/27/how-to-read-out-the-used-aci-basic-parameters/</link>
+      <pubDate>Wed, 27 Oct 2021 05:57:36 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2021/10/27/how-to-read-out-the-used-aci-basic-parameters/</guid>
+      <description>It happend to me more than once, that i needed the basic parameters that were used during the initial setup of the Fabric. For example if you configure a standby APIC later on, or if you (for whatever reason) reset and APIC and redo the initial configuration dialog.
+Of course, we always document everything we do, so we could simply look the information up in the documentation! But there is a faster way, just hop onto one of the APICs and use a small cat command.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Convert Leaf Ports (Uplink to Downlink)</title>
+      <link>https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/</link>
+      <pubDate>Mon, 01 Oct 2018 18:00:28 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/</guid>
+      <description>Since ACI release 3.1(1) it&amp;rsquo;s possible to use some of the Leaf Uplinks as Downlink Ports. This could help you out if there is a need for some 40/100G ports but you are currently only running 10/25G Leafs.
+Currently the following Leafs support the conversion:
+N9K-C9348GC-FXP  N9K-C93180LC-EX   N9K-C93180YC-FX  N9K-C93180YC-EX and N9K-C93180YC-EXU  N9K-C93108TC-EX  N9K-C93108TC-FX  N9K-C9336C-FX2 (only downlink to uplink conversion supported)   There are some limitations, check them out on the Cisco Page.</description>
+    </item>
+    
+    <item>
+      <title>ACI/N9K – How to convert a Nexus 9000 from NX-OS to ACI</title>
+      <link>https://www.richardstrnad.ch/2017/04/12/acin9k-how-to-convert-a-nexus-9000-from-nx-os-to-aci/</link>
+      <pubDate>Wed, 12 Apr 2017 21:13:17 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2017/04/12/acin9k-how-to-convert-a-nexus-9000-from-nx-os-to-aci/</guid>
+      <description>Some time ago i posted how to convert a ACI switch to NX-OS, now the other way around.
+Copy the file to the NX-OS Mode N9k
+1 2 3 4 5 6 7  switch# copy scp: bootflash: Enter source filename: Downloads/aci-n9000-dk9.12.2.1o.bin Enter vrf (If no input, current vrf &amp;#39;default&amp;#39; is considered): management Enter hostname for the scp server: 192.168.0.5 Enter username: USER Password: aci-n9000-dk9.12.2.1o.bin 1% 15MB 3.8MB/s 04:34 ETA   Change the boot mode to aci</description>
+    </item>
+    
+    <item>
+      <title>Error: Error executing command on leaf02. Error Code: 255</title>
+      <link>https://www.richardstrnad.ch/2016/11/11/error-error-executing-command-on-leaf02-error-code-255/</link>
+      <pubDate>Fri, 11 Nov 2016 13:32:59 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/11/11/error-error-executing-command-on-leaf02-error-code-255/</guid>
+      <description>I had a issue today with running remote commands on one of my fabric switches, always generated an error.
+1 2 3 4 5  apic1# fabric leaf02 show switchname ---------------------------------------------------------------- Node 102 (leaf02) ---------------------------------------------------------------- Error: Error executing command on leaf02. Error Code: 255   I tried to directly connect and found the error
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  admin@apic1:attach leaf02 This command is being deprecated on APIC controller, please use NXOS-style equivalent command # Executing command: ssh leaf02 -b 10.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Run Commands on the Switches from your APIC</title>
+      <link>https://www.richardstrnad.ch/2016/11/07/cisco-aci-run-commands-on-the-switches-from-your-apic/</link>
+      <pubDate>Mon, 07 Nov 2016 08:32:33 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/11/07/cisco-aci-run-commands-on-the-switches-from-your-apic/</guid>
+      <description>With the introduction of the NX-OS like CLI Cisco also added the option to run commands on the switches directly from your apic. It&amp;rsquo;s now even easier to get some infos from one or multiple switches in your fabric.
+Show switchname on a single fabric switch
+1 2 3 4 5  apic1# fabric leaf01 show switchname ---------------------------------------------------------------- Node 101 (leaf01) ---------------------------------------------------------------- leaf01   You can also run commands on multiple devices</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Connect to the leaf/spine switches with the NX-OS bash</title>
+      <link>https://www.richardstrnad.ch/2016/11/06/cisco-aci-connect-to-the-leafspine-switches-with-the-nx-os/</link>
+      <pubDate>Sun, 06 Nov 2016 21:06:01 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/11/06/cisco-aci-connect-to-the-leafspine-switches-with-the-nx-os/</guid>
+      <description>Some time ago i posted how you can connect to a spine or leaf switch -&amp;gt; Connect to a leaf/spine switch
+With the introduction of NX-OS, the syntax changed a bit. You have now first to drop back to the bash shell and then you can attach the switches. Password is still the same as for the APIC.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  apic1# bash admin@apic1:~&amp;gt; attach leaf01 This command is being deprecated on APIC controller, please use NXOS-style equivalent command # Executing command: ssh leaf01 -b 10.</description>
+    </item>
+    
+    <item>
+      <title>Acitoolkit – Get all Nodes</title>
+      <link>https://www.richardstrnad.ch/2016/10/27/acitoolkit-get-all-nodes/</link>
+      <pubDate>Thu, 27 Oct 2016 16:56:16 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/10/27/acitoolkit-get-all-nodes/</guid>
+      <description>Example script to print all your fabric nodes.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  from acitoolkit.acitoolkit import Session from acitoolkit.aciphysobject import Node url = &amp;#39;https://apic&amp;#39; user = &amp;#39;user&amp;#39; pw = &amp;#39;pw&amp;#39; session = Session(url, user, pw) session.login() nodes = Node.get(session) for node in nodes: print(&amp;#39;=&amp;#39; * 50) print(&amp;#39;Pod: {}&amp;#39;.format(node.pod)) print(&amp;#39;Node: {}&amp;#39;.format(node.node)) print(&amp;#39;Mode: {}&amp;#39;.format(node.mode)) print(&amp;#39;Model: {}&amp;#39;.format(node.model)) print(&amp;#39;Vendor: {}&amp;#39;.</description>
+    </item>
+    
+    <item>
+      <title>ACI/N9K – How to convert a Nexus 9000 from ACI Mode to NX-OS (Standalone)</title>
+      <link>https://www.richardstrnad.ch/2016/02/29/acin9k-how-to-convert-a-nexus-9000-from-aci-mode-to-standalone/</link>
+      <pubDate>Mon, 29 Feb 2016 13:27:06 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/02/29/acin9k-how-to-convert-a-nexus-9000-from-aci-mode-to-standalone/</guid>
+      <description>Get the standalone software here
+First you have to copy the new nexus 9000 standalone firmware to the APIC:
+1 2  admin@apic1:~&amp;gt; scp richy@YOURIP:Downloads/nxos.7.0.3.I2.2a.bin . nxos.7.0.3.I2.2a.bin 100% 513MB 9.2MB/s 00:56   And now you can push it to the appropriate Nexus 9000. (The user/password matches the APIC)
+1 2 3  admin@apic1:~&amp;gt; scp nxos.7.0.3.I2.2a.bin admin@leaf02:bootflash Password: nxos.7.0.3.I2.2a.bin 100% 513MB 7.0MB/s 01:13   Now reboot the switch and break into the load prompt, this can be done with Control+C in Putty.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Reset a APIC</title>
+      <link>https://www.richardstrnad.ch/2015/12/19/cisco-aci-reset-a-apic/</link>
+      <pubDate>Sat, 19 Dec 2015 17:00:38 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/12/19/cisco-aci-reset-a-apic/</guid>
+      <description>If you want to reset one or all of your APIC Controllers to factory default, there is a easy command for that &amp;lsquo;eraseconfig setup&amp;rsquo;
+1 2 3 4 5 6 7  → ssh admin@10.127.129.50 Application Policy Infrastructure Controller admin@10.127.129.50&amp;#39;s password: apic1# bash ---&amp;gt; Only required with Version 1.2+ admin@apic1:~&amp;gt; eraseconfig setup Do you want to cleanup the initial setup data? The system will be REBOOTED. (Y/n):   When your intention is to reset a whole fabric, it&amp;rsquo;s recommended to reset the switches first:</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – NX-OS Style CLI</title>
+      <link>https://www.richardstrnad.ch/2015/12/16/cisco-aci-nx-os-style-cli/</link>
+      <pubDate>Wed, 16 Dec 2015 14:00:46 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/12/16/cisco-aci-nx-os-style-cli/</guid>
+      <description>Cisco introduced a NX-OS like CLI for the Cisco ACI Solution with release 1.2(1i).
+In this post i will demonstrate some of the things that can be achieved through the NX-OS CLI.
+!Important!
+There is no safety net, if you issue something like &amp;lsquo;no tenant XXX&amp;rsquo; the configuration is gone!
+No commit, warning or similar!
+!Important!
+Basics The NX-OS like CLI is the new default if you connect via SSH to the APIC</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – New Features in Release 1.2(1i)</title>
+      <link>https://www.richardstrnad.ch/2015/12/13/cisco-aci-new-features-in-release-1-21i/</link>
+      <pubDate>Sun, 13 Dec 2015 14:48:47 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/12/13/cisco-aci-new-features-in-release-1-21i/</guid>
+      <description>Cisco released the newest ACI Software this Week, called 1.2(1i).
+There are a lot of great new features that i will try to cover in more detail in the future, for now the overview from the release notes.
+To install this new software, you can follow one of my blog posts:
+Through GUI or Through CLI
+   Feature Description Guidelines and Restrictions     Basic GUI and Advanced GUI for the APIC The APIC GUI now has two operating modes: the Basic GUI and Advanced GUI.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Reset a ACI Spine/Leaf Switch to default</title>
+      <link>https://www.richardstrnad.ch/2015/10/23/reset-a-aci-spineleaf-switch-to-default/</link>
+      <pubDate>Fri, 23 Oct 2015 15:52:19 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/10/23/reset-a-aci-spineleaf-switch-to-default/</guid>
+      <description>Login via SSH or Console to the switch
+Make sure that there is an image on the leaf/spine
+1 2  leaf01# dir /bootflash/aci-n9000* /bootflash/aci-n9000-dk9.11.0.2j.bin   Make sure that this image is used as bootvar
+1 2 3 4  leaf01# cat /mnt/cfg/0/boot/grub/menu.lst.local boot aci-n9000-dk9.11.0.2j.bin leaf01# cat /mnt/cfg/1/boot/grub/menu.lst.local boot aci-n9000-dk9.11.0.2j.bin   If this Image is not set as bootvar, there is a script for that 🙂
+1  leaf01# setup-bootvars.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – New Features in Release 1.1(2h)</title>
+      <link>https://www.richardstrnad.ch/2015/08/19/cisco-aci-new-features-in-release-1-12h/</link>
+      <pubDate>Wed, 19 Aug 2015 12:20:14 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/08/19/cisco-aci-new-features-in-release-1-12h/</guid>
+      <description>Cisco just released the newest Cisco ACI Software called 1.1(2h).
+   Feature Description Guidelines and Restrictions     AES encryption for configuration files As of release 1.1(2), the secure properties of APIC configuration files can be encrypted by enabling AES-256 encryption. AES encryption is a global configuration option; all secure properties conform to the AES configuration setting. It is not possible to export just a portion of the ACI fabric such as a tenant configuration with AES encryption.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – The new and nice GUI way to Upgrade your ACI Fabric</title>
+      <link>https://www.richardstrnad.ch/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/</link>
+      <pubDate>Sun, 09 Aug 2015 18:45:37 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/</guid>
+      <description>Some time ago i posted how to do a upgrade of your ACI Fabric through CLI.
+Cisco made this process now way easier, with some cool new features.
+In this short guide i used the current ACI release 1.1(1o), that you can grab directly from cisco here.
+Upload the Firmware to the APIC You can now upload directly through your browser, no longer the need for a SCP/FTP Server!</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – AVS Upgrade through CLI</title>
+      <link>https://www.richardstrnad.ch/2015/06/17/avs-upgrade-through-cli/</link>
+      <pubDate>Wed, 17 Jun 2015 08:54:21 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/06/17/avs-upgrade-through-cli/</guid>
+      <description>First grab the release from the cisco page here
+Then put it through scp from you Download place to the ESX Server
+1 2 3  scp CiscoAVS_1.5-5.2.1.SV3.1.5-pkg.zip root@10.32.5.150:/tmp Password: CiscoAVS_1.5-5.2.1.SV3.1.5-pkg.zip 100% 35MB 806.2KB/s 00:45   Next you Login to the ESX through SSH and check the current version
+1 2 3 4  ~ # vemcmd show version VEM Version: 5.2.1.3.1.3.0-3.2.1 System Version: VMware ESXi 5.5.0 Releasebuild-2068190 ESX Version Update Level: 0   Then i unzipped the archives and upgraded the vib</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI –  Upgrade your ACI Fabric (1.0(2j) to 1.0(3f))</title>
+      <link>https://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/</link>
+      <pubDate>Thu, 26 Feb 2015 08:09:48 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/</guid>
+      <description>I did a upgrade of our ACI Lab Fabric last week and documented all the steps. The upgrade is really straightforward, but hopefully this guide still helps you 🙂
+First you have to catch the desired Software, get them directly from cisco. You need APIC Release image for 1.0(3f) release (aci-apic-dk9.1.0.3f.iso) and the Cisco Nexus 9000 Series ACI Mode Switch Software Release 11.0(3f) (aci-n9000-dk9.11.0.3f.bin). Get them here:
+Cisco ACI Version 1.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Restart the GUI (Websocket Error)</title>
+      <link>https://www.richardstrnad.ch/2015/02/23/cisco-aci-restart-the-gui-websocket-error/</link>
+      <pubDate>Mon, 23 Feb 2015 16:08:40 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/02/23/cisco-aci-restart-the-gui-websocket-error/</guid>
+      <description>I got some strange Websocket Errors on the Gui Login Page, the following fixed the problem for me
+1 2  admin@aci-lab-apic01:~&amp;gt; acidiag restart mgmt {u&amp;#39;dme&amp;#39;: {u&amp;#39;output&amp;#39;: u&amp;#39;mgmt start/running\n&amp;#39;, u&amp;#39;error_code&amp;#39;: 0, u&amp;#39;error_string&amp;#39;: u&amp;#39;&amp;#39;}}   </description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Reboot an APIC</title>
+      <link>https://www.richardstrnad.ch/2015/02/19/cisco-aci-reboot-an-apic/</link>
+      <pubDate>Thu, 19 Feb 2015 15:52:24 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/02/19/cisco-aci-reboot-an-apic/</guid>
+      <description>As i had some struggle to find the right command, i will share it here 🙂
+1 2 3 4 5  admin@aci-lab-apic01:~&amp;gt; acidiag reboot Broadcast message from root@aci-lab-apic01 (unknown) at 15:31 ... The system is going down for reboot NOW!   So be ready, there is no warning/confirmation!</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Connect to the leaf/spine switches</title>
+      <link>https://www.richardstrnad.ch/2015/02/18/cisco-aci-connect-to-the-leafspine-switches/</link>
+      <pubDate>Wed, 18 Feb 2015 10:44:55 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/02/18/cisco-aci-connect-to-the-leafspine-switches/</guid>
+      <description>With the introduction of the NX-OS Cli, cisco changed the way how you connect to leaf/spine switches.
+Find my updated post here.
+There are several scenarios where you want to connect to your leaf and spine switches of the ACI fabric.
+In this example we want to checkout the BGP Status.
+First you connect to your APIC Controller through SSH:
+1 2 3 4  $ ssh admin@10.32.5.100 Application Policy Infrastructure Controller admin@10.</description>
+    </item>
+    
+  </channel>
+</rss>

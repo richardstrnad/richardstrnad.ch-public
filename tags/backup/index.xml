@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Backup on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/backup/</link>
+    <description>Recent content in Backup on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Sep 2016 18:55:06 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/backup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker MySQL Backup</title>
+      <link>https://www.richardstrnad.ch/2016/09/22/docker-mysql-backup/</link>
+      <pubDate>Thu, 22 Sep 2016 18:55:06 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/09/22/docker-mysql-backup/</guid>
+      <description>We moved an internal tool to docker (docker-compose), this includes the required MySQL Database.
+I looked for a easy solution todo a backup through mysqldump and found something great 🙂
+This is the relevant docker-compose part:
+1 2 3  mysql: networks: - back_net   If this docker-compose is running, the mysql container get the following name &amp;lsquo;ourtool_mysql_1&amp;rsquo;
+The network gets the compose name added:
+1 2 3  docker network ls NETWORK ID NAME DRIVER SCOPE 4d42f74cfe7e ourtool_pub_net macvlan local   We want our backups in the host folder /mnt/Backups/ourtool/sql (This is a nfs mounted folder).</description>
+    </item>
+    
+  </channel>
+</rss>

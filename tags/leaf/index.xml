@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leaf on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/leaf/</link>
+    <description>Recent content in Leaf on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Nov 2016 13:32:59 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/leaf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Error: Error executing command on leaf02. Error Code: 255</title>
+      <link>https://www.richardstrnad.ch/2016/11/11/error-error-executing-command-on-leaf02-error-code-255/</link>
+      <pubDate>Fri, 11 Nov 2016 13:32:59 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/11/11/error-error-executing-command-on-leaf02-error-code-255/</guid>
+      <description>I had a issue today with running remote commands on one of my fabric switches, always generated an error.
+1 2 3 4 5  apic1# fabric leaf02 show switchname ---------------------------------------------------------------- Node 102 (leaf02) ---------------------------------------------------------------- Error: Error executing command on leaf02. Error Code: 255   I tried to directly connect and found the error
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  admin@apic1:attach leaf02 This command is being deprecated on APIC controller, please use NXOS-style equivalent command # Executing command: ssh leaf02 -b 10.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Run Commands on the Switches from your APIC</title>
+      <link>https://www.richardstrnad.ch/2016/11/07/cisco-aci-run-commands-on-the-switches-from-your-apic/</link>
+      <pubDate>Mon, 07 Nov 2016 08:32:33 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/11/07/cisco-aci-run-commands-on-the-switches-from-your-apic/</guid>
+      <description>With the introduction of the NX-OS like CLI Cisco also added the option to run commands on the switches directly from your apic. It&amp;rsquo;s now even easier to get some infos from one or multiple switches in your fabric.
+Show switchname on a single fabric switch
+1 2 3 4 5  apic1# fabric leaf01 show switchname ---------------------------------------------------------------- Node 101 (leaf01) ---------------------------------------------------------------- leaf01   You can also run commands on multiple devices</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Connect to the leaf/spine switches with the NX-OS bash</title>
+      <link>https://www.richardstrnad.ch/2016/11/06/cisco-aci-connect-to-the-leafspine-switches-with-the-nx-os/</link>
+      <pubDate>Sun, 06 Nov 2016 21:06:01 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/11/06/cisco-aci-connect-to-the-leafspine-switches-with-the-nx-os/</guid>
+      <description>Some time ago i posted how you can connect to a spine or leaf switch -&amp;gt; Connect to a leaf/spine switch
+With the introduction of NX-OS, the syntax changed a bit. You have now first to drop back to the bash shell and then you can attach the switches. Password is still the same as for the APIC.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  apic1# bash admin@apic1:~&amp;gt; attach leaf01 This command is being deprecated on APIC controller, please use NXOS-style equivalent command # Executing command: ssh leaf01 -b 10.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Reset a ACI Spine/Leaf Switch to default</title>
+      <link>https://www.richardstrnad.ch/2015/10/23/reset-a-aci-spineleaf-switch-to-default/</link>
+      <pubDate>Fri, 23 Oct 2015 15:52:19 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/10/23/reset-a-aci-spineleaf-switch-to-default/</guid>
+      <description>Login via SSH or Console to the switch
+Make sure that there is an image on the leaf/spine
+1 2  leaf01# dir /bootflash/aci-n9000* /bootflash/aci-n9000-dk9.11.0.2j.bin   Make sure that this image is used as bootvar
+1 2 3 4  leaf01# cat /mnt/cfg/0/boot/grub/menu.lst.local boot aci-n9000-dk9.11.0.2j.bin leaf01# cat /mnt/cfg/1/boot/grub/menu.lst.local boot aci-n9000-dk9.11.0.2j.bin   If this Image is not set as bootvar, there is a script for that 🙂
+1  leaf01# setup-bootvars.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI –  Upgrade your ACI Fabric (1.0(2j) to 1.0(3f))</title>
+      <link>https://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/</link>
+      <pubDate>Thu, 26 Feb 2015 08:09:48 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/</guid>
+      <description>I did a upgrade of our ACI Lab Fabric last week and documented all the steps. The upgrade is really straightforward, but hopefully this guide still helps you 🙂
+First you have to catch the desired Software, get them directly from cisco. You need APIC Release image for 1.0(3f) release (aci-apic-dk9.1.0.3f.iso) and the Cisco Nexus 9000 Series ACI Mode Switch Software Release 11.0(3f) (aci-n9000-dk9.11.0.3f.bin). Get them here:
+Cisco ACI Version 1.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Connect to the leaf/spine switches</title>
+      <link>https://www.richardstrnad.ch/2015/02/18/cisco-aci-connect-to-the-leafspine-switches/</link>
+      <pubDate>Wed, 18 Feb 2015 10:44:55 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/02/18/cisco-aci-connect-to-the-leafspine-switches/</guid>
+      <description>With the introduction of the NX-OS Cli, cisco changed the way how you connect to leaf/spine switches.
+Find my updated post here.
+There are several scenarios where you want to connect to your leaf and spine switches of the ACI fabric.
+In this example we want to checkout the BGP Status.
+First you connect to your APIC Controller through SSH:
+1 2 3 4  $ ssh admin@10.32.5.100 Application Policy Infrastructure Controller admin@10.</description>
+    </item>
+    
+  </channel>
+</rss>

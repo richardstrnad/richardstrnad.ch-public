@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='GUI way to upgrade a cisco ACI fabric'><title>Cisco ACI – The new and nice GUI way to Upgrade your ACI Fabric</title>
+
+<link rel='canonical' href='https://www.richardstrnad.ch/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/'>
+
+<link rel="stylesheet" href="/scss/style.min.b949db8bead9abdc40291b93383b8da6abc3aa62e74f5580356c06ddbb792dab.css"><meta property='og:title' content='Cisco ACI – The new and nice GUI way to Upgrade your ACI Fabric'>
+<meta property='og:description' content='GUI way to upgrade a cisco ACI fabric'>
+<meta property='og:url' content='https://www.richardstrnad.ch/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/'>
+<meta property='og:site_name' content='RichardStrnad.ch'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='1.1(1o)' /><meta property='article:tag' content='ACI' /><meta property='article:tag' content='cisco' /><meta property='article:tag' content='Fabric' /><meta property='article:tag' content='GUI' /><meta property='article:tag' content='Upgrade' /><meta property='article:published_time' content='2015-08-09T18:45:37&#43;00:00'/><meta property='article:modified_time' content='2015-08-09T18:45:37&#43;00:00'/>
+<meta name="twitter:title" content="Cisco ACI – The new and nice GUI way to Upgrade your ACI Fabric">
+<meta name="twitter:description" content="GUI way to upgrade a cisco ACI fabric">
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-47744166-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>Back</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/aci/" >
+                ACI
+            </a>
+        
+            <a href="/categories/cisco/" >
+                Cisco
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/">Cisco ACI – The new and nice GUI way to Upgrade your ACI Fabric</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        GUI way to upgrade a cisco ACI fabric
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">09 Aug, 2015</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>Some time ago i posted how to do a upgrade of your <a title="Cisco ACI –  Upgrade your ACI Fabric (1.0(2j) to 1.0(3f))" href="http://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/" target="_blank">ACI Fabric through CLI</a>.<br>
+Cisco made this process now way easier, with some cool new features.</p>
+<p>In this short guide i used the current ACI release 1.1(1o), that you can grab directly from cisco <a href="https://software.cisco.com/download/release.html?mdfid=285968390&softwareid=286278832&release=1.1(1o)&relind=AVAILABLE&rellifecycle=&reltype=latest" target="_blank">here</a>.</p>
+<h2 id="upload-the-firmware-to-the-apic">Upload the Firmware to the APIC</h2>
+<p>You can now upload directly through your browser, no longer the need for a SCP/FTP Server!</p>
+<p><a class="link" href="https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade1.png"  target="_blank" rel="noopener"
+    ><img loading="lazy" class="alignnone size-full wp-image-175" src="https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade1.png" alt="Upload the new Firmware to the ACI" width="1916" height="1082" /></a></p>
+<p>Just select the file from you computer, that&rsquo;s it!</p>
+<p><a class="link" href="https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade2.png"  target="_blank" rel="noopener"
+    ><img loading="lazy" class="alignnone size-full wp-image-176" src="https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade2.png" alt="Select the new Firmware from your Computer" width="463" height="296" /></a></p>
+<p>Upload both files, the Controller and Switch Firmware:<br>
+Controller - aci-apic-dk9.1.1.1o.iso<br>
+Switches - aci-n9000-dk9.11.1.1o.bin</p>
+<h2 id="upgrade-of-the-apic-controllers">Upgrade of the APIC Controllers</h2>
+<p>You can now start with the upgrade of your APIC Controllers.</p>
+<p><a class="link" href="https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade3.png"  target="_blank" rel="noopener"
+    ><img loading="lazy" class="alignnone size-full wp-image-177" src="https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade3.png" alt="Start the ACI controller upgrade" width="1916" height="1082" /></a><a class="link" href="https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade4.png"  target="_blank" rel="noopener"
+    ><img loading="lazy" class="alignnone size-full wp-image-178" src="https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade4.png" alt="Select to which version you want to upgrade" width="662" height="290" /></a></p>
+<p>Select the new version here and &lsquo;Apply now&rsquo; the Update will start immediately.</p>
+<h2 id="upgrade-of-the-nexus-9000-spine-and-leaf-switches">Upgrade of the Nexus 9000 Spine and Leaf switches</h2>
+<p>After the upgrade of the controllers is finished, you can start with the switches.<br>
+In production you got properly more than one Firmware Group or you split them in another way (Maintenance Windows A/B), but i kept it simple in my lab and made just two (Leaf/Spine).</p>
+<p><a class="link" href="https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade8.png"  target="_blank" rel="noopener"
+    ><img loading="lazy" class="alignnone size-full wp-image-182" src="https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade8.png" alt="Select the version to use for your spine switches" width="1916" height="1082" /></a></p>
+<p><a class="link" href="https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade7.png"  target="_blank" rel="noopener"
+    ><img loading="lazy" class="alignnone size-full wp-image-181" src="https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade7.png" alt="Select to upgrade your spine switches now" width="1916" height="1082" /></a></p>
+<p>You can just trigger the upgrade one and now with the &lsquo;Upgrade Now&rsquo; option!</p>
+<p>Same apply for my other group.</p>
+<p><a class="link" href="https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade5.png"  target="_blank" rel="noopener"
+    ><img loading="lazy" class="alignnone size-full wp-image-179" src="https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade5.png" alt="Select the version to use for your leaf switches" width="1916" height="1082" /></a><a class="link" href="https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade6.png"  target="_blank" rel="noopener"
+    ><img loading="lazy" class="alignnone size-full wp-image-180" src="https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade6.png" alt="Select to upgrade your leaf switches now" width="1916" height="1082" /></a></p>
+<h3 id="thats-it-you-just-upgraded-your-aci-fabric-with-success-and-this-time-easier-and-faster">That&rsquo;s it! You just upgraded your ACI Fabric with success and this time easier and faster!</h3>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/1.11o/">1.1(1o)</a>
+        
+            <a href="/tags/aci/">ACI</a>
+        
+            <a href="/tags/cisco/">cisco</a>
+        
+            <a href="/tags/fabric/">Fabric</a>
+        
+            <a href="/tags/gui/">GUI</a>
+        
+            <a href="/tags/upgrade/">Upgrade</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI –  Upgrade your ACI Fabric (1.0(2j) to 1.0(3f))</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2016/11/07/cisco-aci-run-commands-on-the-switches-from-your-apic/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI – Run Commands on the Switches from your APIC</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2016/10/27/acitoolkit-get-all-nodes/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Acitoolkit – Get all Nodes</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2015/06/17/avs-upgrade-through-cli/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI – AVS Upgrade through CLI</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2015/02/23/cisco-aci-restart-the-gui-websocket-error/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cisco ACI – Restart the GUI (Websocket Error)</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "richardstrnad" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2014 - 
+        
+        2022 RichardStrnad.ch
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.8.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#upload-the-firmware-to-the-apic">Upload the Firmware to the APIC</a></li>
+    <li><a href="#upgrade-of-the-apic-controllers">Upgrade of the APIC Controllers</a></li>
+    <li><a href="#upgrade-of-the-nexus-9000-spine-and-leaf-switches">Upgrade of the Nexus 9000 Spine and Leaf switches</a>
+      <ol>
+        <li><a href="#thats-it-you-just-upgraded-your-aci-fabric-with-success-and-this-time-easier-and-faster">That&rsquo;s it! You just upgraded your ACI Fabric with success and this time easier and faster!</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

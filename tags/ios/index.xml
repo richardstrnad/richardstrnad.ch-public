@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IOS on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/ios/</link>
+    <description>Recent content in IOS on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Oct 2016 10:02:09 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reset Cisco IOS XR Device (Factory Reset)</title>
+      <link>https://www.richardstrnad.ch/2016/10/11/reset-cisco-ios-xr-device-factory-reset/</link>
+      <pubDate>Tue, 11 Oct 2016 10:02:09 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/10/11/reset-cisco-ios-xr-device-factory-reset/</guid>
+      <description>On the IOS XR it&amp;rsquo;s a bit different, but still pretty easy.
+1 2 3 4 5 6  RP/0/RSP0/CPU0:router01#conf t RP/0/RSP0/CPU0:router01(config)#commit replace This commit will replace or remove the entire running configuration. This operation can be service affecting. Do you wish to proceed? [no]: yes RP/0/RSP0/CPU0:ios(config)#   </description>
+    </item>
+    
+    <item>
+      <title>Cisco WLC – IOS Based WLC AP Count through SNMP (5760, 3850, 3650)</title>
+      <link>https://www.richardstrnad.ch/2015/03/05/cisco-wlc-ios-based-wlc-ap-count-through-snmp-5760-3850-3650/</link>
+      <pubDate>Thu, 05 Mar 2015 14:21:57 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/03/05/cisco-wlc-ios-based-wlc-ap-count-through-snmp-5760-3850-3650/</guid>
+      <description>I had a hard time to find the correct OID and ended with doing a snmpwalk and try to find the right OID with a grep…
+But i think i made it 🙂
+Crosschecked on 2 5760 Clusters and i got the correct count on both, also tried to reboot some APs and the count seems correct to me.
+Note: I use 3.6.1 so maybe you get a different result with another software version.</description>
+    </item>
+    
+    <item>
+      <title>Use ? “literal” in IOS</title>
+      <link>https://www.richardstrnad.ch/2014/05/07/use-literal-in-ios/</link>
+      <pubDate>Wed, 07 May 2014 16:07:41 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2014/05/07/use-literal-in-ios/</guid>
+      <description>As we all know, the Question mark in IOS is used as interactive help, but what about a ? in a password?
+This could for example be a task in your CCIE Lab or at least in on of the many preparation labs.
+To use the ? literal just enter crtl+v and then ?
+1 2  Rack1SW3(config)#username cisco password SECR? LINE &amp;lt;cr&amp;gt;   ctrl+v ?
+1 2  Rack1SW3(config)#username cisco password SECR?</description>
+    </item>
+    
+    <item>
+      <title>Cisco IOS shortcuts</title>
+      <link>https://www.richardstrnad.ch/2014/05/06/cisco-ios-shortcuts/</link>
+      <pubDate>Tue, 06 May 2014 22:11:53 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2014/05/06/cisco-ios-shortcuts/</guid>
+      <description>Nice overview of Cisco IOS shortcuts, will try to add more!
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  Ctrl + A - Beginning Line Ctrl + B - Backward Character Ctrl + C - Clear line Ctrl + D - Delete Character to the Right Ctrl + E - End Line Ctrl + F - Forward Character Ctrl + H - Backspace Character to the Left Ctrl + I - Refresh Line and Goto End Ctrl + J - Return Ctrl + K - Delete everything on the Right of cursor Ctrl + L - Refresh Line Ctrl + M - Return Ctrl + N - Next Command Ctrl + P - Previous Command Ctrl + R - Refresh Line Ctrl + T - Flip Last 2 Characters Ctrl + U - Clear Line and Put in Buffer Ctrl + V - Allows A Control Character To Be Typed Ctrl + W - Delete Word Backwards and Put in Buffer Ctrl + X - Clear Line to the Left and Put in Buffer Ctrl + Y - Paste Buffer Contents   </description>
+    </item>
+    
+  </channel>
+</rss>

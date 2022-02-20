@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mode on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/mode/</link>
+    <description>Recent content in mode on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Feb 2016 13:27:06 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/mode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ACI/N9K – How to convert a Nexus 9000 from ACI Mode to NX-OS (Standalone)</title>
+      <link>https://www.richardstrnad.ch/2016/02/29/acin9k-how-to-convert-a-nexus-9000-from-aci-mode-to-standalone/</link>
+      <pubDate>Mon, 29 Feb 2016 13:27:06 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/02/29/acin9k-how-to-convert-a-nexus-9000-from-aci-mode-to-standalone/</guid>
+      <description>Get the standalone software here
+First you have to copy the new nexus 9000 standalone firmware to the APIC:
+1 2  admin@apic1:~&amp;gt; scp richy@YOURIP:Downloads/nxos.7.0.3.I2.2a.bin . nxos.7.0.3.I2.2a.bin 100% 513MB 9.2MB/s 00:56   And now you can push it to the appropriate Nexus 9000. (The user/password matches the APIC)
+1 2 3  admin@apic1:~&amp;gt; scp nxos.7.0.3.I2.2a.bin admin@leaf02:bootflash Password: nxos.7.0.3.I2.2a.bin 100% 513MB 7.0MB/s 01:13   Now reboot the switch and break into the load prompt, this can be done with Control+C in Putty.</description>
+    </item>
+    
+  </channel>
+</rss>

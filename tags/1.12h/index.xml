@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1.1(2h) on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/1.12h/</link>
+    <description>Recent content in 1.1(2h) on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Aug 2015 12:20:14 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/1.12h/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco ACI – New Features in Release 1.1(2h)</title>
+      <link>https://www.richardstrnad.ch/2015/08/19/cisco-aci-new-features-in-release-1-12h/</link>
+      <pubDate>Wed, 19 Aug 2015 12:20:14 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/08/19/cisco-aci-new-features-in-release-1-12h/</guid>
+      <description>Cisco just released the newest Cisco ACI Software called 1.1(2h).
+   Feature Description Guidelines and Restrictions     AES encryption for configuration files As of release 1.1(2), the secure properties of APIC configuration files can be encrypted by enabling AES-256 encryption. AES encryption is a global configuration option; all secure properties conform to the AES configuration setting. It is not possible to export just a portion of the ACI fabric such as a tenant configuration with AES encryption.</description>
+    </item>
+    
+  </channel>
+</rss>

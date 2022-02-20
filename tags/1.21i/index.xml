@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1.2(1i) on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/1.21i/</link>
+    <description>Recent content in 1.2(1i) on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Dec 2015 14:00:46 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/1.21i/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco ACI – NX-OS Style CLI</title>
+      <link>https://www.richardstrnad.ch/2015/12/16/cisco-aci-nx-os-style-cli/</link>
+      <pubDate>Wed, 16 Dec 2015 14:00:46 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/12/16/cisco-aci-nx-os-style-cli/</guid>
+      <description>Cisco introduced a NX-OS like CLI for the Cisco ACI Solution with release 1.2(1i).
+In this post i will demonstrate some of the things that can be achieved through the NX-OS CLI.
+!Important!
+There is no safety net, if you issue something like &amp;lsquo;no tenant XXX&amp;rsquo; the configuration is gone!
+No commit, warning or similar!
+!Important!
+Basics The NX-OS like CLI is the new default if you connect via SSH to the APIC</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – New Features in Release 1.2(1i)</title>
+      <link>https://www.richardstrnad.ch/2015/12/13/cisco-aci-new-features-in-release-1-21i/</link>
+      <pubDate>Sun, 13 Dec 2015 14:48:47 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/12/13/cisco-aci-new-features-in-release-1-21i/</guid>
+      <description>Cisco released the newest ACI Software this Week, called 1.2(1i).
+There are a lot of great new features that i will try to cover in more detail in the future, for now the overview from the release notes.
+To install this new software, you can follow one of my blog posts:
+Through GUI or Through CLI
+   Feature Description Guidelines and Restrictions     Basic GUI and Advanced GUI for the APIC The APIC GUI now has two operating modes: the Basic GUI and Advanced GUI.</description>
+    </item>
+    
+  </channel>
+</rss>

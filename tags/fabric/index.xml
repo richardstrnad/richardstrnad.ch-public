@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fabric on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/fabric/</link>
+    <description>Recent content in Fabric on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Nov 2016 08:32:33 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/fabric/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco ACI – Run Commands on the Switches from your APIC</title>
+      <link>https://www.richardstrnad.ch/2016/11/07/cisco-aci-run-commands-on-the-switches-from-your-apic/</link>
+      <pubDate>Mon, 07 Nov 2016 08:32:33 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/11/07/cisco-aci-run-commands-on-the-switches-from-your-apic/</guid>
+      <description>With the introduction of the NX-OS like CLI Cisco also added the option to run commands on the switches directly from your apic. It&amp;rsquo;s now even easier to get some infos from one or multiple switches in your fabric.
+Show switchname on a single fabric switch
+1 2 3 4 5  apic1# fabric leaf01 show switchname ---------------------------------------------------------------- Node 101 (leaf01) ---------------------------------------------------------------- leaf01   You can also run commands on multiple devices</description>
+    </item>
+    
+    <item>
+      <title>Acitoolkit – Get all Nodes</title>
+      <link>https://www.richardstrnad.ch/2016/10/27/acitoolkit-get-all-nodes/</link>
+      <pubDate>Thu, 27 Oct 2016 16:56:16 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/10/27/acitoolkit-get-all-nodes/</guid>
+      <description>Example script to print all your fabric nodes.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  from acitoolkit.acitoolkit import Session from acitoolkit.aciphysobject import Node url = &amp;#39;https://apic&amp;#39; user = &amp;#39;user&amp;#39; pw = &amp;#39;pw&amp;#39; session = Session(url, user, pw) session.login() nodes = Node.get(session) for node in nodes: print(&amp;#39;=&amp;#39; * 50) print(&amp;#39;Pod: {}&amp;#39;.format(node.pod)) print(&amp;#39;Node: {}&amp;#39;.format(node.node)) print(&amp;#39;Mode: {}&amp;#39;.format(node.mode)) print(&amp;#39;Model: {}&amp;#39;.format(node.model)) print(&amp;#39;Vendor: {}&amp;#39;.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – The new and nice GUI way to Upgrade your ACI Fabric</title>
+      <link>https://www.richardstrnad.ch/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/</link>
+      <pubDate>Sun, 09 Aug 2015 18:45:37 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/</guid>
+      <description>Some time ago i posted how to do a upgrade of your ACI Fabric through CLI.
+Cisco made this process now way easier, with some cool new features.
+In this short guide i used the current ACI release 1.1(1o), that you can grab directly from cisco here.
+Upload the Firmware to the APIC You can now upload directly through your browser, no longer the need for a SCP/FTP Server!</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI –  Upgrade your ACI Fabric (1.0(2j) to 1.0(3f))</title>
+      <link>https://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/</link>
+      <pubDate>Thu, 26 Feb 2015 08:09:48 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/</guid>
+      <description>I did a upgrade of our ACI Lab Fabric last week and documented all the steps. The upgrade is really straightforward, but hopefully this guide still helps you 🙂
+First you have to catch the desired Software, get them directly from cisco. You need APIC Release image for 1.0(3f) release (aci-apic-dk9.1.0.3f.iso) and the Cisco Nexus 9000 Series ACI Mode Switch Software Release 11.0(3f) (aci-n9000-dk9.11.0.3f.bin). Get them here:
+Cisco ACI Version 1.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Connect to the leaf/spine switches</title>
+      <link>https://www.richardstrnad.ch/2015/02/18/cisco-aci-connect-to-the-leafspine-switches/</link>
+      <pubDate>Wed, 18 Feb 2015 10:44:55 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/02/18/cisco-aci-connect-to-the-leafspine-switches/</guid>
+      <description>With the introduction of the NX-OS Cli, cisco changed the way how you connect to leaf/spine switches.
+Find my updated post here.
+There are several scenarios where you want to connect to your leaf and spine switches of the ACI fabric.
+In this example we want to checkout the BGP Status.
+First you connect to your APIC Controller through SSH:
+1 2 3 4  $ ssh admin@10.32.5.100 Application Policy Infrastructure Controller admin@10.</description>
+    </item>
+    
+  </channel>
+</rss>

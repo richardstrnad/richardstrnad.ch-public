@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>5548UP on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/5548up/</link>
+    <description>Recent content in 5548UP on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Mar 2017 17:00:55 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/5548up/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unable to create San-Port-Channel Between Nexus 5548UP and UCS(-Mini)</title>
+      <link>https://www.richardstrnad.ch/2017/03/30/unable-to-create-san-port-channel-between-nexus-5548up-and-ucs-mini/</link>
+      <pubDate>Thu, 30 Mar 2017 17:00:55 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2017/03/30/unable-to-create-san-port-channel-between-nexus-5548up-and-ucs-mini/</guid>
+      <description>The Issue We implemented a new UCS-Mini for a customer with existing Nexus 5548UP (5.1(3)N1(1a)), on the SAN Part we faced some strange issues:
+1 2 3 4 5  2017 Mar 25 12:11:30 NEX5548-2 %PORT-5-IF_DOWN_PORT_CHANNEL_MEMBERS_DOWN: %$VSAN 300%$ Interface san-port-channel 200 is down (No operational members) 2017 Mar 25 12:11:31 NEX5548-2 Mar 25 12:11:31 %KERN-3-SYSTEM_MSG: fc2_nsh_tx_frame: FC2 s_id/d_id/vsan error: sid=0xfffffe,did=0x0,vsan=300,rctl:0x23,type:0x1,oxid 0x4d,rxid:0xff25 - kernel 2017 Mar 25 12:12:10 NEX5548-2 %PORT-5-IF_PORT_QUIESCE_FAILED: Interface fc1/20 port quiesce failed due to failure reason: Force Abort Due to Link Failure (NOS/LOS) (0x119) 2017 Mar 25 12:12:10 NEX5548-2 %PORT-5-IF_DOWN_OLS_RCVD: %$VSAN 300%$ Interface fc1/20 is down (OLS received) san-port-channel 200 2017 Mar 25 12:12:10 NEX5548-2 Mar 25 12:12:10 %KERN-3-SYSTEM_MSG: fc2_nsh_tx_frame: FC2 s_id/d_id/vsan error: sid=0xfffffe,did=0x0,vsan=300,rctl:0x23,type:0x1,oxid 0x5a,rxid:0xff32 - kernel   The san-port-channel was really basic and added to just one VSAN</description>
+    </item>
+    
+  </channel>
+</rss>

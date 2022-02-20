@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>restart on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/restart/</link>
+    <description>Recent content in restart on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Mar 2019 21:00:20 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/restart/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AVI Networks – Reset Controller</title>
+      <link>https://www.richardstrnad.ch/2019/03/08/avi-networks-reset-controller/</link>
+      <pubDate>Fri, 08 Mar 2019 21:00:20 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2019/03/08/avi-networks-reset-controller/</guid>
+      <description>Sometimes it&amp;rsquo;s required to reset a controller, this can be done from the cli. First login to the controller you wish to reset
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  → ssh admin@192.168.128.8 Avi Cloud Controller Avi Networks software, Copyright (C) 2013-2017 by Avi Networks, Inc. All rights reserved. Version: 18.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Restart the GUI (Websocket Error)</title>
+      <link>https://www.richardstrnad.ch/2015/02/23/cisco-aci-restart-the-gui-websocket-error/</link>
+      <pubDate>Mon, 23 Feb 2015 16:08:40 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/02/23/cisco-aci-restart-the-gui-websocket-error/</guid>
+      <description>I got some strange Websocket Errors on the Gui Login Page, the following fixed the problem for me
+1 2  admin@aci-lab-apic01:~&amp;gt; acidiag restart mgmt {u&amp;#39;dme&amp;#39;: {u&amp;#39;output&amp;#39;: u&amp;#39;mgmt start/running\n&amp;#39;, u&amp;#39;error_code&amp;#39;: 0, u&amp;#39;error_string&amp;#39;: u&amp;#39;&amp;#39;}}   </description>
+    </item>
+    
+  </channel>
+</rss>

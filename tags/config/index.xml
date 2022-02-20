@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>config on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/config/</link>
+    <description>Recent content in config on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Oct 2021 05:57:36 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/config/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to read out the used ACI basic parameters</title>
+      <link>https://www.richardstrnad.ch/2021/10/27/how-to-read-out-the-used-aci-basic-parameters/</link>
+      <pubDate>Wed, 27 Oct 2021 05:57:36 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2021/10/27/how-to-read-out-the-used-aci-basic-parameters/</guid>
+      <description>It happend to me more than once, that i needed the basic parameters that were used during the initial setup of the Fabric. For example if you configure a standby APIC later on, or if you (for whatever reason) reset and APIC and redo the initial configuration dialog.
+Of course, we always document everything we do, so we could simply look the information up in the documentation! But there is a faster way, just hop onto one of the APICs and use a small cat command.</description>
+    </item>
+    
+  </channel>
+</rss>

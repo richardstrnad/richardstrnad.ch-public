@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>port-profile on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/port-profile/</link>
+    <description>Recent content in port-profile on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Oct 2016 10:00:02 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/port-profile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nexus 1000v – Port-Profile Error ‘MSP-5-PP_UPDATE_FAILED’</title>
+      <link>https://www.richardstrnad.ch/2016/10/18/nexus-1000v-port-profile-error-msp-5-pp_update_failed/</link>
+      <pubDate>Tue, 18 Oct 2016 10:00:02 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/10/18/nexus-1000v-port-profile-error-msp-5-pp_update_failed/</guid>
+      <description>I tried to create a new port-profile on a Nexus 1000V and got the error
+1  2016 Oct 14 10:33:35 N1Kv %MSP-5-PP_UPDATE_FAILED: Update of port-profile &amp;#39;New-Port-Group&amp;#39; on the vCenter Server failed. Please verify port-profile config.   This error can appear if you configure more max-ports on the port-profiles than you specified in the &amp;lsquo;svs connection vcenter&amp;rsquo;. In my case i had overprovisioned the port-profiles with &amp;lsquo;max-group 512&amp;rsquo;, so i just reduced the max-port on some port-profiles and this solved the issue.</description>
+    </item>
+    
+  </channel>
+</rss>

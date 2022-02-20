@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>255 on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/255/</link>
+    <description>Recent content in 255 on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Nov 2016 13:32:59 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/255/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Error: Error executing command on leaf02. Error Code: 255</title>
+      <link>https://www.richardstrnad.ch/2016/11/11/error-error-executing-command-on-leaf02-error-code-255/</link>
+      <pubDate>Fri, 11 Nov 2016 13:32:59 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/11/11/error-error-executing-command-on-leaf02-error-code-255/</guid>
+      <description>I had a issue today with running remote commands on one of my fabric switches, always generated an error.
+1 2 3 4 5  apic1# fabric leaf02 show switchname ---------------------------------------------------------------- Node 102 (leaf02) ---------------------------------------------------------------- Error: Error executing command on leaf02. Error Code: 255   I tried to directly connect and found the error
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  admin@apic1:attach leaf02 This command is being deprecated on APIC controller, please use NXOS-style equivalent command # Executing command: ssh leaf02 -b 10.</description>
+    </item>
+    
+  </channel>
+</rss>

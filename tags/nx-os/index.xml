@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NX-OS on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/nx-os/</link>
+    <description>Recent content in NX-OS on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Apr 2017 21:13:17 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/nx-os/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ACI/N9K – How to convert a Nexus 9000 from NX-OS to ACI</title>
+      <link>https://www.richardstrnad.ch/2017/04/12/acin9k-how-to-convert-a-nexus-9000-from-nx-os-to-aci/</link>
+      <pubDate>Wed, 12 Apr 2017 21:13:17 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2017/04/12/acin9k-how-to-convert-a-nexus-9000-from-nx-os-to-aci/</guid>
+      <description>Some time ago i posted how to convert a ACI switch to NX-OS, now the other way around.
+Copy the file to the NX-OS Mode N9k
+1 2 3 4 5 6 7  switch# copy scp: bootflash: Enter source filename: Downloads/aci-n9000-dk9.12.2.1o.bin Enter vrf (If no input, current vrf &amp;#39;default&amp;#39; is considered): management Enter hostname for the scp server: 192.168.0.5 Enter username: USER Password: aci-n9000-dk9.12.2.1o.bin 1% 15MB 3.8MB/s 04:34 ETA   Change the boot mode to aci</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Connect to the leaf/spine switches with the NX-OS bash</title>
+      <link>https://www.richardstrnad.ch/2016/11/06/cisco-aci-connect-to-the-leafspine-switches-with-the-nx-os/</link>
+      <pubDate>Sun, 06 Nov 2016 21:06:01 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/11/06/cisco-aci-connect-to-the-leafspine-switches-with-the-nx-os/</guid>
+      <description>Some time ago i posted how you can connect to a spine or leaf switch -&amp;gt; Connect to a leaf/spine switch
+With the introduction of NX-OS, the syntax changed a bit. You have now first to drop back to the bash shell and then you can attach the switches. Password is still the same as for the APIC.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  apic1# bash admin@apic1:~&amp;gt; attach leaf01 This command is being deprecated on APIC controller, please use NXOS-style equivalent command # Executing command: ssh leaf01 -b 10.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – NX-OS Style CLI</title>
+      <link>https://www.richardstrnad.ch/2015/12/16/cisco-aci-nx-os-style-cli/</link>
+      <pubDate>Wed, 16 Dec 2015 14:00:46 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/12/16/cisco-aci-nx-os-style-cli/</guid>
+      <description>Cisco introduced a NX-OS like CLI for the Cisco ACI Solution with release 1.2(1i).
+In this post i will demonstrate some of the things that can be achieved through the NX-OS CLI.
+!Important!
+There is no safety net, if you issue something like &amp;lsquo;no tenant XXX&amp;rsquo; the configuration is gone!
+No commit, warning or similar!
+!Important!
+Basics The NX-OS like CLI is the new default if you connect via SSH to the APIC</description>
+    </item>
+    
+  </channel>
+</rss>

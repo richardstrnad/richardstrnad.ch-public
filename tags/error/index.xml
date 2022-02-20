@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>error on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/error/</link>
+    <description>Recent content in error on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Mar 2017 18:30:47 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/error/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BFD and IP redirects</title>
+      <link>https://www.richardstrnad.ch/2017/03/23/bfd-and-ip-redirects/</link>
+      <pubDate>Thu, 23 Mar 2017 18:30:47 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2017/03/23/bfd-and-ip-redirects/</guid>
+      <description>We faced some strange ICMP redirect messages today on one of our devices after we configured BFD for BGP.
+Device1
+1 2 3 4 5 6  ICMP: bogus redirect from 192.168.100.1 - for 192.168.100.2 use gw 192.168.100.2 gateway address is one of our addresses ICMP: bogus redirect from 192.168.100.1 - for 192.168.100.2 use gw 192.168.100.2 gateway address is one of our addresses ICMP: bogus redirect from 192.168.100.1 - for 192.</description>
+    </item>
+    
+    <item>
+      <title>Error: Error executing command on leaf02. Error Code: 255</title>
+      <link>https://www.richardstrnad.ch/2016/11/11/error-error-executing-command-on-leaf02-error-code-255/</link>
+      <pubDate>Fri, 11 Nov 2016 13:32:59 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2016/11/11/error-error-executing-command-on-leaf02-error-code-255/</guid>
+      <description>I had a issue today with running remote commands on one of my fabric switches, always generated an error.
+1 2 3 4 5  apic1# fabric leaf02 show switchname ---------------------------------------------------------------- Node 102 (leaf02) ---------------------------------------------------------------- Error: Error executing command on leaf02. Error Code: 255   I tried to directly connect and found the error
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  admin@apic1:attach leaf02 This command is being deprecated on APIC controller, please use NXOS-style equivalent command # Executing command: ssh leaf02 -b 10.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACS – Patch Install error (% Manifest file not found in the bundle)</title>
+      <link>https://www.richardstrnad.ch/2015/03/01/cisco-acs-patch-install-error-manifest-file-not-found-in-the-bundle/</link>
+      <pubDate>Sun, 01 Mar 2015 11:29:29 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/03/01/cisco-acs-patch-install-error-manifest-file-not-found-in-the-bundle/</guid>
+      <description>I&amp;rsquo;m sure that it&amp;rsquo;s not the first time i felt for this …
+Tried to install a ACS Patch this morning and got an error:
+&amp;ldquo;% Manifest file not found in the bundle&amp;rdquo;
+First i used the wrong command:
+patch install 5-4-0-46-5.tar.gpg FTP
+1 2 3 4 5 6  ACS01/admin# patch install 5-4-0-46-5.tar.gpg FTP Save the current ADE-OS running configuration? (yes/no) [yes] ? Generating configuration... Saved the ADE-OS running configuration to startup successfully Initiating Application Patch installation.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ACI – Restart the GUI (Websocket Error)</title>
+      <link>https://www.richardstrnad.ch/2015/02/23/cisco-aci-restart-the-gui-websocket-error/</link>
+      <pubDate>Mon, 23 Feb 2015 16:08:40 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2015/02/23/cisco-aci-restart-the-gui-websocket-error/</guid>
+      <description>I got some strange Websocket Errors on the Gui Login Page, the following fixed the problem for me
+1 2  admin@aci-lab-apic01:~&amp;gt; acidiag restart mgmt {u&amp;#39;dme&amp;#39;: {u&amp;#39;output&amp;#39;: u&amp;#39;mgmt start/running\n&amp;#39;, u&amp;#39;error_code&amp;#39;: 0, u&amp;#39;error_string&amp;#39;: u&amp;#39;&amp;#39;}}   </description>
+    </item>
+    
+  </channel>
+</rss>
