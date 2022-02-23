@@ -37,7 +37,7 @@ You can decrypt password directly through the CLI:
       
       <guid>https://www.richardstrnad.ch/2015/05/06/ftp-server-under-mac-os-x/</guid>
       <description>Today a colleague of mine (Thanks Alex Passfall) showed me a simple ftp server under mac:
-1 2  pip2 install twisted # if not already sudo twistd -n ftp -p 21 -r Downloads   After that you can access all the files in the specified directory through ftp. Awesome stuff!
+1 2  pip install twisted # if not already sudo twistd -n ftp -p 21 -r Downloads   After that you can access all the files in the specified directory through ftp. Awesome stuff!
 1 2 3 4 5 6 7 8  aci-lab-as01#copy ftp://10.32.32.184/file.lic . Destination filename [file.lic]? Accessing ftp://10.32.32.184/file.lic... Loading file.</description>
     </item>
     
