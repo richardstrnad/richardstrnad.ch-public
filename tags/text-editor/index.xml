@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Text Editor on RichardStrnad.ch</title>
+    <link>https://www.richardstrnad.ch/tags/text-editor/</link>
+    <description>Recent content in Text Editor on RichardStrnad.ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Feb 2022 18:00:00 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/text-editor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Some nice and helpful VIM shortcuts</title>
+      <link>https://www.richardstrnad.ch/2022/02/28/some-nice-and-helpful-vim-shortcuts/</link>
+      <pubDate>Mon, 28 Feb 2022 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2022/02/28/some-nice-and-helpful-vim-shortcuts/</guid>
+      <description>For whatever reason I decided to give VIM a chance&amp;hellip; crazy guy I am :)
+On a bit more serious note, I&amp;rsquo;m sure that VIM is really powerful if you ever get hang of it.
+In the past I worked for a long time with Sublime Text 3, which is really great! And in the last ~ year I switched to Visual Studio Code, which is great as well! Especially the multicursor mode is a nifty feature.</description>
+    </item>
+    
+  </channel>
+</rss>

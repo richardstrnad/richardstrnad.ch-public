@@ -6,7 +6,18 @@
     <description>Recent content in shortcuts on RichardStrnad.ch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 May 2014 22:11:53 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/shortcuts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Feb 2022 18:00:00 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/shortcuts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Some nice and helpful VIM shortcuts</title>
+      <link>https://www.richardstrnad.ch/2022/02/28/some-nice-and-helpful-vim-shortcuts/</link>
+      <pubDate>Mon, 28 Feb 2022 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.richardstrnad.ch/2022/02/28/some-nice-and-helpful-vim-shortcuts/</guid>
+      <description>For whatever reason I decided to give VIM a chance&amp;hellip; crazy guy I am :)
+On a bit more serious note, I&amp;rsquo;m sure that VIM is really powerful if you ever get hang of it.
+In the past I worked for a long time with Sublime Text 3, which is really great! And in the last ~ year I switched to Visual Studio Code, which is great as well! Especially the multicursor mode is a nifty feature.</description>
+    </item>
+    
     <item>
       <title>Cisco IOS shortcuts</title>
       <link>https://www.richardstrnad.ch/2014/05/06/cisco-ios-shortcuts/</link>

@@ -2,31 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.richardstrnad.ch/categories/</loc>
+    <lastmod>2022-02-28T18:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/categories/macos/</loc>
+    <lastmod>2022-02-28T18:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/post/</loc>
+    <lastmod>2022-02-28T18:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/</loc>
+    <lastmod>2022-02-28T18:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/tags/shortcuts/</loc>
+    <lastmod>2022-02-28T18:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/2022/02/28/some-nice-and-helpful-vim-shortcuts/</loc>
+    <lastmod>2022-02-28T18:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/tags/</loc>
+    <lastmod>2022-02-28T18:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/tags/text-editor/</loc>
+    <lastmod>2022-02-28T18:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/tags/vim/</loc>
+    <lastmod>2022-02-28T18:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/categories/vim/</loc>
+    <lastmod>2022-02-28T18:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.richardstrnad.ch/tags/apple/</loc>
     <lastmod>2022-02-16T07:45:46+01:00</lastmod>
   </url><url>
     <loc>https://www.richardstrnad.ch/2022/02/16/apple-macos-touch-id-for-sudo/</loc>
     <lastmod>2022-02-16T07:45:46+01:00</lastmod>
   </url><url>
-    <loc>https://www.richardstrnad.ch/categories/</loc>
-    <lastmod>2022-02-16T07:45:46+01:00</lastmod>
-  </url><url>
     <loc>https://www.richardstrnad.ch/tags/macos/</loc>
     <lastmod>2022-02-16T07:45:46+01:00</lastmod>
   </url><url>
-    <loc>https://www.richardstrnad.ch/categories/macos/</loc>
-    <lastmod>2022-02-16T07:45:46+01:00</lastmod>
-  </url><url>
-    <loc>https://www.richardstrnad.ch/post/</loc>
-    <lastmod>2022-02-16T07:45:46+01:00</lastmod>
-  </url><url>
-    <loc>https://www.richardstrnad.ch/</loc>
-    <lastmod>2022-02-16T07:45:46+01:00</lastmod>
-  </url><url>
     <loc>https://www.richardstrnad.ch/tags/sudo/</loc>
-    <lastmod>2022-02-16T07:45:46+01:00</lastmod>
-  </url><url>
-    <loc>https://www.richardstrnad.ch/tags/</loc>
     <lastmod>2022-02-16T07:45:46+01:00</lastmod>
   </url><url>
     <loc>https://www.richardstrnad.ch/tags/touchid/</loc>
@@ -684,9 +699,6 @@
     <lastmod>2014-05-07T16:07:41+00:00</lastmod>
   </url><url>
     <loc>https://www.richardstrnad.ch/2014/05/06/cisco-ios-shortcuts/</loc>
-    <lastmod>2014-05-06T22:11:53+00:00</lastmod>
-  </url><url>
-    <loc>https://www.richardstrnad.ch/tags/shortcuts/</loc>
     <lastmod>2014-05-06T22:11:53+00:00</lastmod>
   </url><url>
     <loc>https://www.richardstrnad.ch/about/</loc>
