@@ -401,6 +401,31 @@ password   required       pam_deny.so
 session    required       pam_permit.so
 </code></pre></td></tr></table>
 </div>
+</div><p><strong>Addition for tmux users</strong></p>
+<p>I started to use tmux recently and the Touch ID for sudo stopped working. To renable it, you first need to install <a class="link" href="https://github.com/fabianishere/pam_reattach"  target="_blank" rel="noopener"
+    >pam_reattach</a>, then edit the <code>/etc/pam.d/sudo</code> file like this.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"># sudo: auth account password session
+auth       optional       pam_reattach.so
+auth       sufficient     pam_tid.so
+auth       sufficient     pam_smartcard.so
+auth       required       pam_opendirectory.so
+account    required       pam_permit.so
+password   required       pam_deny.so
+session    required       pam_permit.so
+</code></pre></td></tr></table>
+</div>
 </div>
 </section>
 
