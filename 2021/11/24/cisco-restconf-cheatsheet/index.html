@@ -175,6 +175,19 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Cisco-IOS-XE-native:native/interface/Port-channel-subinterface/Port-channel=1.600
 </code></pre></td></tr></table>
 </div>
+</div><p>Get a Interface/Subinterface, here it&rsquo;s important to escape the <code>/</code> in the name</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">import requests
+INTERFACE = requests.utils.quote(&#34;1/0/1.3204&#34;, safe=&#39;&#39;)
+Cisco-IOS-XE-native:native/interface/HundredGigE={INTERFACE}&#39;
+</code></pre></td></tr></table>
+</div>
 </div><p>Operational information about all the vrfs</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

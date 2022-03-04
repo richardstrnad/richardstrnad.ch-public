@@ -235,6 +235,33 @@ Especially the multicursor mode is a nifty feature.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;h1 id=&#34;manipulating-numbers&#34;&gt;Manipulating numbers&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;Key&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl + a&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Increase the first digit or number on the current line&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl + x&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Decrease the first digit or number on the current line&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;g Ctrl + a&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Visual Mode: Increase the first digit or number on the current line, but increasingly. e.g. first line +1, second line +2, and so on&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;g Ctrl + x&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Visual Mode: Decrease the first digit or number on the current line, but increasingly. e.g. first line +1, second line +2, and so on&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </description>
         </item>
         <item>
@@ -480,6 +507,19 @@ This command will reload the chassis, Proceed (y/n)? [n]: y
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;Cisco-IOS-XE-native:native/interface/Port-channel-subinterface/Port-channel=1.600
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Get a Interface/Subinterface, here it&amp;rsquo;s important to escape the &lt;code&gt;/&lt;/code&gt; in the name&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;import requests
+INTERFACE = requests.utils.quote(&amp;#34;1/0/1.3204&amp;#34;, safe=&amp;#39;&amp;#39;)
+Cisco-IOS-XE-native:native/interface/HundredGigE={INTERFACE}&amp;#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;Operational information about all the vrfs&lt;/p&gt;
