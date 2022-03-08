@@ -491,7 +491,13 @@ This command will reload the chassis, Proceed (y/n)? [n]: y
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;https://{HOST}:{PORT}/restconf/data/
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Get a Portchannel Subinterface&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;In the beginning i really struggled to find the right models, what can help is the yang representation you can find &lt;a class=&#34;link&#34; href=&#34;https://github.com/YangModels/yang/tree/master/vendor/cisco/xe/1731&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;on github posted by cisco.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;An important concept to understand is the split between configuration &amp;amp; operational data (Which makes sense as the devices itself always
+worked like that). Thankfully the naming of the resource gives a good hint what data you can expect. If there is a &lt;strong&gt;-oper&lt;/strong&gt; in the name,
+you are querying for operational data.&lt;/p&gt;
+&lt;h2 id=&#34;example-paths-for-configuration&#34;&gt;Example Paths for configuration&lt;/h2&gt;
+&lt;p&gt;Get a Portchannel Subinterface&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -500,7 +506,7 @@ This command will reload the chassis, Proceed (y/n)? [n]: y
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;Cisco-IOS-XE-native:native/interface/Port-channel-subinterface/Port-channel=1.600
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Delete a Portchannel Subinterface&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;Delete a Portchannel Subinterface, difference to Get is that you make a &lt;code&gt;DELETE&lt;/code&gt; call to the API&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -515,23 +521,16 @@ This command will reload the chassis, Proceed (y/n)? [n]: y
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;import requests
 INTERFACE = requests.utils.quote(&amp;#34;1/0/1.3204&amp;#34;, safe=&amp;#39;&amp;#39;)
+
 Cisco-IOS-XE-native:native/interface/HundredGigE={INTERFACE}&amp;#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Operational information about all the vrfs&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;Cisco-IOS-XE-vrf-oper:vrf-oper-data
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Get the information for a specific vrf&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;Get the configuration for a specific vrf&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -540,10 +539,44 @@ Cisco-IOS-XE-native:native/interface/HundredGigE={INTERFACE}&amp;#39;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;Cisco-IOS-XE-native:native/vrf/definition=TEST
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;python-examples&#34;&gt;Python examples&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;example-paths-for-operational-data&#34;&gt;Example Paths for operational data&lt;/h2&gt;
+&lt;p&gt;Operational information about all the vrfs&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;Cisco-IOS-XE-vrf-oper:vrf-oper-data
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Operational information about all the interfaces&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;Cisco-IOS-XE-interfaces-oper:interfaces
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Operational information for a specific interfaces, here it&amp;rsquo;s also important again to escape the &lt;code&gt;/&lt;/code&gt; in the name&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;import requests
+INTERFACE = requests.utils.quote(&amp;#34;1/0/1.3204&amp;#34;, safe=&amp;#39;&amp;#39;)
+
+Cisco-IOS-XE-interfaces-oper:interfaces/interface=HundredGigE{INTERFACE}
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;python-examples&#34;&gt;Python examples&lt;/h2&gt;
 &lt;p&gt;These are really simple examples that can hopefully help you to get on speed
 (and help me remember how this stuff works) :)&lt;/p&gt;
-&lt;h2 id=&#34;create-a-new-vrf&#34;&gt;Create a new VRF&lt;/h2&gt;
+&lt;h3 id=&#34;create-a-new-vrf&#34;&gt;Create a new VRF&lt;/h3&gt;
 &lt;p&gt;This examples creates a new vrf on the defined switch. It only works when the
 vrf doesn&amp;rsquo;t already exists.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -622,7 +655,7 @@ vrf doesn&amp;rsquo;t already exists.&lt;/p&gt;
     &lt;span class=&#34;n&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;update-a-vrf&#34;&gt;Update a VRF&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;update-a-vrf&#34;&gt;Update a VRF&lt;/h3&gt;
 &lt;p&gt;The update process works a bit different, the following example shows how to add
 an additional rt to the vrf TEST&lt;/p&gt;
 &lt;p&gt;Example of the vrf before our change&lt;/p&gt;

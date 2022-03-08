@@ -132,7 +132,7 @@ if (!doNotTrack) {
 
 
                 <time class="article-time--reading">
-                    3 minute read
+                    4 minute read
                 </time>
             </div>
         
@@ -157,7 +157,13 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">https://{HOST}:{PORT}/restconf/data/
 </code></pre></td></tr></table>
 </div>
-</div><p>Get a Portchannel Subinterface</p>
+</div><p>In the beginning i really struggled to find the right models, what can help is the yang representation you can find <a class="link" href="https://github.com/YangModels/yang/tree/master/vendor/cisco/xe/1731"  target="_blank" rel="noopener"
+    >on github posted by cisco.</a></p>
+<p>An important concept to understand is the split between configuration &amp; operational data (Which makes sense as the devices itself always
+worked like that). Thankfully the naming of the resource gives a good hint what data you can expect. If there is a <strong>-oper</strong> in the name,
+you are querying for operational data.</p>
+<h2 id="example-paths-for-configuration">Example Paths for configuration</h2>
+<p>Get a Portchannel Subinterface</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -166,7 +172,7 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Cisco-IOS-XE-native:native/interface/Port-channel-subinterface/Port-channel=1.600
 </code></pre></td></tr></table>
 </div>
-</div><p>Delete a Portchannel Subinterface</p>
+</div><p>Delete a Portchannel Subinterface, difference to Get is that you make a <code>DELETE</code> call to the API</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -181,23 +187,16 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
+</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">import requests
 INTERFACE = requests.utils.quote(&#34;1/0/1.3204&#34;, safe=&#39;&#39;)
+
 Cisco-IOS-XE-native:native/interface/HundredGigE={INTERFACE}&#39;
 </code></pre></td></tr></table>
 </div>
-</div><p>Operational information about all the vrfs</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Cisco-IOS-XE-vrf-oper:vrf-oper-data
-</code></pre></td></tr></table>
-</div>
-</div><p>Get the information for a specific vrf</p>
+</div><p>Get the configuration for a specific vrf</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -206,10 +205,44 @@ Cisco-IOS-XE-native:native/interface/HundredGigE={INTERFACE}&#39;
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Cisco-IOS-XE-native:native/vrf/definition=TEST
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="python-examples">Python examples</h1>
+</div><h2 id="example-paths-for-operational-data">Example Paths for operational data</h2>
+<p>Operational information about all the vrfs</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Cisco-IOS-XE-vrf-oper:vrf-oper-data
+</code></pre></td></tr></table>
+</div>
+</div><p>Operational information about all the interfaces</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Cisco-IOS-XE-interfaces-oper:interfaces
+</code></pre></td></tr></table>
+</div>
+</div><p>Operational information for a specific interfaces, here it&rsquo;s also important again to escape the <code>/</code> in the name</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">import requests
+INTERFACE = requests.utils.quote(&#34;1/0/1.3204&#34;, safe=&#39;&#39;)
+
+Cisco-IOS-XE-interfaces-oper:interfaces/interface=HundredGigE{INTERFACE}
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="python-examples">Python examples</h2>
 <p>These are really simple examples that can hopefully help you to get on speed
 (and help me remember how this stuff works) :)</p>
-<h2 id="create-a-new-vrf">Create a new VRF</h2>
+<h3 id="create-a-new-vrf">Create a new VRF</h3>
 <p>This examples creates a new vrf on the defined switch. It only works when the
 vrf doesn&rsquo;t already exists.</p>
 <div class="highlight"><div class="chroma">
@@ -288,7 +321,7 @@ vrf doesn&rsquo;t already exists.</p>
     <span class="n">main</span><span class="p">()</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="update-a-vrf">Update a VRF</h2>
+</div><h3 id="update-a-vrf">Update a VRF</h3>
 <p>The update process works a bit different, the following example shows how to add
 an additional rt to the vrf TEST</p>
 <p>Example of the vrf before our change</p>
@@ -716,8 +749,14 @@ vrf definition TEST
                 <div class="widget--toc">
                     <nav id="TableOfContents">
   <ol>
-    <li><a href="#create-a-new-vrf">Create a new VRF</a></li>
-    <li><a href="#update-a-vrf">Update a VRF</a></li>
+    <li><a href="#example-paths-for-configuration">Example Paths for configuration</a></li>
+    <li><a href="#example-paths-for-operational-data">Example Paths for operational data</a></li>
+    <li><a href="#python-examples">Python examples</a>
+      <ol>
+        <li><a href="#create-a-new-vrf">Create a new VRF</a></li>
+        <li><a href="#update-a-vrf">Update a VRF</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
                 </div>
