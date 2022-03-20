@@ -1,22 +1,75 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>ICMP on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/icmp/</link>
-    <description>Recent content in ICMP on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 23 Mar 2017 18:30:47 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/icmp/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>BFD and IP redirects</title>
-      <link>https://www.richardstrnad.ch/2017/03/23/bfd-and-ip-redirects/</link>
-      <pubDate>Thu, 23 Mar 2017 18:30:47 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2017/03/23/bfd-and-ip-redirects/</guid>
-      <description>We faced some strange ICMP redirect messages today on one of our devices after we configured BFD for BGP.
-Device1
-1 2 3 4 5 6  ICMP: bogus redirect from 192.168.100.1 - for 192.168.100.2 use gw 192.168.100.2 gateway address is one of our addresses ICMP: bogus redirect from 192.168.100.1 - for 192.168.100.2 use gw 192.168.100.2 gateway address is one of our addresses ICMP: bogus redirect from 192.168.100.1 - for 192.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>ICMP on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/icmp/</link>
+        <description>Recent content in ICMP on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 23 Mar 2017 18:30:47 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/icmp/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>BFD and IP redirects</title>
+        <link>https://www.richardstrnad.ch/2017/03/23/bfd-and-ip-redirects/</link>
+        <pubDate>Thu, 23 Mar 2017 18:30:47 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2017/03/23/bfd-and-ip-redirects/</guid>
+        <description>&lt;p&gt;We faced some strange ICMP redirect messages today on one of our devices after we configured BFD for BGP.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Device1&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;ICMP: bogus redirect from 192.168.100.1 - for 192.168.100.2 use gw 192.168.100.2
+      gateway address is one of our addresses
+ICMP: bogus redirect from 192.168.100.1 - for 192.168.100.2 use gw 192.168.100.2
+      gateway address is one of our addresses
+ICMP: bogus redirect from 192.168.100.1 - for 192.168.100.2 use gw 192.168.100.2
+      gateway address is one of our addresses
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;So we checked the device that was sending these redirects and did a short ethanalyzer capture&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Device2&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;ethanalyzer local interface inband-in vdc vdc2 capture-filter &amp;#34;host 192.168.100.2&amp;#34; limit-captured-frames 0
+Capturing on inband
+192.168.200.2 -&amp;gt; 192.168.200.2  UDP 60 Source port: 49152  Destination port: bfd-echo
+192.168.200.2 -&amp;gt; 192.168.200.2  UDP 60 Source port: 49152  Destination port: bfd-echo
+192.168.200.2 -&amp;gt; 192.168.200.2  UDP 60 Source port: 49152  Destination port: bfd-echo
+192.168.200.2 -&amp;gt; 192.168.200.2  UDP 60 Source port: 49152  Destination port: bfd-echo
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;So these redirect messages where triggered from the BFD Echo packets that Device2 received from Device1.&lt;br&gt;
+We simply forgot to disable `ip redirects` on the interface between Device2 and Device1, after we changed this the ICMP bogus redirect messages where gone.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;interface port-channel1
+  no ip redirects
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;This is documented on various points on the cisco page, for example &lt;a href=&#34;http://www.cisco.com/c/en/us/td/docs/ios/12_0s/feature/guide/fs_bfd.html&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Before using BFD echo mode, you must disable the sending of Internet Control Message Protocol (ICMP) redirect messages by entering the no ip redirects command, in order to avoid high CPU utilization.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

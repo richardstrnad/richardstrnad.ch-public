@@ -1,56 +1,401 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>convert on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/convert/</link>
-    <description>Recent content in convert on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jul 2019 17:30:21 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/convert/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cisco ACI – Convert Leaf Ports back (Downlink to Uplink)</title>
-      <link>https://www.richardstrnad.ch/2019/07/29/cisco-aci-convert-leaf-ports-back-downlink-to-uplink/</link>
-      <pubDate>Mon, 29 Jul 2019 17:30:21 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2019/07/29/cisco-aci-convert-leaf-ports-back-downlink-to-uplink/</guid>
-      <description>As i described in another Post there is the possibility to change a ACI Leaf Uplink Port to Downlink mode. This can be useful if you require some 40/100G Ports but don&amp;rsquo;t want to add new Leafs.
-If you now wan&amp;rsquo;t to convert some of these Downlinks back to Uplinks, you can follow this guide here.
-Navigate to Fabric -&amp;gt; Pod and select the Leaf on which you wan&amp;rsquo;t to change the Port behaviour.</description>
-    </item>
-    
-    <item>
-      <title>Cisco ACI – Convert Leaf Ports (Uplink to Downlink)</title>
-      <link>https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/</link>
-      <pubDate>Mon, 01 Oct 2018 18:00:28 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/</guid>
-      <description>Since ACI release 3.1(1) it&amp;rsquo;s possible to use some of the Leaf Uplinks as Downlink Ports. This could help you out if there is a need for some 40/100G ports but you are currently only running 10/25G Leafs.
-Currently the following Leafs support the conversion:
-N9K-C9348GC-FXP  N9K-C93180LC-EX   N9K-C93180YC-FX  N9K-C93180YC-EX and N9K-C93180YC-EXU  N9K-C93108TC-EX  N9K-C93108TC-FX  N9K-C9336C-FX2 (only downlink to uplink conversion supported)   There are some limitations, check them out on the Cisco Page.</description>
-    </item>
-    
-    <item>
-      <title>ACI/N9K – How to convert a Nexus 9000 from NX-OS to ACI</title>
-      <link>https://www.richardstrnad.ch/2017/04/12/acin9k-how-to-convert-a-nexus-9000-from-nx-os-to-aci/</link>
-      <pubDate>Wed, 12 Apr 2017 21:13:17 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2017/04/12/acin9k-how-to-convert-a-nexus-9000-from-nx-os-to-aci/</guid>
-      <description>Some time ago i posted how to convert a ACI switch to NX-OS, now the other way around.
-Copy the file to the NX-OS Mode N9k
-1 2 3 4 5 6 7  switch# copy scp: bootflash: Enter source filename: Downloads/aci-n9000-dk9.12.2.1o.bin Enter vrf (If no input, current vrf &amp;#39;default&amp;#39; is considered): management Enter hostname for the scp server: 192.168.0.5 Enter username: USER Password: aci-n9000-dk9.12.2.1o.bin 1% 15MB 3.8MB/s 04:34 ETA   Change the boot mode to aci</description>
-    </item>
-    
-    <item>
-      <title>ACI/N9K – How to convert a Nexus 9000 from ACI Mode to NX-OS (Standalone)</title>
-      <link>https://www.richardstrnad.ch/2016/02/29/acin9k-how-to-convert-a-nexus-9000-from-aci-mode-to-standalone/</link>
-      <pubDate>Mon, 29 Feb 2016 13:27:06 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2016/02/29/acin9k-how-to-convert-a-nexus-9000-from-aci-mode-to-standalone/</guid>
-      <description>Get the standalone software here
-First you have to copy the new nexus 9000 standalone firmware to the APIC:
-1 2  admin@apic1:~&amp;gt; scp richy@YOURIP:Downloads/nxos.7.0.3.I2.2a.bin . nxos.7.0.3.I2.2a.bin 100% 513MB 9.2MB/s 00:56   And now you can push it to the appropriate Nexus 9000. (The user/password matches the APIC)
-1 2 3  admin@apic1:~&amp;gt; scp nxos.7.0.3.I2.2a.bin admin@leaf02:bootflash Password: nxos.7.0.3.I2.2a.bin 100% 513MB 7.0MB/s 01:13   Now reboot the switch and break into the load prompt, this can be done with Control+C in Putty.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>convert on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/convert/</link>
+        <description>Recent content in convert on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 29 Jul 2019 17:30:21 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/convert/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Cisco ACI – Convert Leaf Ports back (Downlink to Uplink)</title>
+        <link>https://www.richardstrnad.ch/2019/07/29/cisco-aci-convert-leaf-ports-back-downlink-to-uplink/</link>
+        <pubDate>Mon, 29 Jul 2019 17:30:21 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2019/07/29/cisco-aci-convert-leaf-ports-back-downlink-to-uplink/</guid>
+        <description>&lt;p&gt;As i described in another &lt;a class=&#34;link&#34; href=&#34;https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Post&lt;/a&gt; there is the possibility to change a ACI Leaf Uplink Port to Downlink mode. This can be useful if you require some 40/100G Ports but don&amp;rsquo;t want to add new Leafs.&lt;/p&gt;
+&lt;p&gt;If you now wan&amp;rsquo;t to convert some of these Downlinks back to Uplinks, you can follow this guide here.&lt;/p&gt;
+&lt;p&gt;Navigate to Fabric -&amp;gt; Pod and select the Leaf on which you wan&amp;rsquo;t to change the Port behaviour.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardstrnad.ch/2019/07/29/cisco-aci-convert-leaf-ports-back-downlink-to-uplink/aci-leaf-convert-down-to-uplink-1.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1089&#34;
+	srcset=&#34;https://www.richardstrnad.ch/2019/07/29/cisco-aci-convert-leaf-ports-back-downlink-to-uplink/aci-leaf-convert-down-to-uplink-1_hudd434ef65f725803262b230da7e538ba_243733_480x0_resize_box_3.png 480w, https://www.richardstrnad.ch/2019/07/29/cisco-aci-convert-leaf-ports-back-downlink-to-uplink/aci-leaf-convert-down-to-uplink-1_hudd434ef65f725803262b230da7e538ba_243733_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Overview of a leaf&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;423px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Change to the Interface Tab and select &amp;ldquo;Configuration&amp;rdquo; on the right side.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardstrnad.ch/2019/07/29/cisco-aci-convert-leaf-ports-back-downlink-to-uplink/aci-leaf-convert-down-to-uplink-2.png&#34;
+	width=&#34;1921&#34;
+	height=&#34;1090&#34;
+	srcset=&#34;https://www.richardstrnad.ch/2019/07/29/cisco-aci-convert-leaf-ports-back-downlink-to-uplink/aci-leaf-convert-down-to-uplink-2_hua15be7b804ec99856879ea1c0618e52b_228888_480x0_resize_box_3.png 480w, https://www.richardstrnad.ch/2019/07/29/cisco-aci-convert-leaf-ports-back-downlink-to-uplink/aci-leaf-convert-down-to-uplink-2_hua15be7b804ec99856879ea1c0618e52b_228888_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Interface view of a leaf&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;422px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Now select the Interfaces you wish to change and then select &amp;ldquo;Uplink&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardstrnad.ch/2019/07/29/cisco-aci-convert-leaf-ports-back-downlink-to-uplink/aci-leaf-convert-down-to-uplink-3.png&#34;
+	width=&#34;1921&#34;
+	height=&#34;1126&#34;
+	srcset=&#34;https://www.richardstrnad.ch/2019/07/29/cisco-aci-convert-leaf-ports-back-downlink-to-uplink/aci-leaf-convert-down-to-uplink-3_hub936e1e682bc00ca2ad69dcfbd5dbc30_227912_480x0_resize_box_3.png 480w, https://www.richardstrnad.ch/2019/07/29/cisco-aci-convert-leaf-ports-back-downlink-to-uplink/aci-leaf-convert-down-to-uplink-3_hub936e1e682bc00ca2ad69dcfbd5dbc30_227912_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Change type to Uplink&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;170&#34;
+		data-flex-basis=&#34;409px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;You then need to confirm the action, to make the change active you have to reload the ACI Leaf switch.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardstrnad.ch/2019/07/29/cisco-aci-convert-leaf-ports-back-downlink-to-uplink/aci-leaf-convert-down-to-uplink-4.png&#34;
+	width=&#34;1082&#34;
+	height=&#34;584&#34;
+	srcset=&#34;https://www.richardstrnad.ch/2019/07/29/cisco-aci-convert-leaf-ports-back-downlink-to-uplink/aci-leaf-convert-down-to-uplink-4_hu768ad384ac0007d8568d83e2aac7d7fd_74801_480x0_resize_box_3.png 480w, https://www.richardstrnad.ch/2019/07/29/cisco-aci-convert-leaf-ports-back-downlink-to-uplink/aci-leaf-convert-down-to-uplink-4_hu768ad384ac0007d8568d83e2aac7d7fd_74801_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Confirmation dialog&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;185&#34;
+		data-flex-basis=&#34;444px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s it, after the Switch is reloaded the interfaces are back in Uplink mode an can be connected to the Spines 🙂&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Cisco ACI – Convert Leaf Ports (Uplink to Downlink)</title>
+        <link>https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/</link>
+        <pubDate>Mon, 01 Oct 2018 18:00:28 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/</guid>
+        <description>&lt;p&gt;Since ACI release 3.1(1) it&amp;rsquo;s possible to use some of the Leaf Uplinks as Downlink Ports. This could help you out if there is a need for some 40/100G ports but you are currently only running 10/25G Leafs.&lt;br&gt;
+Currently the following Leafs support the conversion:&lt;/p&gt;
+&lt;ul class=&#34;ul&#34;&gt;
+  &lt;li class=&#34;li&#34;&gt;
+    N9K-C9348GC-FXP
+  &lt;/li&gt;
+  &lt;li class=&#34;li&#34;&gt;
+    N9K-C93180LC-EX
+  &lt;/li&gt;
+  &lt;li&gt;
+    N9K-C93180YC-FX
+  &lt;/li&gt;
+  &lt;li class=&#34;li&#34;&gt;
+    N9K-C93180YC-EX and N9K-C93180YC-EXU
+  &lt;/li&gt;
+  &lt;li class=&#34;li&#34;&gt;
+    N9K-C93108TC-EX
+  &lt;/li&gt;
+  &lt;li class=&#34;li&#34;&gt;
+    N9K-C93108TC-FX
+  &lt;/li&gt;
+  &lt;li class=&#34;li&#34;&gt;
+    N9K-C9336C-FX2 (only downlink to uplink conversion supported)
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are some limitations, check them out on the &lt;a href=&#34;https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/1-x/aci-fundamentals/b_ACI-Fundamentals/b_ACI-Fundamentals_chapter_010011.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Cisco Page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Our use case was to use some of the 40/100G Ports as Downlinks on a N9K-C93180YC-FX. The main limitation there is that the last 2 ports (53 and 54) don&amp;rsquo;t support conversion, no issue if you use them as Uplinks anyway.&lt;/p&gt;
+&lt;p&gt;The conversion process is pretty straight forward.&lt;br&gt;
+Head to Fabric -&amp;gt; Inventory, open up the respective POD and select your Leaf.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/aci-leaf-convert-up-to-downlink-1.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1089&#34;
+	srcset=&#34;https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/aci-leaf-convert-up-to-downlink-1_hudd434ef65f725803262b230da7e538ba_243733_480x0_resize_box_3.png 480w, https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/aci-leaf-convert-up-to-downlink-1_hudd434ef65f725803262b230da7e538ba_243733_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Overview of a leaf&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;423px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Go to the &amp;ldquo;Interface&amp;rdquo; tab and change the mode to &amp;ldquo;Configuration&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/aci-leaf-convert-up-to-downlink-2.png&#34;
+	width=&#34;1921&#34;
+	height=&#34;1090&#34;
+	srcset=&#34;https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/aci-leaf-convert-up-to-downlink-2_hua15be7b804ec99856879ea1c0618e52b_228888_480x0_resize_box_3.png 480w, https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/aci-leaf-convert-up-to-downlink-2_hua15be7b804ec99856879ea1c0618e52b_228888_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Interface overview of a leaf&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;422px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Now select the port you want to change from uplink to downlink and then select &amp;ldquo;Downlink&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/aci-leaf-convert-up-to-downlink-3.png&#34;
+	width=&#34;1921&#34;
+	height=&#34;1089&#34;
+	srcset=&#34;https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/aci-leaf-convert-up-to-downlink-3_hud80ef47240e0194d3da98fcaa18f611d_238467_480x0_resize_box_3.png 480w, https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/aci-leaf-convert-up-to-downlink-3_hud80ef47240e0194d3da98fcaa18f611d_238467_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Change the port type&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;423px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;There will be a popup with the information about the change, &amp;ldquo;Submit&amp;rdquo; it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/aci-leaf-convert-up-to-downlink-4.png&#34;
+	width=&#34;543&#34;
+	height=&#34;293&#34;
+	srcset=&#34;https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/aci-leaf-convert-up-to-downlink-4_hua39072d56f67f3e3ef2df25ce2c31e56_42082_480x0_resize_box_3.png 480w, https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/aci-leaf-convert-up-to-downlink-4_hua39072d56f67f3e3ef2df25ce2c31e56_42082_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Submit dialog&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;185&#34;
+		data-flex-basis=&#34;444px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;And that&amp;rsquo;s it, repeat for all the other interfaces you want to convert. Then reload the Leaf.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/aci-leaf-convert-up-to-downlink-5.png&#34;
+	width=&#34;1921&#34;
+	height=&#34;1090&#34;
+	srcset=&#34;https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/aci-leaf-convert-up-to-downlink-5_hu7edfaf3274f82ca96790e902d586f612_223488_480x0_resize_box_3.png 480w, https://www.richardstrnad.ch/2018/10/01/cisco-aci-convert-leaf-uplink-to-downlink/aci-leaf-convert-up-to-downlink-5_hu7edfaf3274f82ca96790e902d586f612_223488_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Reboot the leaf&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;422px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>ACI/N9K – How to convert a Nexus 9000 from NX-OS to ACI</title>
+        <link>https://www.richardstrnad.ch/2017/04/12/acin9k-how-to-convert-a-nexus-9000-from-nx-os-to-aci/</link>
+        <pubDate>Wed, 12 Apr 2017 21:13:17 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2017/04/12/acin9k-how-to-convert-a-nexus-9000-from-nx-os-to-aci/</guid>
+        <description>&lt;p&gt;Some time ago i posted how to convert a &lt;a class=&#34;link&#34; href=&#34;https://www.richardstrnad.ch/2016/02/29/acin9k-how-to-convert-a-nexus-9000-from-aci-mode-to-standalone/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ACI switch to NX-OS&lt;/a&gt;, now the other way around.&lt;/p&gt;
+&lt;p&gt;Copy the file to the NX-OS Mode N9k&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;switch# copy scp: bootflash:
+Enter source filename: Downloads/aci-n9000-dk9.12.2.1o.bin
+Enter vrf (If no input, current vrf &amp;#39;default&amp;#39; is considered): management
+Enter hostname for the scp server: 192.168.0.5
+Enter username: USER
+Password:
+aci-n9000-dk9.12.2.1o.bin                       1%   15MB   3.8MB/s   04:34 ETA
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Change the boot mode to aci&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;switch(config)# boot aci bootflash:///aci-n9000-dk9.12.2.1o.bin
+Warning: Please check list of all ACI supported hardware before doing this operation, not all hardware are supported.
+Warning: Booting to an ACI image will remove all nxos configuration and format bootflash. Do you want to continue (y/n)?[n] y
+Performing image verification and compatibility check, please wait....
+
+Image verification successful.
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;That&amp;rsquo;s it, just boot the switch and you can join the fabric 🙂&lt;br&gt;
+Be aware that the first reload can take quite some time! (15minutes+)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;switch# reload
+!!!WARNING! there is unsaved configuration!!!
+This command will reboot the system. (y/n)?  [n] y
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>ACI/N9K – How to convert a Nexus 9000 from ACI Mode to NX-OS (Standalone)</title>
+        <link>https://www.richardstrnad.ch/2016/02/29/acin9k-how-to-convert-a-nexus-9000-from-aci-mode-to-standalone/</link>
+        <pubDate>Mon, 29 Feb 2016 13:27:06 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2016/02/29/acin9k-how-to-convert-a-nexus-9000-from-aci-mode-to-standalone/</guid>
+        <description>&lt;p&gt;Get the standalone software &lt;a href=&#34;https://software.cisco.com/download/release.html?mdfid=286279793&amp;#038;release=7.0(3)I2(2a)&amp;#038;softwareid=282088129&amp;#038;sortparam=&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;First you have to copy the new nexus 9000 standalone firmware to the APIC:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@apic1:~&amp;gt; scp richy@YOURIP:Downloads/nxos.7.0.3.I2.2a.bin .
+nxos.7.0.3.I2.2a.bin                          100%  513MB   9.2MB/s   00:56
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;And now you can push it to the appropriate Nexus 9000. (The user/password matches the APIC)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@apic1:~&amp;gt; scp nxos.7.0.3.I2.2a.bin admin@leaf02:bootflash
+Password:
+nxos.7.0.3.I2.2a.bin                          100%  513MB   7.0MB/s   01:13
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Now reboot the switch and break into the load prompt, this can be done with Control+C in Putty.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;loader &amp;gt;
+loader &amp;gt; boot nxos.7.0.3.I2.2a.bin
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;After the switch is booted up you got the default prompts (POAP, Secure Admin PW, etc..) When you finaliy reach the CLI you have to Set the Boot Path!&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;switch(config)# boot nxos bootflash:///nxos.7.0.3.I2.2a.bin
+Performing image verification and compatibility check, please wait....
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Also save the config!&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;switch# copy running-config startup-config
+[########################################] 100%
+Copy complete.
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Now is time to verify that everything is fine with the new image (should, as it already booted ;-))&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;switch# show boot
+Current Boot Variables:
+
+sup-1
+NXOS variable = bootflash:/nxos.7.0.3.I2.2a.bin &amp;lt;---- Good
+No module boot variable set
+
+Boot Variables on next reload:
+
+sup-1
+NXOS variable = bootflash:/nxos.7.0.3.I2.2a.bin &amp;lt;---- Good
+No module boot variable set
+
+
+switch# show install all impact
+
+.
+.
+.
+
+Compatibility check is done:
+Module  bootable          Impact  Install-type  Reason
+------  --------  --------------  ------------  ------
+     1       yes  non-disruptive          none
+
+
+
+Images will be upgraded according to following table:
+Module       Image                  Running-Version(pri:alt)           New-Version  Upg-Required
+------  ----------  ----------------------------------------  --------------------  ------------
+     1        nxos                              7.0(3)I2(2a)          7.0(3)I2(2a)            no
+     1        bios     v07.41(10/12/2015):v07.17(09/10/2014)    v07.34(08/11/2015)            no
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;That&amp;rsquo;s it, make a final boot and your switch is now ACI-Free!&lt;br&gt;
+Maybe there is the time you want to go back to ACI, &lt;a href=&#34;https://www.richardstrnad.ch/2017/04/12/acin9k-how-to-convert-a-nexus-9000-from-nx-os-to-aci/&#34; target=&#34;_blank&#34;&gt;check out my new post&lt;/a&gt;!&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

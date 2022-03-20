@@ -1,26 +1,322 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>CLI on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/cli/</link>
-    <description>Recent content in CLI on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 16 Dec 2015 14:00:46 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/cli/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cisco ACI – NX-OS Style CLI</title>
-      <link>https://www.richardstrnad.ch/2015/12/16/cisco-aci-nx-os-style-cli/</link>
-      <pubDate>Wed, 16 Dec 2015 14:00:46 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2015/12/16/cisco-aci-nx-os-style-cli/</guid>
-      <description>Cisco introduced a NX-OS like CLI for the Cisco ACI Solution with release 1.2(1i).
-In this post i will demonstrate some of the things that can be achieved through the NX-OS CLI.
-!Important!
-There is no safety net, if you issue something like &amp;lsquo;no tenant XXX&amp;rsquo; the configuration is gone!
-No commit, warning or similar!
-!Important!
-Basics The NX-OS like CLI is the new default if you connect via SSH to the APIC</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>CLI on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/cli/</link>
+        <description>Recent content in CLI on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 16 Dec 2015 14:00:46 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/cli/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Cisco ACI – NX-OS Style CLI</title>
+        <link>https://www.richardstrnad.ch/2015/12/16/cisco-aci-nx-os-style-cli/</link>
+        <pubDate>Wed, 16 Dec 2015 14:00:46 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2015/12/16/cisco-aci-nx-os-style-cli/</guid>
+        <description>&lt;p&gt;Cisco introduced a NX-OS like CLI for the Cisco ACI Solution with release 1.2(1i).&lt;br&gt;
+In this post i will demonstrate some of the things that can be achieved through the NX-OS CLI.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!Important!&lt;br&gt;
+There is no safety net, if you issue something like &amp;lsquo;no tenant &lt;em&gt;XXX&lt;/em&gt;&amp;rsquo; the configuration is gone!&lt;br&gt;
+No commit, warning or similar!&lt;br&gt;
+!Important!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;
+&lt;p&gt;The NX-OS like CLI is the new default if you connect via SSH to the APIC&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;→ ssh admin@10.127.129.50
+Application Policy Infrastructure Controller
+admin@10.127.129.50&amp;#39;s password:
+apic1#
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;If you wan to access the Linux CLI you can go there through &amp;lsquo;bash&amp;rsquo; and go back with &amp;lsquo;exit&amp;rsquo;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;apic1# bash
+admin@apic1:
+
+...
+
+admin@apic1:
+exit
+apic1#
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;configurations&#34;&gt;Configurations&lt;/h2&gt;
+&lt;h3 id=&#34;tenant&#34;&gt;Tenant&lt;/h3&gt;
+&lt;p&gt;Configure a Tenant, Application Profile and End Point Group&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;apic1# configure
+apic1(config)# tenant nxos_cli
+apic1(config-tenant)# application app_1
+apic1(config-tenant-app)# epg epg_1
+apic1(config-tenant-app-epg)# exit
+apic1(config-tenant-app)# epg epg_2
+apic1(config-tenant-app-epg)# end
+
+...
+
+apic1# show running-config tenant nxos_cli
+# Command: show running-config tenant nxos_cli
+# Time: Sun Dec 13 16:44:58 2015
+  tenant nxos_cli
+    application app_1
+      epg epg_1
+        exit
+      epg epg_2
+        exit
+      exit
+    exit
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;I&amp;rsquo;m sure that this configuration style is straight forward for all network engineers, and for some tasks i think this is a great way to get things done!&lt;/p&gt;
+&lt;h3 id=&#34;networking&#34;&gt;Networking&lt;/h3&gt;
+&lt;p&gt;Example of adding a new Subnet to a VRF.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;apic1(config)# tenant nxos_cli
+apic1(config-tenant)# vrf context vrf_1
+apic1(config-tenant-vrf)# exit
+apic1(config-tenant)# bridge-domain bd_1
+apic1(config-tenant-bd)# vrf member vrf_1
+apic1(config-tenant-bd)# exit
+apic1(config-tenant)# interface bridge-domain bd_1
+apic1(config-tenant-interface)# ip address 172.20.20.1/24
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;complete-tenant-example&#34;&gt;Complete Tenant example&lt;/h3&gt;
+&lt;p&gt;This is how one of my tenants look in the CLI&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;50
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;51
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;52
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;53
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;54
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;55
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;56
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;57
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;58
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;59
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;60
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;61
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;62
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;63
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;64
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;65
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;66
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;67
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;68
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;69
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;70
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;71
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;72
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;73
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;74
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;75
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;76
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;77
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;78
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;79
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;80
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;81
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;82
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;83
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;84
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;85
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;86
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;87
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;tenant PoC
+  vrf context Net_1
+    contract enforce egress
+    exit
+  application SimpleWebServer
+    epg sqlServers
+      bridge-domain member BD_1
+      contract provider mgmt_contract
+      contract provider SQL_Contract
+      vmware-domain member vmware_dom deploy immediate
+      exit
+    epg webServers
+      bridge-domain member BD_1
+      contract consumer SQL_Contract
+      contract provider Web_Contract
+      contract provider mgmt_contract
+      vmware-domain member vmware_dom deploy immediate
+      exit
+    exit
+  contract Allow_ANY
+    subject Allow_ANY_Subj
+      access-group IP_ANY both
+      exit
+    exit
+  contract SQL_Contract
+    subject SQL_Subject
+      access-group SQL_Filter both
+      exit
+    exit
+  contract Ubuntu_to_Ext
+    subject external_con
+      access-group IP_ANY in
+      access-group IP_ANY out
+      exit
+    exit
+  contract Web_Contract
+    subject Web_Subject
+      access-group Web_Filter both
+      exit
+    exit
+  contract mgmt_contract
+    subject allow_icmp
+      access-group icmp both
+      exit
+    subject allow_ssh
+      access-group filter_telnet both
+      access-group ssh both
+      exit
+    exit
+  external-l3 epg L3_Out:ext_all
+    vrf member Net_1
+    match ip 0.0.0.0/0
+    contract consumer mgmt_contract
+    contract consumer Web_Contract
+    contract provider Ubuntu_to_Ext
+    exit
+  access-list DNS
+    match udp dest 53
+    exit
+  access-list IP_ANY
+    match raw ANY_TCP etherT ip prot 6 stateful yes
+    match udp
+    exit
+  access-list SQL_Filter
+    match tcp dest 3306
+    exit
+  access-list Web_Filter
+    match tcp dest 80
+    exit
+  access-list filter_telnet
+    match tcp dest 23
+    exit
+  access-list icmp
+    match icmp
+    exit
+  access-list ssh
+    match raw ssh dFromPort 22 dToPort 22 etherT ip prot 6 stateful yes
+    exit
+  bridge-domain BD_1
+    arp flooding
+    l2-unknown-unicast flood
+    vrf member Net_1
+    exit
+  interface bridge-domain BD_1
+    ip address 10.127.200.1/24 secondary scope public
+    exit
+  exit
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
 </rss>

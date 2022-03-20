@@ -1,82 +1,1095 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Upgrade on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/upgrade/</link>
-    <description>Recent content in Upgrade on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 21 Dec 2015 17:00:17 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/upgrade/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cisco IOS XE – Install the New release 16.1.1 (Denali) on 3850</title>
-      <link>https://www.richardstrnad.ch/2015/12/21/cisco-ios-xe-install-the-new-release-16-1-1-denali-on-3850/</link>
-      <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2015/12/21/cisco-ios-xe-install-the-new-release-16-1-1-denali-on-3850/</guid>
-      <description>Cisco continues its strategy to merge the whole Campus Switch platform to a single Image, the newest step in this process is IOS XE 16.1.1. Currently only available for the Cat3k Platform (3650, 3850) but releases for the other Catalyst platforms should follow.
-In this post i show you how to upgrade your Cisco 3650/3850 Switch from 3.x to 16.1.1
-Frist, grab the software here:
-IOS XE Denali 16.1.1 on Cisco.</description>
-    </item>
-    
-    <item>
-      <title>Cisco ACI – The new and nice GUI way to Upgrade your ACI Fabric</title>
-      <link>https://www.richardstrnad.ch/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/</link>
-      <pubDate>Sun, 09 Aug 2015 18:45:37 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/</guid>
-      <description>Some time ago i posted how to do a upgrade of your ACI Fabric through CLI.
-Cisco made this process now way easier, with some cool new features.
-In this short guide i used the current ACI release 1.1(1o), that you can grab directly from cisco here.
-Upload the Firmware to the APIC You can now upload directly through your browser, no longer the need for a SCP/FTP Server!</description>
-    </item>
-    
-    <item>
-      <title>Cisco ACI – AVS Upgrade through CLI</title>
-      <link>https://www.richardstrnad.ch/2015/06/17/avs-upgrade-through-cli/</link>
-      <pubDate>Wed, 17 Jun 2015 08:54:21 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2015/06/17/avs-upgrade-through-cli/</guid>
-      <description>First grab the release from the cisco page here
-Then put it through scp from you Download place to the ESX Server
-1 2 3  scp CiscoAVS_1.5-5.2.1.SV3.1.5-pkg.zip root@10.32.5.150:/tmp Password: CiscoAVS_1.5-5.2.1.SV3.1.5-pkg.zip 100% 35MB 806.2KB/s 00:45   Next you Login to the ESX through SSH and check the current version
-1 2 3 4  ~ # vemcmd show version VEM Version: 5.2.1.3.1.3.0-3.2.1 System Version: VMware ESXi 5.5.0 Releasebuild-2068190 ESX Version Update Level: 0   Then i unzipped the archives and upgraded the vib</description>
-    </item>
-    
-    <item>
-      <title>Cisco Prime Infrastructure – Update from 2.1 to 2.2</title>
-      <link>https://www.richardstrnad.ch/2015/05/05/cisco-prime-infrastructure-update-from-2-1-to-2-2/</link>
-      <pubDate>Tue, 05 May 2015 21:15:08 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2015/05/05/cisco-prime-infrastructure-update-from-2-1-to-2-2/</guid>
-      <description>Overview I did the Upgrade from Prime Infrastructure 2.1 to Prime Infrastructure 2.2 last week for one of our customers. Unfortunately this upgrade isn&amp;rsquo;t possible &amp;lsquo;in place&amp;rsquo;, you have to install a new Prime Infrastructure 2.2 Server and then import your old configuration.
-As described in the Prime Infrastructure 2.2 Quickstart Guide you have to be on one of the following versions that the backup can be used in 2.2:</description>
-    </item>
-    
-    <item>
-      <title>Cisco ACS – Patch Install error (% Manifest file not found in the bundle)</title>
-      <link>https://www.richardstrnad.ch/2015/03/01/cisco-acs-patch-install-error-manifest-file-not-found-in-the-bundle/</link>
-      <pubDate>Sun, 01 Mar 2015 11:29:29 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2015/03/01/cisco-acs-patch-install-error-manifest-file-not-found-in-the-bundle/</guid>
-      <description>I&amp;rsquo;m sure that it&amp;rsquo;s not the first time i felt for this …
-Tried to install a ACS Patch this morning and got an error:
-&amp;ldquo;% Manifest file not found in the bundle&amp;rdquo;
-First i used the wrong command:
-patch install 5-4-0-46-5.tar.gpg FTP
-1 2 3 4 5 6  ACS01/admin# patch install 5-4-0-46-5.tar.gpg FTP Save the current ADE-OS running configuration? (yes/no) [yes] ? Generating configuration... Saved the ADE-OS running configuration to startup successfully Initiating Application Patch installation.</description>
-    </item>
-    
-    <item>
-      <title>Cisco ACI –  Upgrade your ACI Fabric (1.0(2j) to 1.0(3f))</title>
-      <link>https://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/</link>
-      <pubDate>Thu, 26 Feb 2015 08:09:48 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/</guid>
-      <description>I did a upgrade of our ACI Lab Fabric last week and documented all the steps. The upgrade is really straightforward, but hopefully this guide still helps you 🙂
-First you have to catch the desired Software, get them directly from cisco. You need APIC Release image for 1.0(3f) release (aci-apic-dk9.1.0.3f.iso) and the Cisco Nexus 9000 Series ACI Mode Switch Software Release 11.0(3f) (aci-n9000-dk9.11.0.3f.bin). Get them here:
-Cisco ACI Version 1.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Upgrade on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/upgrade/</link>
+        <description>Recent content in Upgrade on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 21 Dec 2015 17:00:17 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/upgrade/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Cisco IOS XE – Install the New release 16.1.1 (Denali) on 3850</title>
+        <link>https://www.richardstrnad.ch/2015/12/21/cisco-ios-xe-install-the-new-release-16-1-1-denali-on-3850/</link>
+        <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2015/12/21/cisco-ios-xe-install-the-new-release-16-1-1-denali-on-3850/</guid>
+        <description>&lt;p&gt;Cisco continues its strategy to merge the whole Campus Switch platform to a single Image, the newest step in this process is IOS XE 16.1.1. Currently only available for the Cat3k Platform (3650, 3850) but releases for the other Catalyst platforms should follow.&lt;/p&gt;
+&lt;p&gt;In this post i show you how to upgrade your Cisco 3650/3850 Switch from 3.x to 16.1.1&lt;/p&gt;
+&lt;p&gt;Frist, grab the software here:&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://software.cisco.com/download/release.html?mdfid=284455380&amp;amp;softwareid=282046477&amp;amp;release=16.1.1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;IOS XE Denali 16.1.1 on Cisco.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Just copy it to your switch&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;Switch#copy ftp://x:x@10.32.31.15/cat3k_caa-universalk9.16.01.01.SPA.bin flash:
+Destination filename [cat3k_caa-universalk9.16.01.01.SPA.bin]?
+Accessing ftp://*****:*****@10.32.31.15/cat3k_caa-universalk9.16.01.01.SPA.bin...!!!!!!!
+*Dec 16 08:22:42.371: Loading cat3k_caa-universalk9.16.01.01.SPA.bin !!!!!!!!!!!!!...
+...
+!!!
+[OK - 469677062/4096 bytes]
+
+469677062 bytes copied in 432.250 secs (1086587 bytes/sec)
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;After that you can install the OS as always&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-plaintext&#34; data-lang=&#34;plaintext&#34;&gt;Switch#software install file flash:cat3k_caa-universalk9.16.01.01.SPA.bin new
+Preparing install operation ...
+[1]: Starting install operation
+[1]: Expanding bundle flash:cat3k_caa-universalk9.16.01.01.SPA.bin
+[1]: Copying package files
+[1]: Package files copied
+[1]: Finished expanding bundle flash:cat3k_caa-universalk9.16.01.01.SPA.bin
+[1]: Verifying and copying expanded package files to flash:
+[1]: Verified and copied expanded package files to flash:
+[1]: Starting compatibility checks
+[1]: Finished compatibility checks
+[1]: Starting application pre-installation processing
+[1]: Finished application pre-installation processing
+[1]: Old files list:
+    Removed cat3k_caa-base.SPA.03.03.05SE.pkg
+    Removed cat3k_caa-drivers.SPA.03.03.05SE.pkg
+    Removed cat3k_caa-infra.SPA.03.03.05SE.pkg
+    Removed cat3k_caa-iosd-universalk9.SPA.150-1.EZ5.pkg
+    Removed cat3k_caa-platform.SPA.03.03.05SE.pkg
+    Removed cat3k_caa-wcm.SPA.10.1.150.0.pkg
+[1]: New files list:
+    Added cat3k_caa-rpbase.16.01.01E.SPA.pkg
+    Added cat3k_caa-srdriver.16.01.01E.SPA.pkg
+    Added cat3k_caa-wcm.16.01.01E.SPA.pkg
+    Added cat3k_caa-webui.16.01.01E.SPA.pkg
+[1]: Creating pending provisioning file
+[1]: Finished installing software.  New software will load on reboot.
+[1]: Committing provisioning file
+
+[1]: Do you want to proceed with reload? [yes/no]: yes
+
+System configuration has been modified. Save? [yes/no]: yes
+Building configuration...
+Compressed configuration from 2991 bytes to 1553 bytes[OK]
+[1]: Reloading
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;It takes some time to boot up again, after that you can see the new Version is running&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;Switch Ports Model              SW Version        SW Image              Mode
+------ ----- -----              ----------        ----------            ----
+*    1 32    WS-C3850-24P       Denali 16.1.1     CAT3K_CAA-UNIVERSALK9 INSTALL
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;After that i created a user with priv 15&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;Switch(config)#username cisco privilege 15 secret cisco
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Now you can head to the new WebGui, i attached two impressions of the new GUI. Compared to the old cisco switch GUIs it looks really nice. But if it ever is used?… 🙂&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/12/2015-12-16_10-24-44.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/12/2015-12-16_10-24-44.png&#34; alt=&#34;Cisco IOS XE 16.1.1 Interface Configuration Part 1&#34; width=&#34;1280&#34; height=&#34;1345&#34; class=&#34;alignnone size-full wp-image-270&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/12/2015-12-16_10-25-04.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/12/2015-12-16_10-25-04.png&#34; alt=&#34;Cisco IOS XE 16.1.1 Interface Configuration Part 2&#34; width=&#34;1015&#34; height=&#34;1128&#34; class=&#34;alignnone size-full wp-image-271&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Cisco ACI – The new and nice GUI way to Upgrade your ACI Fabric</title>
+        <link>https://www.richardstrnad.ch/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/</link>
+        <pubDate>Sun, 09 Aug 2015 18:45:37 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/</guid>
+        <description>&lt;p&gt;Some time ago i posted how to do a upgrade of your &lt;a title=&#34;Cisco ACI –  Upgrade your ACI Fabric (1.0(2j) to 1.0(3f))&#34; href=&#34;http://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/&#34; target=&#34;_blank&#34;&gt;ACI Fabric through CLI&lt;/a&gt;.&lt;br&gt;
+Cisco made this process now way easier, with some cool new features.&lt;/p&gt;
+&lt;p&gt;In this short guide i used the current ACI release 1.1(1o), that you can grab directly from cisco &lt;a href=&#34;https://software.cisco.com/download/release.html?mdfid=285968390&amp;softwareid=286278832&amp;release=1.1(1o)&amp;relind=AVAILABLE&amp;rellifecycle=&amp;reltype=latest&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;upload-the-firmware-to-the-apic&#34;&gt;Upload the Firmware to the APIC&lt;/h2&gt;
+&lt;p&gt;You can now upload directly through your browser, no longer the need for a SCP/FTP Server!&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade1.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img loading=&#34;lazy&#34; class=&#34;alignnone size-full wp-image-175&#34; src=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade1.png&#34; alt=&#34;Upload the new Firmware to the ACI&#34; width=&#34;1916&#34; height=&#34;1082&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Just select the file from you computer, that&amp;rsquo;s it!&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade2.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img loading=&#34;lazy&#34; class=&#34;alignnone size-full wp-image-176&#34; src=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade2.png&#34; alt=&#34;Select the new Firmware from your Computer&#34; width=&#34;463&#34; height=&#34;296&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Upload both files, the Controller and Switch Firmware:&lt;br&gt;
+Controller - aci-apic-dk9.1.1.1o.iso&lt;br&gt;
+Switches - aci-n9000-dk9.11.1.1o.bin&lt;/p&gt;
+&lt;h2 id=&#34;upgrade-of-the-apic-controllers&#34;&gt;Upgrade of the APIC Controllers&lt;/h2&gt;
+&lt;p&gt;You can now start with the upgrade of your APIC Controllers.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade3.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img loading=&#34;lazy&#34; class=&#34;alignnone size-full wp-image-177&#34; src=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade3.png&#34; alt=&#34;Start the ACI controller upgrade&#34; width=&#34;1916&#34; height=&#34;1082&#34; /&gt;&lt;/a&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade4.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img loading=&#34;lazy&#34; class=&#34;alignnone size-full wp-image-178&#34; src=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade4.png&#34; alt=&#34;Select to which version you want to upgrade&#34; width=&#34;662&#34; height=&#34;290&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Select the new version here and &amp;lsquo;Apply now&amp;rsquo; the Update will start immediately.&lt;/p&gt;
+&lt;h2 id=&#34;upgrade-of-the-nexus-9000-spine-and-leaf-switches&#34;&gt;Upgrade of the Nexus 9000 Spine and Leaf switches&lt;/h2&gt;
+&lt;p&gt;After the upgrade of the controllers is finished, you can start with the switches.&lt;br&gt;
+In production you got properly more than one Firmware Group or you split them in another way (Maintenance Windows A/B), but i kept it simple in my lab and made just two (Leaf/Spine).&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade8.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img loading=&#34;lazy&#34; class=&#34;alignnone size-full wp-image-182&#34; src=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade8.png&#34; alt=&#34;Select the version to use for your spine switches&#34; width=&#34;1916&#34; height=&#34;1082&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade7.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img loading=&#34;lazy&#34; class=&#34;alignnone size-full wp-image-181&#34; src=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade7.png&#34; alt=&#34;Select to upgrade your spine switches now&#34; width=&#34;1916&#34; height=&#34;1082&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can just trigger the upgrade one and now with the &amp;lsquo;Upgrade Now&amp;rsquo; option!&lt;/p&gt;
+&lt;p&gt;Same apply for my other group.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade5.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img loading=&#34;lazy&#34; class=&#34;alignnone size-full wp-image-179&#34; src=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade5.png&#34; alt=&#34;Select the version to use for your leaf switches&#34; width=&#34;1916&#34; height=&#34;1082&#34; /&gt;&lt;/a&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade6.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img loading=&#34;lazy&#34; class=&#34;alignnone size-full wp-image-180&#34; src=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/08/upgrade6.png&#34; alt=&#34;Select to upgrade your leaf switches now&#34; width=&#34;1916&#34; height=&#34;1082&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;thats-it-you-just-upgraded-your-aci-fabric-with-success-and-this-time-easier-and-faster&#34;&gt;That&amp;rsquo;s it! You just upgraded your ACI Fabric with success and this time easier and faster!&lt;/h3&gt;
+</description>
+        </item>
+        <item>
+        <title>Cisco ACI – AVS Upgrade through CLI</title>
+        <link>https://www.richardstrnad.ch/2015/06/17/avs-upgrade-through-cli/</link>
+        <pubDate>Wed, 17 Jun 2015 08:54:21 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2015/06/17/avs-upgrade-through-cli/</guid>
+        <description>&lt;p&gt;First grab the release from the cisco page &lt;a href=&#34;https://software.cisco.com/download/release.html?mdfid=286025832&amp;flowid=71262&amp;softwareid=282088129&amp;release=5.2(1)SV3(1.5)&amp;relind=AVAILABLE&amp;rellifecycle=&amp;reltype=latest&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Then put it through scp from you Download place to the ESX Server&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;scp CiscoAVS_1.5-5.2.1.SV3.1.5-pkg.zip root@10.32.5.150:/tmp
+Password:
+CiscoAVS_1.5-5.2.1.SV3.1.5-pkg.zip 100% 35MB 806.2KB/s 00:45
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Next you Login to the ESX through SSH and check the current version&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;~ # vemcmd show version
+VEM Version: 5.2.1.3.1.3.0-3.2.1
+System Version: VMware ESXi 5.5.0 Releasebuild-2068190
+ESX Version Update Level: 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Then i unzipped the archives and upgraded the vib&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;cd /tmp/
+unzip CiscoAVS_1.5-5.2.1.SV3.1.5-pkg.zip
+unzip CiscoAVS_1.5-5.2.1.SV3.1.5.zip
+cd ~
+esxcli software vib update -v /tmp/CiscoAVS_1.5-5.2.1.SV3.1.5/cross_cisco-vem-v197-5.2.1.3.1.5.0-3.2.1.vib --maintenance-mode
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;And thats it, i&amp;rsquo;m now running the new AVS Version&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;~ # vemcmd show version
+VEM Version: 5.2.1.3.1.5.0-3.2.1
+OpFlex SDK Version: 1.1(1j)
+System Version: VMware ESXi 5.5.0 Releasebuild-2068190
+ESX Version Update Level: 2
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Cisco Prime Infrastructure – Update from 2.1 to 2.2</title>
+        <link>https://www.richardstrnad.ch/2015/05/05/cisco-prime-infrastructure-update-from-2-1-to-2-2/</link>
+        <pubDate>Tue, 05 May 2015 21:15:08 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2015/05/05/cisco-prime-infrastructure-update-from-2-1-to-2-2/</guid>
+        <description>&lt;h2 id=&#34;overview&#34;&gt; Overview&lt;/h2&gt;
+&lt;p&gt;I did the Upgrade from Prime Infrastructure 2.1 to Prime Infrastructure 2.2 last week for one of our customers. Unfortunately this upgrade isn&amp;rsquo;t possible &amp;lsquo;in place&amp;rsquo;, you have to install a new Prime Infrastructure 2.2 Server and then import your old configuration.&lt;/p&gt;
+&lt;p&gt;As described in the Prime Infrastructure &lt;a href=&#34;http://www.cisco.com/c/en/us/td/docs/net_mgmt/prime/infrastructure/2-2/quickstart/guide/cpi_qsg.html#pgfId-113783&#34; target=&#34;_blank&#34;&gt;2.2 Quickstart Guide&lt;/a&gt; you have to be on one of the following versions that the backup can be used in 2.2:&lt;/p&gt;
+&lt;li class=&#34;pBu1_Bullet1&#34;&gt;
+  Cisco Prime Infrastructure 2.1.2 (with the UBF patch)
+&lt;/li&gt;
+&lt;li class=&#34;pBu1_Bullet1&#34;&gt;
+  Cisco Prime Infrastructure 2.1.1 (with the UBF patch)
+&lt;/li&gt;
+&lt;li class=&#34;pBu1_Bullet1&#34;&gt;
+  Cisco Prime Infrastructure 2.1.0.0.87
+&lt;/li&gt;
+&lt;li class=&#34;pBu1_Bullet1&#34;&gt;
+  Cisco Prime Infrastructure 1.4.2
+&lt;/li&gt;
+&lt;li class=&#34;pBu1_Bullet1&#34;&gt;
+  Cisco Prime Infrastructure 1.4.1
+&lt;/li&gt;
+&lt;li class=&#34;pBu1_Bullet1&#34;&gt;
+  Cisco Prime Infrastructure 1.4.0.45
+&lt;/li&gt;
+&lt;p&gt;Luckily we were on 2.1.0.0.87, so it wasn&amp;rsquo;t necessary to do a minor upgrade first.&lt;/p&gt;
+&lt;h2 id=&#34;install-a-prime-infrastructure-22-server&#34;&gt; Install a Prime Infrastructure 2.2 Server&lt;/h2&gt;
+&lt;p&gt;First you need a new Server, for me this was again a VM (like the 2.1 installation)&lt;br&gt;
+You can download the Image &lt;a href=&#34;https://software.cisco.com/download/release.html?mdfid=286236028&amp;softwareid=284272932&amp;release=2.2&amp;relind=AVAILABLE&amp;rellifecycle=&amp;reltype=latest&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, just pick the right one for your case. For me it was:&lt;br&gt;
+&lt;em&gt;&lt;strong&gt;Cisco Prime Infrastructure 2.2 Virtual Appliance&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;PI-VA-2.2.0.0.158.ova&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;If you also use the VM, check the different Virtual Appliance options out in this table:&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;http://www.richardstrnad.ch/wp-content/uploads/2015/05/cisco_prime_infrastructure_vm_scaleing.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img loading=&#34;lazy&#34; class=&#34;alignnone size-full wp-image-146&#34; src=&#34;http://www.richardstrnad.ch/wp-content/uploads/2015/05/cisco_prime_infrastructure_vm_scaleing.png&#34; alt=&#34;Cisco Prime Infrastructure 2.2 VM Scaleing&#34; width=&#34;603&#34; height=&#34;784&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This should help you to pick the right VM.&lt;/p&gt;
+&lt;p&gt;Now you can just install the image through the vsphere console and finish the basic setup. I used a different IP first and changed it before i did the restore.&lt;/p&gt;
+&lt;h2 id=&#34;backup-of-your-prime-infrastructure-21&#34;&gt;Backup of your Prime Infrastructure 2.1&lt;/h2&gt;
+&lt;p&gt;After you ensured that you have one of the compatible versions, you start with the backup.&lt;br&gt;
+The easiest way is to use a remote repository, just configure one from the CLI like these&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;repository ftp
+ url ftp://your.ftp.server/path/
+ user username password plain plain
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;You&amp;rsquo;re now ready to perform the backup, this took some time for me.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;sv00019/admin# backup PI_Backup repository ftp application NCS
+% Creating backup with timestamped filename: PI_Backup-150430-1120.tar.gpg
+ Backup Started at : 04/30/15 11:20:29
+ Stage 1 of 7: Database backup ...
+ Database size: 81G
+ -- completed at 04/30/15 11:37:09
+ Stage 2 of 7: Database copy ...
+ -- completed at 04/30/15 11:37:09
+ Stage 3 of 7: Backing up support files ...
+ -- completed at 04/30/15 11:37:17
+ Stage 4 of 7: Compressing Backup ...
+ -- completed at 04/30/15 11:37:29
+ Stage 5 of 7: Building backup file ...
+ -- completed at 04/30/15 11:47:04
+ Stage 6 of 7: Encrypting backup file ...
+ -- completed at 04/30/15 11:50:01
+ Stage 7 of 7: Transferring backup file ...
+ -- completed at 04/30/15 11:51:32
+ Total Backup duration is: 0h:31m:3s
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;After that, you are ready to restore the Backup.&lt;/p&gt;
+&lt;h2 id=&#34;restore-the-backup-of-your-prime-infrastructure-21&#34;&gt;Restore the Backup of your Prime Infrastructure 2.1&lt;/h2&gt;
+&lt;p&gt;We assume here that your new Prime Infrastructure 2.2 Server is ready. First step would be to shut down the 2.1 Server and configure this IP on the 2.2 Server.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;sv00283/admin# application stop NCS
+
+Stopping Prime Infrastructure...
+
+This may take a few minutes...
+
+Prime Infrastructure successfully shutdown.
+
+
+Plug and Play Gateway is being shut down..... Please wait!!!
+
+Stop of Plug and Play Gateway Completed!!
+Stopping SAM daemon...
+Checking for SAM daemon again ...
+SAM Daemon not found...
+Stopping DA daemon ...
+Checking for DA daemon again ...
+DA Daemon not found...
+Stopping strongSwan IPsec...
+
+
+sv00283/admin(config)# interface GigabitEthernet 0
+sv00283/admin(config-GigabitEthernet)# ip address 10.192.2.30 255.255.255.0
+
+Changing the hostname or IP may result in undesired side effects,
+such as installed application(s) being restarted.
+Are you sure you want to proceed? [y/n] y
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;I stopped the application first, just prevent any possible issues.&lt;br&gt;
+Then i added the same remote repository as i used for the backup&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;repository ftp
+url ftp://your.ftp.server/path/
+user username password plain plain
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;After this step, you are ready for the restore. Plan some time for this to finish!&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;50
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;51
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;52
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;53
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;54
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;55
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;sv00283/admin# restore PI_Backup-150430-1120.tar.gpg repository nas001 application NCS
+
+* NOTE *
+If the system console is disconnected or got cleared on session timeout
+run &amp;#39;show restore log&amp;#39; to see the output of the last restore session.
+
+Restore will restart the application services. Continue? (yes/no) [yes] ?
+
+DO NOT press ^C while the restoration is in progress
+Aborting restore with a ^C may leave the system in a unrecoverable state
+
+Initiating restore. Please wait...
+Restore Started at 04/30/15 14:10:47
+Stage 1 of 9: Transferring backup file ...
+-- completed at 04/30/15 14:11:58
+Stage 2 of 9: Decrypting backup file ...
+-- completed at 04/30/15 14:16:04
+Stage 3 of 9: Unpacking backup file ...
+-- completed at 04/30/15 14:16:05
+Stopping strongSwan IPsec failed: starter is not running
+Stage 4 of 9: Decompressing backup ...
+-- completed at 04/30/15 14:17:10
+Stage 5 of 9: Restoring Support Files ...
+-- completed at 04/30/15 14:17:12
+Stage 6 of 9: Restoring Database Files ...
+-- completed at 04/30/15 14:17:45
+Stage 7 of 9: Recovering Database ...
+-- completed at 04/30/15 15:13:01
+Stage 8 of 9: Updating Database Schema ...
+Stage 1 of 5: Pre Migration Schema Upgrade ...
+-- completed at: 2015-04-30 15:38:25.126, Time Taken : 0 hr, 19 min, 10 sec
+Stage 2 of 5: Schema Upgrade ...
+: This could take long time based on the existing data size.
+-- completed at: 2015-04-30 15:41:42.862, Time Taken : 0 hr, 3 min, 17 sec
+Stage 3 of 5: Post Migration Schema Upgrade ...
+-- completed at: 2015-04-30 16:04:13.639, Time Taken : 0 hr, 22 min, 30 sec
+Stage 4 of 5: Enabling DB Constraints ...
+-- completed at: 2015-04-30 16:04:34.163, Time Taken : 0 hr, 0 min, 12 sec
+Stage 5 of 5: Finishing Up ...
+-- completed at: 2015-04-30 16:04:41.941, Time Taken : 0 hr, 0 min, 7 sec
+-- completed at 04/30/15 16:06:03
+Stage 9 of 9: Re-enabling Database Settings ...
+-- completed at 04/30/15 16:06:03
+Total Restore duration is: 01h:55m:16s
+INFO: Restore completed successfully.
+Starting PI Server... This may take some time
+
+Starting Prime Infrastructure...
+
+This may take a while (10 minutes or more) ...
+
+Prime Infrastructure started successfully.
+
+Starting strongSwan 5.0.1 IPsec [starter]...
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;and-thats-it-you-are-running-now-prime-infrastructure-22&#34;&gt;And that&amp;rsquo;s it, you are running now Prime Infrastructure 2.2&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.richardstrnad.ch/wp-content/uploads/2015/05/cisco_prime_infrastructure_2_2.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img loading=&#34;lazy&#34; class=&#34;alignnone size-full wp-image-147&#34; src=&#34;http://www.richardstrnad.ch/wp-content/uploads/2015/05/cisco_prime_infrastructure_2_2.png&#34; alt=&#34;Cisco Prime Infrastructure 2.2 Login Screen&#34; width=&#34;1600&#34; height=&#34;727&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Cisco ACS – Patch Install error (% Manifest file not found in the bundle)</title>
+        <link>https://www.richardstrnad.ch/2015/03/01/cisco-acs-patch-install-error-manifest-file-not-found-in-the-bundle/</link>
+        <pubDate>Sun, 01 Mar 2015 11:29:29 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2015/03/01/cisco-acs-patch-install-error-manifest-file-not-found-in-the-bundle/</guid>
+        <description>&lt;p&gt;I&amp;rsquo;m sure that it&amp;rsquo;s not the first time i felt for this …&lt;br&gt;
+Tried to install a ACS Patch this morning and got an error:&lt;br&gt;
+&amp;ldquo;&lt;strong&gt;% Manifest file not found in the bundle&lt;/strong&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;First i used the wrong command:&lt;br&gt;
+&lt;code&gt;patch install 5-4-0-46-5.tar.gpg FTP&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;ACS01/admin# patch install 5-4-0-46-5.tar.gpg FTP
+Save the current ADE-OS running configuration? (yes/no) [yes] ?
+Generating configuration...
+Saved the ADE-OS running configuration to startup successfully
+Initiating Application Patch installation...
+% Manifest file not found in the bundle
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Easy solution, use the right command! 🙂&lt;br&gt;
+&lt;code&gt;acs patch install 5-4-0-46-5.tar.gpg repository FTP&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;ACS01/admin# acs patch install 5-4-0-46-5.tar.gpg repository FTP
+Installing ACS patch requires a restart of ACS services. Continue?  (yes/no) yes
+Calculating disk size for /opt/CSCOacs/patches
+Total size of patch files are 1079 M.
+Max Size defined for patch files are 1000 M.
+WARNING: Patch of size 1079 M exceeds the allowed quota of 1000 M.
+This will not prohibit patch installation process as long as there is enough disk space.
+Please note that this indicates you should consider moving ACS to a higher disk space machine
+Stopping ACS.
+Stopping Management and View...............................................................
+Stopping Runtime.........................
+Stopping Database.....
+Stopping Ntpd....
+Cleanup..
+Stopping log forwarding .....
+Installing patch version &amp;#39;5.4.0.46.5&amp;#39;
+Installing ADE-OS 1.2 patch.  Please wait...
+Decompressing patch files 5.4.0.46.5 ...
+About to install files
+Removing old war
+Removing old war
+Removing old war
+Removing old war
+Removing old war
+Removing old war
+Removing old war
+Removing old war
+Removing old war
+/opt/CSCOacs/patches/5-4-0-46-5
+Patch &amp;#39;5-4-0-46-5&amp;#39; version &amp;#39;5.4.0.46.5&amp;#39; successfully installed
+Starting ACS ....
+
+To verify that ACS processes are running, use the
+&amp;#39;show application status acs&amp;#39; command.
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Cisco ACI –  Upgrade your ACI Fabric (1.0(2j) to 1.0(3f))</title>
+        <link>https://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/</link>
+        <pubDate>Thu, 26 Feb 2015 08:09:48 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/</guid>
+        <description>&lt;p&gt;I did a upgrade of our ACI Lab Fabric last week and documented all the steps. The upgrade is really straightforward, but hopefully this guide still helps you 🙂&lt;/p&gt;
+&lt;p&gt;First you have to catch the desired Software, get them directly from cisco. You need APIC Release image for 1.0(3f) release (aci-apic-dk9.1.0.3f.iso) and the Cisco Nexus 9000 Series ACI Mode Switch Software Release 11.0(3f) (aci-n9000-dk9.11.0.3f.bin). Get them here:&lt;br&gt;
+&lt;a href=&#34;https://software.cisco.com/download/release.html?mdfid=285968390&amp;softwareid=286278832&amp;release=1.0(3f)&amp;relind=AVAILABLE&amp;rellifecycle=&amp;reltype=all&#34; target=&#34;_blank&#34;&gt;Cisco ACI Version 1.0(3f)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I always check the MD5 sum, just to be sure that everything went right with my download.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;$ md5 aci-apic-dk9.1.0.3f.iso
+MD5 (aci-apic-dk9.1.0.3f.iso) = 6e747378ec4225ead0f27cb23aa54f02
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div id=&#34;attachment_105&#34; style=&#34;width: 1290px&#34; class=&#34;wp-caption alignnone&#34;&gt;
+  &lt;a href=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/02/2015-02-18_14-44-59.png&#34;&gt;&lt;img aria-describedby=&#34;caption-attachment-105&#34; loading=&#34;lazy&#34; class=&#34;size-full wp-image-105&#34; src=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/02/2015-02-18_14-44-59.png&#34; alt=&#34;Cisco ACI 1.0(3f) MD5 Hash&#34; width=&#34;1280&#34; height=&#34;626&#34; /&gt;&lt;/a&gt;
+  &lt;p id=&#34;caption-attachment-105&#34; class=&#34;wp-caption-text&#34;&gt;
+    Cisco ACI 1.0(3f) MD5 Hash
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The MD5 hash looks right. Check the same for the Nexus 9000 Image!&lt;/p&gt;
+&lt;h2 id=&#34;upgrade-of-the-apic-controllers&#34;&gt;Upgrade of the APIC Controllers&lt;/h2&gt;
+&lt;p&gt;We start with the upgrade of the APIC Controller, all APIC Controllers of your Fabric have to be upgraded first.&lt;br&gt;
+I did the whole upgrade through CLI, it&amp;rsquo;s also possible with the GUI but i prefer the CLI way.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Copy the Software to the APIC Controller&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@aci-lab-apic01:~&amp;gt; scp richy@10.32.32.179:Downloads/aci-apic-dk9.1.0.3f.iso .
+Password:
+aci-apic-dk9.1.0.3f.iso 100% 3175MB 102.4MB/s 00:31
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Hint: Maybe you need an additional &amp;lsquo;/&amp;rsquo; after the &amp;lsquo;:&amp;rsquo; like &amp;lsquo;user@host:/path&amp;rsquo;&lt;br&gt;
+Thanks @Jonas Walker for the information!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add the new firmware to the repository&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@aci-lab-apic01:~&amp;gt; firmware add aci-apic-dk9.1.0.3f.iso
+Firmware Image aci-apic-dk9.1.0.3f.iso is added to the repository
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;After adding the new firmware, it&amp;rsquo;s &amp;ldquo;removed&amp;rdquo; from the upload directory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@aci-lab-apic01:~&amp;gt; ls
+aci debug mit
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Wait a couple of seconds and you can now see the new added firmware in the repository&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@aci-lab-apic01:~&amp;gt; firmware list
+Name : aci-apic-dk9.1.0.3f.bin
+Type : controller
+Version : 1.0(3f)
+Size(Bytes) : 3329372160
+Release-Date : 2015-02-10T03:46:53.000+02:00
+Download-Date : 2015-02-18T16:37:29.580+02:00
+
+Name : aci-catalog-dk9.1.0.3f.bin
+Type : catalog
+Version : 1.0(3f)
+Size(Bytes) : 18064
+Release-Date : 2015-02-10T02:27:12.000+02:00
+Download-Date : 2015-02-18T16:37:31.554+02:00
+
+Name : aci-catalog-dk9.1.0.2j.bin
+Type : catalog
+Version : 1.0(2j)
+Size(Bytes) : 17493
+Release-Date : 2014-11-11T18:58:18.000+02:00
+Download-Date : 2015-01-31T05:57:47.354+02:00
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Now you can start the controller upgrade, it&amp;rsquo;s automatically done on all APIC Controllers, one at a time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@aci-lab-apic01:~&amp;gt; firmware upgrade controllers aci-apic-dk9.1.0.3f.bin
+Firmware Upgrade on Controllers has been scheduled.
+The upgrade will be performed on one controller at a time in the background.
+To check the upgrade status, use &amp;#39;firmware upgrade status node &amp;lt;node-id&amp;gt;&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Then you can check the status of the upgrade&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@aci-lab-apic01:~&amp;gt; firmware upgrade status
+Node-Id Role Current-Firmware Target-Firmware Upgrade-Status Progress-Percent(if inprogress)
+----------------------------------------------------------------------------------------------------------------------
+&amp;lt;strong&amp;gt;1 controller 1.0(2j) apic-1.0(3f) inqueue 0&amp;lt;/strong&amp;gt;
+101 spine n9000-11.0(2j) notscheduled 0
+111 leaf n9000-11.0(2j) notscheduled 0
+112 leaf n9000-11.0(2j) notscheduled 0
+
+Legend:
+notscheduled - Upgrade has NOT been scheduled
+scheduled - Upgrade has been scheduled at a future time
+queued - Node is waiting for token from scheduler(permission to upgrade)
+inprogress - Image installation is currently in progress on node
+completeok - Upgrade successful
+completenok - Upgrade failed
+unknown - Node unreachable
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;After some minutes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@aci-lab-apic01:~&amp;gt; firmware upgrade status
+Node-Id Role Current-Firmware Target-Firmware Upgrade-Status Progress-Percent(if inprogress)
+----------------------------------------------------------------------------------------------------------------------
+&amp;lt;strong&amp;gt;1 controller 1.0(2j) apic-1.0(3f) inprogress 75
+&amp;lt;/strong&amp;gt;101 spine n9000-11.0(2j) notscheduled 0
+111 leaf n9000-11.0(2j) notscheduled 0
+112 leaf n9000-11.0(2j) notscheduled 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;The Controllers do an automatic reboot, so if you just have one APIC in your Fabric, you definitely will be kicked off&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@aci-lab-apic01:~&amp;gt;
+Broadcast message from root@aci-lab-apic01
+(unknown) at 15:47 ...
+
+The system is going down for reboot NOW!
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;As soon as the APIC Controller is back up you can check the firmware upgrade status&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@aci-lab-apic01:~&amp;gt; firmware upgrade status node 1
+Node-Id Role Current-Firmware Target-Firmware Upgrade-Status Progress-Percent(if inprogress)
+----------------------------------------------------------------------------------------------------------------------
+1 controller apic-1.0(3f) apic-1.0(3f) completeok 100
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;upgrade-of-the-nexus-9000-spine-and-leaf-switches&#34;&gt;Upgrade of the Nexus 9000 Spine and Leaf switches&lt;/h2&gt;
+&lt;p&gt;After all the Fabric Controllers are updated, you can proceed to upgrade your Nexus 9000 Spine and Leaf Switches.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Copy the Nexus 9000 Software to the APIC Controller&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@aci-lab-apic01:~&amp;gt; scp richy@10.32.32.179:Downloads/aci-n9000-dk9.11.0.3f.bin .
+Password:
+aci-n9000-dk9.11.0.3f.bin 100% 495MB 99.1MB/s 00:05
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Also add the Nexus 9000 Software to the Firmware Repository&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@aci-lab-apic01:~&amp;gt; firmware add aci-n9000-dk9.11.0.3f.bin
+Firmware Image aci-n9000-dk9.11.0.3f.bin is added to the repository
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Check that the software was added succesfully to the repository&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@aci-lab-apic01:~&amp;gt; firmware list
+Name : aci-n9000-dk9.11.0.3f.bin
+Type : switch
+Version : 11.0(3f)
+Size(Bytes) : 519376842
+Release-Date : 2015-02-10T02:47:47.000+01:00
+Download-Date : 2015-02-18T15:53:28.874+01:00
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;You now can start the upgrade on the switches, in a production environment you should split the upgrade to make it undisruptive. As this is just my lab, i booted all the switches at the same time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@aci-lab-apic01:~&amp;gt; firmware upgrade switch node 101 aci-n9000-dk9.11.0.3f.bin
+Firmware Installation on Switch Scheduled
+To check the upgrade status, use &amp;#39;firmware upgrade status node &amp;lt;node-id&amp;gt;&amp;#39;
+
+admin@aci-lab-apic01:~&amp;gt; firmware upgrade switch node 111 aci-n9000-dk9.11.0.3f.bin
+Firmware Installation on Switch Scheduled
+To check the upgrade status, use &amp;#39;firmware upgrade status node &amp;lt;node-id&amp;gt;&amp;#39;
+
+admin@aci-lab-apic01:~&amp;gt; firmware upgrade switch node 112 aci-n9000-dk9.11.0.3f.bin
+Firmware Installation on Switch Scheduled
+To check the upgrade status, use &amp;#39;firmware upgrade status node &amp;lt;node-id&amp;gt;&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;You can check the upgrade status with the same command here&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@aci-lab-apic01:~&amp;gt; firmware upgrade status
+Node-Id Role Current-Firmware Target-Firmware Upgrade-Status Progress-Percent(if inprogress)
+----------------------------------------------------------------------------------------------------------------------
+1 controller apic-1.0(3f) apic-1.0(3f) completeok 100
+101 spine n9000-11.0(2j) n9000-11.0(3f) inprogress 5
+111 leaf n9000-11.0(2j) n9000-11.0(3f) inprogress 5
+112 leaf n9000-11.0(2j) n9000-11.0(3f) inprogress 5
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;The switches also do an automatic reboot after the upgrade&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@aci-lab-apic01:~&amp;gt; firmware upgrade status
+Node-Id Role Current-Firmware Target-Firmware Upgrade-Status Progress-Percent(if inprogress)
+----------------------------------------------------------------------------------------------------------------------
+1 controller apic-1.0(3f) apic-1.0(3f) completeok 100
+101 spine unknown unknown unknown unknown
+111 leaf unknown unknown unknown unknown
+112 leaf unknown unknown unknown unknown
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;After all the switches booted, you should see them all with a status of &amp;ldquo;completeok&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@aci-lab-apic01:~&amp;gt; firmware upgrade status
+Node-Id Role Current-Firmware Target-Firmware Upgrade-Status Progress-Percent(if inprogress)
+----------------------------------------------------------------------------------------------------------------------
+1 controller apic-1.0(3f) apic-1.0(3f) completeok 100
+101 spine n9000-11.0(3f) n9000-11.0(3f) completeok 100
+111 leaf n9000-11.0(3f) n9000-11.0(3f) completeok 100
+112 leaf n9000-11.0(3f) n9000-11.0(3f) completeok 100
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Final check of the current software version&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@aci-lab-apic01:~&amp;gt; show version
+# Executing command: &amp;#39;version&amp;#39;
+node type node id node name version
+---------- ------- --------------- --------------
+controller 1 aci-lab-apic01 1.0(3f)
+spine 101 aci-lab-spine01 n9000-11.0(3f)
+leaf 111 aci-lab-leaf01 n9000-11.0(3f)
+leaf 112 aci-lab-leaf02 n9000-11.0(3f)
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;thats-it-you-just-upgraded-your-aci-fabric-with-success&#34;&gt;That&amp;rsquo;s it! You just upgraded your ACI Fabric with success.&lt;/h3&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

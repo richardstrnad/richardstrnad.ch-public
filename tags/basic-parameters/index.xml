@@ -1,21 +1,79 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Basic Parameters on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/basic-parameters/</link>
-    <description>Recent content in Basic Parameters on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 27 Oct 2021 05:57:36 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/basic-parameters/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to read out the used ACI basic parameters</title>
-      <link>https://www.richardstrnad.ch/2021/10/27/how-to-read-out-the-used-aci-basic-parameters/</link>
-      <pubDate>Wed, 27 Oct 2021 05:57:36 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2021/10/27/how-to-read-out-the-used-aci-basic-parameters/</guid>
-      <description>It happend to me more than once, that i needed the basic parameters that were used during the initial setup of the Fabric. For example if you configure a standby APIC later on, or if you (for whatever reason) reset and APIC and redo the initial configuration dialog.
-Of course, we always document everything we do, so we could simply look the information up in the documentation! But there is a faster way, just hop onto one of the APICs and use a small cat command.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Basic Parameters on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/basic-parameters/</link>
+        <description>Recent content in Basic Parameters on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 27 Oct 2021 05:57:36 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/basic-parameters/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>How to read out the used ACI basic parameters</title>
+        <link>https://www.richardstrnad.ch/2021/10/27/how-to-read-out-the-used-aci-basic-parameters/</link>
+        <pubDate>Wed, 27 Oct 2021 05:57:36 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2021/10/27/how-to-read-out-the-used-aci-basic-parameters/</guid>
+        <description>&lt;p&gt;It happend to me more than once, that i needed the basic parameters that were used during the initial setup of the Fabric. For example if you configure a standby APIC later on, or if you (for whatever reason) reset and APIC and redo the initial configuration dialog.&lt;/p&gt;
+&lt;p&gt;Of course, we always document everything we do, so we could simply look the information up in the documentation! But there is a faster way, just hop onto one of the APICs and use a small &lt;strong&gt;cat&lt;/strong&gt; command.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;cat /data/data_admin/sam_exported.config
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;This gives you back all the of the base parameters you used, during the initial setup.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;apic01# cat /data/data_admin/sam_exported.config
+Setup for Active and Standby APIC
+
+fabricDomain = DC
+fabricID = 1
+systemName = apic01
+controllerID = 1
+tepPool = 100.64.0.0/16
+infraVlan = 3967
+GIPo = 225.0.0.0/15
+clusterSize = 3
+standbyApic = NO
+enableIPv4 = Y
+enableIPv6 = N
+firmwareVersion = 4.2(7f)
+ifcIpAddr = 100.64.0.1
+apicX = NO
+podId = 1
+oobIpAddr = 10.100.0.1/24
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Afterword&lt;/strong&gt;&lt;br&gt;
+My colleague Matthias (A daily reader of the blog), pointed out that the sam_exported.config is only present in newer version. If the command doesn&amp;rsquo;t work for you, check out the attached Technote from Cisco 🙂&lt;/p&gt;
+&lt;div class=&#34;wp-block-file&#34;&gt;
+  &lt;a href=&#34;https://community.cisco.com/kxiwq67737/attachments/kxiwq67737/12206936-discussions-aci/2289/1/technote-apic-findsetupconfigvalues.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;ACI Technote - Find Setup config values&lt;/a&gt; 
+  &lt;p&gt;
+  &lt;/p&gt;</description>
+        </item>
+        
+    </channel>
 </rss>

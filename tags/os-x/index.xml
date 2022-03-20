@@ -1,22 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>os x on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/os-x/</link>
-    <description>Recent content in os x on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 06 May 2015 07:10:01 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/os-x/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>FTP Server under Mac OS X</title>
-      <link>https://www.richardstrnad.ch/2015/05/06/ftp-server-under-mac-os-x/</link>
-      <pubDate>Wed, 06 May 2015 07:10:01 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2015/05/06/ftp-server-under-mac-os-x/</guid>
-      <description>Today a colleague of mine (Thanks Alex Passfall) showed me a simple ftp server under mac:
-1 2  pip install twisted # if not already sudo twistd -n ftp -p 21 -r Downloads   After that you can access all the files in the specified directory through ftp. Awesome stuff!
-1 2 3 4 5 6 7 8  aci-lab-as01#copy ftp://10.32.32.184/file.lic . Destination filename [file.lic]? Accessing ftp://10.32.32.184/file.lic... Loading file.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>os x on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/os-x/</link>
+        <description>Recent content in os x on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 06 May 2015 07:10:01 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/os-x/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>FTP Server under Mac OS X</title>
+        <link>https://www.richardstrnad.ch/2015/05/06/ftp-server-under-mac-os-x/</link>
+        <pubDate>Wed, 06 May 2015 07:10:01 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2015/05/06/ftp-server-under-mac-os-x/</guid>
+        <description>&lt;p&gt;Today a colleague of mine (Thanks Alex Passfall) showed me a simple ftp server under mac:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;pip install twisted # if not already
+sudo twistd -n ftp -p 21 -r Downloads
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;After that you can access all the files in the specified directory through ftp. Awesome stuff!&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;aci-lab-as01#copy ftp://10.32.32.184/file.lic .
+Destination filename [file.lic]?
+Accessing ftp://10.32.32.184/file.lic...
+Loading file.lic !
+[OK - 814/4096 bytes]
+
+814 bytes copied in 0.084 secs (9690 bytes/sec)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Thanks @&lt;a href=&#34;http://www.show-run.ch&#34; target=&#34;_blank&#34;&gt;Samuel Heinrich&lt;/a&gt; for spell checking 😉&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

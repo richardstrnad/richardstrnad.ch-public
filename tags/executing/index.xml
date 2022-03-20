@@ -1,22 +1,90 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>executing on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/executing/</link>
-    <description>Recent content in executing on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 11 Nov 2016 13:32:59 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/executing/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Error: Error executing command on leaf02. Error Code: 255</title>
-      <link>https://www.richardstrnad.ch/2016/11/11/error-error-executing-command-on-leaf02-error-code-255/</link>
-      <pubDate>Fri, 11 Nov 2016 13:32:59 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2016/11/11/error-error-executing-command-on-leaf02-error-code-255/</guid>
-      <description>I had a issue today with running remote commands on one of my fabric switches, always generated an error.
-1 2 3 4 5  apic1# fabric leaf02 show switchname ---------------------------------------------------------------- Node 102 (leaf02) ---------------------------------------------------------------- Error: Error executing command on leaf02. Error Code: 255   I tried to directly connect and found the error
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  admin@apic1:attach leaf02 This command is being deprecated on APIC controller, please use NXOS-style equivalent command # Executing command: ssh leaf02 -b 10.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>executing on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/executing/</link>
+        <description>Recent content in executing on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Fri, 11 Nov 2016 13:32:59 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/executing/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Error: Error executing command on leaf02. Error Code: 255</title>
+        <link>https://www.richardstrnad.ch/2016/11/11/error-error-executing-command-on-leaf02-error-code-255/</link>
+        <pubDate>Fri, 11 Nov 2016 13:32:59 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2016/11/11/error-error-executing-command-on-leaf02-error-code-255/</guid>
+        <description>&lt;p&gt;I had a issue today with running remote commands on one of my fabric switches, always generated an error.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;apic1# fabric leaf02 show switchname
+----------------------------------------------------------------
+ Node 102 (leaf02)
+----------------------------------------------------------------
+Error: Error executing command on leaf02. Error Code: 255
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;I tried to directly connect and found the error&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@apic1:attach leaf02
+This command is being deprecated on APIC controller, please use NXOS-style equivalent command
+# Executing command: ssh leaf02 -b 10.127.240.1
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that the RSA host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+d1:f1:c4:8a:3e:a7:df:4a:76:bf:ec:01:bb:0d:28:99.
+Please contact your system administrator.
+Add correct host key in /home/admin/.ssh/known_hosts to get rid of this message.
+Offending key in /home/admin/.ssh/known_hosts:2
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+
+Permission denied (publickey,password,keyboard-interactive).
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;I think this was the switch that i &lt;a href=&#34;https://www.richardstrnad.ch/2016/02/29/acin9k-how-to-convert-a-nexus-9000-from-aci-mode-to-standalone/&#34; target=&#34;_blank&#34;&gt;converted to NX-OS standalone mode&lt;/a&gt;, and thus it changed the host key.&lt;/p&gt;
+&lt;p&gt;The fix is easy, open the file and delete the offending key&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;vi /home/admin/.ssh/known_hosts
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;After that i was able to &lt;a href=&#34;https://www.richardstrnad.ch/2016/11/07/cisco-aci-run-commands-on-the-switches-from-your-apic/&#34; target=&#34;_blank&#34;&gt;run commands from the apic&lt;/a&gt; and also &lt;a href=&#34;https://www.richardstrnad.ch/2016/11/06/cisco-aci-connect-to-the-leafspine-switches-with-the-nx-os/&#34; target=&#34;_blank&#34;&gt;connect to the fabric switch again&lt;/a&gt;.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

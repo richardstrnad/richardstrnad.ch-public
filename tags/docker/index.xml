@@ -1,25 +1,92 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Docker on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/docker/</link>
-    <description>Recent content in Docker on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 22 Sep 2016 18:55:06 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/docker/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Docker MySQL Backup</title>
-      <link>https://www.richardstrnad.ch/2016/09/22/docker-mysql-backup/</link>
-      <pubDate>Thu, 22 Sep 2016 18:55:06 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2016/09/22/docker-mysql-backup/</guid>
-      <description>We moved an internal tool to docker (docker-compose), this includes the required MySQL Database.
-I looked for a easy solution todo a backup through mysqldump and found something great 🙂
-This is the relevant docker-compose part:
-1 2 3  mysql: networks: - back_net   If this docker-compose is running, the mysql container get the following name &amp;lsquo;ourtool_mysql_1&amp;rsquo;
-The network gets the compose name added:
-1 2 3  docker network ls NETWORK ID NAME DRIVER SCOPE 4d42f74cfe7e ourtool_pub_net macvlan local   We want our backups in the host folder /mnt/Backups/ourtool/sql (This is a nfs mounted folder).</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Docker on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/docker/</link>
+        <description>Recent content in Docker on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 22 Sep 2016 18:55:06 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/docker/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Docker MySQL Backup</title>
+        <link>https://www.richardstrnad.ch/2016/09/22/docker-mysql-backup/</link>
+        <pubDate>Thu, 22 Sep 2016 18:55:06 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2016/09/22/docker-mysql-backup/</guid>
+        <description>&lt;p&gt;We moved an internal tool to docker (docker-compose), this includes the required MySQL Database.&lt;br&gt;
+I looked for a easy solution todo a backup through mysqldump and found something great 🙂&lt;br&gt;
+This is the relevant docker-compose part:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;mysql:
+   networks:
+     - back_net
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;If this docker-compose is running, the mysql container get the following name &amp;lsquo;ourtool_mysql_1&amp;rsquo;&lt;br&gt;
+The network gets the compose name added:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;docker network ls
+NETWORK ID          NAME                          DRIVER              SCOPE
+4d42f74cfe7e        ourtool_pub_net    macvlan             local
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;We want our backups in the host folder /mnt/Backups/ourtool/sql (This is a nfs mounted folder).&lt;br&gt;
+Now we just put this information together:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;docker run -it \
+--net=ourtool_pub_net \
+-v /mnt/Backups/ourtool/sql:/var/backup \
+--rm mysql \
+sh -c &amp;amp;quot;exec mysqldump -h ourtool_mysql_1 -uroot -pYOURPASSWORD YOURDATABASE &amp;gt; /var/backup/mysql.dump&amp;amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;That&amp;rsquo;s it, it runs, after that the temporary container gets destroyed and you can find the data on the host itself (&#39;/mnt/Backups/ourtool/sql&#39; in my case)&lt;/p&gt;
+&lt;p&gt;We now just run this as a cronjob&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cat /etc/cron.daily/backup_ourtool
+&lt;span class=&#34;c1&#34;&gt;#!/bin/sh&lt;/span&gt;
+
+&lt;span class=&#34;nv&#34;&gt;FILENAME&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;quot&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;ourtool-&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;date -I&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;.sql&lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;quot&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+docker run -it &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;--net&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;ourtool_pub_net &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;-v /mnt/Backups/ourtool/sql:/var/backup &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;--rm mysql &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;sh -c &lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;quot&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; mysqldump -h ourtool_mysql_1 -uroot -pYOURPASSWORD YOURDATABASE &amp;gt; /var/backup/&lt;span class=&#34;nv&#34;&gt;$FILENAME&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;quot&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
 </rss>

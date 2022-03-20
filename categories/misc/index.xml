@@ -1,21 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Misc on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/categories/misc/</link>
-    <description>Recent content in Misc on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jan 2017 07:00:39 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/categories/misc/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Happy New Year &amp; Resolutions for 2017</title>
-      <link>https://www.richardstrnad.ch/2017/01/01/happy-new-year-resolutions-for-2017/</link>
-      <pubDate>Sun, 01 Jan 2017 07:00:39 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2017/01/01/happy-new-year-resolutions-for-2017/</guid>
-      <description>2016 is over, at least here in switzerland. It was an interesting year for me, i attend my first Cisco Live (@Vegas) and had to recertify my CCIE for the first time. As the new year starts i&amp;rsquo;m taking a new challenge @Netcloud as Network Engineer. I have different things that i want to accomplish in 2017.
-   Title Description     Run on 200 days About 4 Days a week, this will be hard but should be doable   First Marathon Already booked, Berlin in September   Read 26 Books I will create a list and keep track of this on a separate post   Improve my Spanish I learned some basic Spanish skills last year and put them in use on my trip to central america, but i definitely want improve   Get my CCIE Datacenter I&amp;rsquo;m already working on this   Blog Redesign An easy one, but it&amp;rsquo;s time for a new look    </description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Misc on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/categories/misc/</link>
+        <description>Recent content in Misc on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 01 Jan 2017 07:00:39 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/categories/misc/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Happy New Year &amp; Resolutions for 2017</title>
+        <link>https://www.richardstrnad.ch/2017/01/01/happy-new-year-resolutions-for-2017/</link>
+        <pubDate>Sun, 01 Jan 2017 07:00:39 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2017/01/01/happy-new-year-resolutions-for-2017/</guid>
+        <description>&lt;p&gt;2016 is over, at least here in switzerland. It was an interesting year for me, i attend my first Cisco Live (@Vegas) and had to recertify my CCIE for the first time. As the new year starts i&amp;rsquo;m taking a new challenge @Netcloud as Network Engineer. I have different things that i want to accomplish in 2017.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Title&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Run on 200 days&lt;/td&gt;
+&lt;td&gt;About 4 Days a week, this will be hard but should be doable&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;First Marathon&lt;/td&gt;
+&lt;td&gt;Already booked, &lt;a href=&#34;http://www.bmw-berlin-marathon.com/en/&#34; target=&#34;_blank&#34;&gt;Berlin&lt;/a&gt; in September&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Read 26 Books&lt;/td&gt;
+&lt;td&gt;I will create a list and keep track of this on a separate post&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Improve my Spanish&lt;/td&gt;
+&lt;td&gt;I learned some basic Spanish skills last year and put them in use on my trip to central america, but i definitely want improve&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Get my CCIE Datacenter&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;I&amp;rsquo;m already working on this&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Blog Redesign&lt;/td&gt;
+&lt;td&gt;An easy one, but it&amp;rsquo;s time for a new look&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

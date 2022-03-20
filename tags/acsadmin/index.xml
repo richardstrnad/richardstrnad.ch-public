@@ -1,22 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>ACSAdmin on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/acsadmin/</link>
-    <description>Recent content in ACSAdmin on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 16 Mar 2015 15:34:32 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/acsadmin/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cisco ACS – Default User and Password for the GUI</title>
-      <link>https://www.richardstrnad.ch/2015/03/16/cisco-acs-default-user-and-password-for-the-gui/</link>
-      <pubDate>Mon, 16 Mar 2015 15:34:32 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2015/03/16/cisco-acs-default-user-and-password-for-the-gui/</guid>
-      <description>Just for documentation reason, and for everyone out there that is looking for this information 🙂
-Default ACS User/Password for the GUI.
-1 2  Username: ACSAdmin Password: default   After that, you get promoted for a new password.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>ACSAdmin on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/acsadmin/</link>
+        <description>Recent content in ACSAdmin on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 16 Mar 2015 15:34:32 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/acsadmin/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Cisco ACS – Default User and Password for the GUI</title>
+        <link>https://www.richardstrnad.ch/2015/03/16/cisco-acs-default-user-and-password-for-the-gui/</link>
+        <pubDate>Mon, 16 Mar 2015 15:34:32 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2015/03/16/cisco-acs-default-user-and-password-for-the-gui/</guid>
+        <description>&lt;p&gt;Just for documentation reason, and for everyone out there that is looking for this information 🙂&lt;/p&gt;
+&lt;p&gt;Default ACS User/Password for the GUI.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;Username: ACSAdmin
+Password: default
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;After that, you get promoted for a new password.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

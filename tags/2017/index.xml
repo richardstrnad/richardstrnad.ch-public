@@ -1,32 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>2017 on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/2017/</link>
-    <description>Recent content in 2017 on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 06 Feb 2017 15:23:50 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/2017/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cisco Champion 2017</title>
-      <link>https://www.richardstrnad.ch/2017/02/06/cisco-champion-2017/</link>
-      <pubDate>Mon, 06 Feb 2017 15:23:50 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2017/02/06/cisco-champion-2017/</guid>
-      <description>I just got the mail that i was accepted to the Cisco Champions 2017 program, this is the first year for me!
-What makes a Cisco Champion? Quote from Cisco.com:
- Passion, plus a desire to share their perspectives with the community. There are Cisco Champions all over the world. They represent a variety of segments across the IT industry. And they offer their time to help others learn about Cisco and connect with Cisco in unique ways.</description>
-    </item>
-    
-    <item>
-      <title>Happy New Year &amp; Resolutions for 2017</title>
-      <link>https://www.richardstrnad.ch/2017/01/01/happy-new-year-resolutions-for-2017/</link>
-      <pubDate>Sun, 01 Jan 2017 07:00:39 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2017/01/01/happy-new-year-resolutions-for-2017/</guid>
-      <description>2016 is over, at least here in switzerland. It was an interesting year for me, i attend my first Cisco Live (@Vegas) and had to recertify my CCIE for the first time. As the new year starts i&amp;rsquo;m taking a new challenge @Netcloud as Network Engineer. I have different things that i want to accomplish in 2017.
-   Title Description     Run on 200 days About 4 Days a week, this will be hard but should be doable   First Marathon Already booked, Berlin in September   Read 26 Books I will create a list and keep track of this on a separate post   Improve my Spanish I learned some basic Spanish skills last year and put them in use on my trip to central america, but i definitely want improve   Get my CCIE Datacenter I&amp;rsquo;m already working on this   Blog Redesign An easy one, but it&amp;rsquo;s time for a new look    </description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>2017 on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/2017/</link>
+        <description>Recent content in 2017 on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 06 Feb 2017 15:23:50 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/2017/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Cisco Champion 2017</title>
+        <link>https://www.richardstrnad.ch/2017/02/06/cisco-champion-2017/</link>
+        <pubDate>Mon, 06 Feb 2017 15:23:50 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2017/02/06/cisco-champion-2017/</guid>
+        <description>&lt;p&gt;I just got the mail that i was accepted to the Cisco Champions 2017 program, this is the first year for me!&lt;/p&gt;
+&lt;p&gt;What makes a Cisco Champion?
+&lt;a href=&#34;https://communities.cisco.com/docs/DOC-54595&#34; target=&#34;_blank&#34;&gt;Quote from Cisco.com&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Passion, plus a desire to share their perspectives with the community. There are Cisco Champions all over the world. They represent a variety of segments across the IT industry. And they offer their time to help others learn about Cisco and connect with Cisco in unique ways.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Thanks to Cisco for the opportunity to be member of this program!&lt;/p&gt;
+&lt;center&gt;
+  &lt;a href=&#34;https://www.richardstrnad.ch/wp-content/uploads/2017/02/ciscochampion2017-512.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.richardstrnad.ch/wp-content/uploads/2017/02/ciscochampion2017-512.png&#34; alt=&#34;&#34; width=&#34;200&#34; height=&#34;200&#34; class=&#34;alignnone size-full wp-image-406&#34; /&gt;&lt;/a&gt;
+&lt;/center&gt;</description>
+        </item>
+        <item>
+        <title>Happy New Year &amp; Resolutions for 2017</title>
+        <link>https://www.richardstrnad.ch/2017/01/01/happy-new-year-resolutions-for-2017/</link>
+        <pubDate>Sun, 01 Jan 2017 07:00:39 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2017/01/01/happy-new-year-resolutions-for-2017/</guid>
+        <description>&lt;p&gt;2016 is over, at least here in switzerland. It was an interesting year for me, i attend my first Cisco Live (@Vegas) and had to recertify my CCIE for the first time. As the new year starts i&amp;rsquo;m taking a new challenge @Netcloud as Network Engineer. I have different things that i want to accomplish in 2017.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Title&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Run on 200 days&lt;/td&gt;
+&lt;td&gt;About 4 Days a week, this will be hard but should be doable&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;First Marathon&lt;/td&gt;
+&lt;td&gt;Already booked, &lt;a href=&#34;http://www.bmw-berlin-marathon.com/en/&#34; target=&#34;_blank&#34;&gt;Berlin&lt;/a&gt; in September&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Read 26 Books&lt;/td&gt;
+&lt;td&gt;I will create a list and keep track of this on a separate post&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Improve my Spanish&lt;/td&gt;
+&lt;td&gt;I learned some basic Spanish skills last year and put them in use on my trip to central america, but i definitely want improve&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Get my CCIE Datacenter&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;I&amp;rsquo;m already working on this&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Blog Redesign&lt;/td&gt;
+&lt;td&gt;An easy one, but it&amp;rsquo;s time for a new look&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

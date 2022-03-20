@@ -1,67 +1,87 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Pages on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/page/</link>
-    <description>Recent content in Pages on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/page/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Archives</title>
-      <link>https://www.richardstrnad.ch/archives/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/archives/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://www.richardstrnad.ch/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/about/</guid>
-      <description>Richard Strnad
-Senior Network Engineer
-CCIE #43536 R&amp;S  Qualifications:
-CCIE Enterprise Infrastructure (R&amp;S) #43536
-DevNet 500
-Cisco Certified DevNet Professional
-Red Hat Certified Specialist in Ansible Automation (EX407)  Professional experiences   Senior Network Engineer (Full time employee)
-Netcloud AG, www.netcloud.ch
-Industry: Information Technology &amp; Services
-Privately held company, 150-250 employees     Senior Network Engineer (Full time employee)
-eternalNet AG, www.eternalnet.ch
-Industry: Information Technology &amp; Services</description>
-    </item>
-    
-    <item>
-      <title>Categories</title>
-      <link>https://www.richardstrnad.ch/categories/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/categories/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Links</title>
-      <link>https://www.richardstrnad.ch/links/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/links/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Search</title>
-      <link>https://www.richardstrnad.ch/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/search/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Pages on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/page/</link>
+        <description>Recent content in Pages on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Archives</title>
+        <link>https://www.richardstrnad.ch/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>About</title>
+        <link>https://www.richardstrnad.ch/about/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/about/</guid>
+        <description>&lt;p&gt;
+  &lt;strong&gt;Richard Strnad&lt;br /&gt; &lt;/strong&gt;Senior Network Engineer&lt;br /&gt; CCIE #43536 R&amp;S
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;strong&gt;Qualifications:&lt;/strong&gt;&lt;br /&gt; &lt;em&gt;&lt;a href=&#34;https://www.youracclaim.com/badges/894926fa-a187-4fb1-b5ec-1f093381c82c&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CCIE Enterprise Infrastructure (R&amp;S) #43536&lt;/a&gt;&lt;br /&gt; &lt;a href=&#34;https://www.youracclaim.com/badges/3e8bff96-26dc-4e13-8121-8fcaf6c27d02&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;DevNet 500&lt;/a&gt;&lt;br /&gt; &lt;a href=&#34;https://www.youracclaim.com/badges/cc6038ec-2e82-468a-b9cf-ae035b8bdd8b&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Cisco Certified DevNet Professional&lt;/a&gt;&lt;br /&gt; Red Hat Certified Specialist in Ansible Automation (EX407)&lt;/em&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;strong&gt;Professional experiences&lt;/strong&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    Senior Network Engineer &lt;em&gt;(Full time employee)&lt;/em&gt;&lt;br /&gt; Netcloud AG, &lt;a href=&#34;http://www.netcloud.ch/&#34;&gt;www.netcloud.ch&lt;/a&gt;&lt;br /&gt; Industry: Information Technology &amp; Services&lt;br /&gt; Privately held company, 150-250 employees
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    Senior Network Engineer &lt;em&gt;(Full time employee)&lt;/em&gt;&lt;br /&gt; eternalNet AG, &lt;a href=&#34;http://www.eternalnet.ch/&#34;&gt;www.eternalnet.ch&lt;/a&gt;&lt;br /&gt; Industry: Information Technology &amp; Services&lt;br /&gt; Privately held company, 1-10 employee
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    Network Engineer &lt;em&gt;(Full time employee)&lt;br /&gt; &lt;/em&gt;Alpiq InTec West AG, &lt;a href=&#34;http://www.alpiq-intec.ch/&#34;&gt;www.alpiq-intec.ch&lt;/a&gt;&lt;a href=&#34;http://www.eternalnet.ch/&#34;&gt;&lt;br /&gt; &lt;/a&gt;Industry: Information Technology &amp; Services
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    Network Engineer &lt;em&gt;&lt;em&gt;(Full time employee)&lt;br /&gt; &lt;/em&gt;&lt;/em&gt;Genotec AG, &lt;a href=&#34;http://www.genotec.ch/&#34;&gt;www.genotec.ch&lt;br /&gt; &lt;/a&gt;Industry: Information Technology &amp; Services&lt;br /&gt; Privately held company, 11-50 employees
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+  &lt;strong&gt;Educational background&lt;/strong&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    Aug 2004 – Aug 2008&lt;br /&gt; GIBM – Gewerblich-industrielle Berufsfachschule Muttenz,&lt;br /&gt; Information Technology &amp; Services, Informatiker EFZ
+  &lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+        <item>
+        <title>Categories</title>
+        <link>https://www.richardstrnad.ch/categories/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/categories/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Links</title>
+        <link>https://www.richardstrnad.ch/links/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/links/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://www.richardstrnad.ch/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
 </rss>

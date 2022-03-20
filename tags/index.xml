@@ -1,1451 +1,1291 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/</link>
-    <description>Recent content in Tags on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 28 Feb 2022 18:00:00 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>shortcuts</title>
-      <link>https://www.richardstrnad.ch/tags/shortcuts/</link>
-      <pubDate>Mon, 28 Feb 2022 18:00:00 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/shortcuts/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Text Editor</title>
-      <link>https://www.richardstrnad.ch/tags/text-editor/</link>
-      <pubDate>Mon, 28 Feb 2022 18:00:00 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/text-editor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VIM</title>
-      <link>https://www.richardstrnad.ch/tags/vim/</link>
-      <pubDate>Mon, 28 Feb 2022 18:00:00 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/vim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Apple</title>
-      <link>https://www.richardstrnad.ch/tags/apple/</link>
-      <pubDate>Wed, 16 Feb 2022 07:45:46 +0100</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/apple/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>macOS</title>
-      <link>https://www.richardstrnad.ch/tags/macos/</link>
-      <pubDate>Wed, 16 Feb 2022 07:45:46 +0100</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/macos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sudo</title>
-      <link>https://www.richardstrnad.ch/tags/sudo/</link>
-      <pubDate>Wed, 16 Feb 2022 07:45:46 +0100</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/sudo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TouchID</title>
-      <link>https://www.richardstrnad.ch/tags/touchid/</link>
-      <pubDate>Wed, 16 Feb 2022 07:45:46 +0100</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/touchid/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ACI</title>
-      <link>https://www.richardstrnad.ch/tags/aci/</link>
-      <pubDate>Thu, 10 Feb 2022 08:00:00 +0100</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/aci/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cisco</title>
-      <link>https://www.richardstrnad.ch/tags/cisco/</link>
-      <pubDate>Thu, 10 Feb 2022 08:00:00 +0100</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/cisco/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Discoveryissues</title>
-      <link>https://www.richardstrnad.ch/tags/discoveryissues/</link>
-      <pubDate>Thu, 10 Feb 2022 08:00:00 +0100</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/discoveryissues/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Replacement</title>
-      <link>https://www.richardstrnad.ch/tags/replacement/</link>
-      <pubDate>Thu, 10 Feb 2022 08:00:00 +0100</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/replacement/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spine</title>
-      <link>https://www.richardstrnad.ch/tags/spine/</link>
-      <pubDate>Thu, 10 Feb 2022 08:00:00 +0100</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/spine/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>API</title>
-      <link>https://www.richardstrnad.ch/tags/api/</link>
-      <pubDate>Wed, 24 Nov 2021 12:41:48 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/api/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>automation</title>
-      <link>https://www.richardstrnad.ch/tags/automation/</link>
-      <pubDate>Wed, 24 Nov 2021 12:41:48 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/automation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Restconf</title>
-      <link>https://www.richardstrnad.ch/tags/restconf/</link>
-      <pubDate>Wed, 24 Nov 2021 12:41:48 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/restconf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>APIC</title>
-      <link>https://www.richardstrnad.ch/tags/apic/</link>
-      <pubDate>Wed, 27 Oct 2021 05:57:36 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/apic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Basic Parameters</title>
-      <link>https://www.richardstrnad.ch/tags/basic-parameters/</link>
-      <pubDate>Wed, 27 Oct 2021 05:57:36 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/basic-parameters/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>config</title>
-      <link>https://www.richardstrnad.ch/tags/config/</link>
-      <pubDate>Wed, 27 Oct 2021 05:57:36 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/config/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Setup</title>
-      <link>https://www.richardstrnad.ch/tags/setup/</link>
-      <pubDate>Wed, 27 Oct 2021 05:57:36 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/setup/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ISE</title>
-      <link>https://www.richardstrnad.ch/tags/ise/</link>
-      <pubDate>Fri, 30 Jul 2021 18:05:58 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/ise/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NDB</title>
-      <link>https://www.richardstrnad.ch/tags/ndb/</link>
-      <pubDate>Fri, 30 Jul 2021 18:05:58 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/ndb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TACACS</title>
-      <link>https://www.richardstrnad.ch/tags/tacacs/</link>
-      <pubDate>Fri, 30 Jul 2021 18:05:58 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/tacacs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>custom</title>
-      <link>https://www.richardstrnad.ch/tags/custom/</link>
-      <pubDate>Wed, 16 Dec 2020 19:00:24 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/custom/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ESX</title>
-      <link>https://www.richardstrnad.ch/tags/esx/</link>
-      <pubDate>Wed, 16 Dec 2020 19:00:24 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/esx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hyperflex</title>
-      <link>https://www.richardstrnad.ch/tags/hyperflex/</link>
-      <pubDate>Wed, 16 Dec 2020 19:00:24 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/hyperflex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Image</title>
-      <link>https://www.richardstrnad.ch/tags/image/</link>
-      <pubDate>Wed, 16 Dec 2020 19:00:24 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/image/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ISO</title>
-      <link>https://www.richardstrnad.ch/tags/iso/</link>
-      <pubDate>Wed, 16 Dec 2020 19:00:24 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/iso/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>100G</title>
-      <link>https://www.richardstrnad.ch/tags/100g/</link>
-      <pubDate>Mon, 29 Jul 2019 17:30:21 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/100g/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>40G</title>
-      <link>https://www.richardstrnad.ch/tags/40g/</link>
-      <pubDate>Mon, 29 Jul 2019 17:30:21 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/40g/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>convert</title>
-      <link>https://www.richardstrnad.ch/tags/convert/</link>
-      <pubDate>Mon, 29 Jul 2019 17:30:21 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/convert/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Downlink</title>
-      <link>https://www.richardstrnad.ch/tags/downlink/</link>
-      <pubDate>Mon, 29 Jul 2019 17:30:21 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/downlink/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Uplink</title>
-      <link>https://www.richardstrnad.ch/tags/uplink/</link>
-      <pubDate>Mon, 29 Jul 2019 17:30:21 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/uplink/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AVI</title>
-      <link>https://www.richardstrnad.ch/tags/avi/</link>
-      <pubDate>Fri, 08 Mar 2019 21:00:20 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/avi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AVI Networks</title>
-      <link>https://www.richardstrnad.ch/tags/avi-networks/</link>
-      <pubDate>Fri, 08 Mar 2019 21:00:20 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/avi-networks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>factory reset</title>
-      <link>https://www.richardstrnad.ch/tags/factory-reset/</link>
-      <pubDate>Fri, 08 Mar 2019 21:00:20 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/factory-reset/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Loadbalancer</title>
-      <link>https://www.richardstrnad.ch/tags/loadbalancer/</link>
-      <pubDate>Fri, 08 Mar 2019 21:00:20 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/loadbalancer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>restart</title>
-      <link>https://www.richardstrnad.ch/tags/restart/</link>
-      <pubDate>Fri, 08 Mar 2019 21:00:20 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/restart/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vantage</title>
-      <link>https://www.richardstrnad.ch/tags/vantage/</link>
-      <pubDate>Fri, 08 Mar 2019 21:00:20 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/vantage/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>10G</title>
-      <link>https://www.richardstrnad.ch/tags/10g/</link>
-      <pubDate>Mon, 01 Oct 2018 18:00:28 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/10g/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>QSFP</title>
-      <link>https://www.richardstrnad.ch/tags/qsfp/</link>
-      <pubDate>Mon, 01 Oct 2018 18:00:28 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/qsfp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>aci mode</title>
-      <link>https://www.richardstrnad.ch/tags/aci-mode/</link>
-      <pubDate>Wed, 12 Apr 2017 21:13:17 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/aci-mode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nexus</title>
-      <link>https://www.richardstrnad.ch/tags/nexus/</link>
-      <pubDate>Wed, 12 Apr 2017 21:13:17 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/nexus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nexus 9000</title>
-      <link>https://www.richardstrnad.ch/tags/nexus-9000/</link>
-      <pubDate>Wed, 12 Apr 2017 21:13:17 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/nexus-9000/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NX-OS</title>
-      <link>https://www.richardstrnad.ch/tags/nx-os/</link>
-      <pubDate>Wed, 12 Apr 2017 21:13:17 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/nx-os/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>standalone</title>
-      <link>https://www.richardstrnad.ch/tags/standalone/</link>
-      <pubDate>Wed, 12 Apr 2017 21:13:17 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/standalone/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>5548UP</title>
-      <link>https://www.richardstrnad.ch/tags/5548up/</link>
-      <pubDate>Thu, 30 Mar 2017 17:00:55 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/5548up/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>6324</title>
-      <link>https://www.richardstrnad.ch/tags/6324/</link>
-      <pubDate>Thu, 30 Mar 2017 17:00:55 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/6324/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>FI</title>
-      <link>https://www.richardstrnad.ch/tags/fi/</link>
-      <pubDate>Thu, 30 Mar 2017 17:00:55 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/fi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>UCS</title>
-      <link>https://www.richardstrnad.ch/tags/ucs/</link>
-      <pubDate>Thu, 30 Mar 2017 17:00:55 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/ucs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>UCS-Mini</title>
-      <link>https://www.richardstrnad.ch/tags/ucs-mini/</link>
-      <pubDate>Thu, 30 Mar 2017 17:00:55 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/ucs-mini/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>BFD</title>
-      <link>https://www.richardstrnad.ch/tags/bfd/</link>
-      <pubDate>Thu, 23 Mar 2017 18:30:47 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/bfd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>BGP</title>
-      <link>https://www.richardstrnad.ch/tags/bgp/</link>
-      <pubDate>Thu, 23 Mar 2017 18:30:47 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/bgp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bogus</title>
-      <link>https://www.richardstrnad.ch/tags/bogus/</link>
-      <pubDate>Thu, 23 Mar 2017 18:30:47 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/bogus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>error</title>
-      <link>https://www.richardstrnad.ch/tags/error/</link>
-      <pubDate>Thu, 23 Mar 2017 18:30:47 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/error/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ICMP</title>
-      <link>https://www.richardstrnad.ch/tags/icmp/</link>
-      <pubDate>Thu, 23 Mar 2017 18:30:47 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/icmp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>IP Redirect</title>
-      <link>https://www.richardstrnad.ch/tags/ip-redirect/</link>
-      <pubDate>Thu, 23 Mar 2017 18:30:47 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/ip-redirect/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>2017</title>
-      <link>https://www.richardstrnad.ch/tags/2017/</link>
-      <pubDate>Mon, 06 Feb 2017 15:23:50 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/2017/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Champion</title>
-      <link>https://www.richardstrnad.ch/tags/champion/</link>
-      <pubDate>Mon, 06 Feb 2017 15:23:50 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/champion/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ccie</title>
-      <link>https://www.richardstrnad.ch/tags/ccie/</link>
-      <pubDate>Sun, 01 Jan 2017 07:00:39 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/ccie/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Happy New Year</title>
-      <link>https://www.richardstrnad.ch/tags/happy-new-year/</link>
-      <pubDate>Sun, 01 Jan 2017 07:00:39 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/happy-new-year/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Misc</title>
-      <link>https://www.richardstrnad.ch/tags/misc/</link>
-      <pubDate>Sun, 01 Jan 2017 07:00:39 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/misc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recertify</title>
-      <link>https://www.richardstrnad.ch/tags/recertify/</link>
-      <pubDate>Sun, 01 Jan 2017 07:00:39 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/recertify/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Resolutions</title>
-      <link>https://www.richardstrnad.ch/tags/resolutions/</link>
-      <pubDate>Sun, 01 Jan 2017 07:00:39 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/resolutions/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Targets</title>
-      <link>https://www.richardstrnad.ch/tags/targets/</link>
-      <pubDate>Sun, 01 Jan 2017 07:00:39 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/targets/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>255</title>
-      <link>https://www.richardstrnad.ch/tags/255/</link>
-      <pubDate>Fri, 11 Nov 2016 13:32:59 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/255/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>attach</title>
-      <link>https://www.richardstrnad.ch/tags/attach/</link>
-      <pubDate>Fri, 11 Nov 2016 13:32:59 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/attach/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>executing</title>
-      <link>https://www.richardstrnad.ch/tags/executing/</link>
-      <pubDate>Fri, 11 Nov 2016 13:32:59 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/executing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>host key</title>
-      <link>https://www.richardstrnad.ch/tags/host-key/</link>
-      <pubDate>Fri, 11 Nov 2016 13:32:59 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/host-key/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Leaf</title>
-      <link>https://www.richardstrnad.ch/tags/leaf/</link>
-      <pubDate>Fri, 11 Nov 2016 13:32:59 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/leaf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>command</title>
-      <link>https://www.richardstrnad.ch/tags/command/</link>
-      <pubDate>Mon, 07 Nov 2016 08:32:33 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/command/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fabric</title>
-      <link>https://www.richardstrnad.ch/tags/fabric/</link>
-      <pubDate>Mon, 07 Nov 2016 08:32:33 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/fabric/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>remote</title>
-      <link>https://www.richardstrnad.ch/tags/remote/</link>
-      <pubDate>Mon, 07 Nov 2016 08:32:33 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/remote/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>run</title>
-      <link>https://www.richardstrnad.ch/tags/run/</link>
-      <pubDate>Mon, 07 Nov 2016 08:32:33 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/run/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>connect</title>
-      <link>https://www.richardstrnad.ch/tags/connect/</link>
-      <pubDate>Sun, 06 Nov 2016 21:06:01 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/connect/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>new way</title>
-      <link>https://www.richardstrnad.ch/tags/new-way/</link>
-      <pubDate>Sun, 06 Nov 2016 21:06:01 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/new-way/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>acitoolkit</title>
-      <link>https://www.richardstrnad.ch/tags/acitoolkit/</link>
-      <pubDate>Thu, 27 Oct 2016 16:56:16 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/acitoolkit/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nodes</title>
-      <link>https://www.richardstrnad.ch/tags/nodes/</link>
-      <pubDate>Thu, 27 Oct 2016 16:56:16 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/nodes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://www.richardstrnad.ch/tags/python/</link>
-      <pubDate>Thu, 27 Oct 2016 16:56:16 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>1000v</title>
-      <link>https://www.richardstrnad.ch/tags/1000v/</link>
-      <pubDate>Tue, 18 Oct 2016 10:00:02 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/1000v/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>max-ports</title>
-      <link>https://www.richardstrnad.ch/tags/max-ports/</link>
-      <pubDate>Tue, 18 Oct 2016 10:00:02 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/max-ports/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nexus1000v</title>
-      <link>https://www.richardstrnad.ch/tags/nexus1000v/</link>
-      <pubDate>Tue, 18 Oct 2016 10:00:02 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/nexus1000v/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>port-profile</title>
-      <link>https://www.richardstrnad.ch/tags/port-profile/</link>
-      <pubDate>Tue, 18 Oct 2016 10:00:02 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/port-profile/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AAA</title>
-      <link>https://www.richardstrnad.ch/tags/aaa/</link>
-      <pubDate>Wed, 12 Oct 2016 14:10:30 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/aaa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>APIC-EM</title>
-      <link>https://www.richardstrnad.ch/tags/apic-em/</link>
-      <pubDate>Wed, 12 Oct 2016 14:10:30 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/apic-em/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Authentication</title>
-      <link>https://www.richardstrnad.ch/tags/authentication/</link>
-      <pubDate>Wed, 12 Oct 2016 14:10:30 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/authentication/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>external</title>
-      <link>https://www.richardstrnad.ch/tags/external/</link>
-      <pubDate>Wed, 12 Oct 2016 14:10:30 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/external/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Login</title>
-      <link>https://www.richardstrnad.ch/tags/login/</link>
-      <pubDate>Wed, 12 Oct 2016 14:10:30 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/login/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Radius</title>
-      <link>https://www.richardstrnad.ch/tags/radius/</link>
-      <pubDate>Wed, 12 Oct 2016 14:10:30 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/radius/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>decrypt</title>
-      <link>https://www.richardstrnad.ch/tags/decrypt/</link>
-      <pubDate>Wed, 12 Oct 2016 10:00:03 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/decrypt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Password</title>
-      <link>https://www.richardstrnad.ch/tags/password/</link>
-      <pubDate>Wed, 12 Oct 2016 10:00:03 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/password/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>resolver</title>
-      <link>https://www.richardstrnad.ch/tags/resolver/</link>
-      <pubDate>Wed, 12 Oct 2016 10:00:03 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/resolver/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>type</title>
-      <link>https://www.richardstrnad.ch/tags/type/</link>
-      <pubDate>Wed, 12 Oct 2016 10:00:03 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/type/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>type7</title>
-      <link>https://www.richardstrnad.ch/tags/type7/</link>
-      <pubDate>Wed, 12 Oct 2016 10:00:03 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/type7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>9001</title>
-      <link>https://www.richardstrnad.ch/tags/9001/</link>
-      <pubDate>Tue, 11 Oct 2016 10:02:09 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/9001/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>9006</title>
-      <link>https://www.richardstrnad.ch/tags/9006/</link>
-      <pubDate>Tue, 11 Oct 2016 10:02:09 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/9006/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ASR</title>
-      <link>https://www.richardstrnad.ch/tags/asr/</link>
-      <pubDate>Tue, 11 Oct 2016 10:02:09 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/asr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>IOS</title>
-      <link>https://www.richardstrnad.ch/tags/ios/</link>
-      <pubDate>Tue, 11 Oct 2016 10:02:09 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/ios/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>IOS XR</title>
-      <link>https://www.richardstrnad.ch/tags/ios-xr/</link>
-      <pubDate>Tue, 11 Oct 2016 10:02:09 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/ios-xr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>XR</title>
-      <link>https://www.richardstrnad.ch/tags/xr/</link>
-      <pubDate>Tue, 11 Oct 2016 10:02:09 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/xr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Backup</title>
-      <link>https://www.richardstrnad.ch/tags/backup/</link>
-      <pubDate>Thu, 22 Sep 2016 18:55:06 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/backup/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://www.richardstrnad.ch/tags/docker/</link>
-      <pubDate>Thu, 22 Sep 2016 18:55:06 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MySQL</title>
-      <link>https://www.richardstrnad.ch/tags/mysql/</link>
-      <pubDate>Thu, 22 Sep 2016 18:55:06 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/mysql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>9000</title>
-      <link>https://www.richardstrnad.ch/tags/9000/</link>
-      <pubDate>Mon, 29 Feb 2016 13:27:06 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/9000/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mode</title>
-      <link>https://www.richardstrnad.ch/tags/mode/</link>
-      <pubDate>Mon, 29 Feb 2016 13:27:06 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/mode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>16.1.1</title>
-      <link>https://www.richardstrnad.ch/tags/16.1.1/</link>
-      <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/16.1.1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>3650</title>
-      <link>https://www.richardstrnad.ch/tags/3650/</link>
-      <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/3650/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>3850</title>
-      <link>https://www.richardstrnad.ch/tags/3850/</link>
-      <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/3850/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Catalyst</title>
-      <link>https://www.richardstrnad.ch/tags/catalyst/</link>
-      <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/catalyst/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Denali</title>
-      <link>https://www.richardstrnad.ch/tags/denali/</link>
-      <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/denali/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>IOS XE</title>
-      <link>https://www.richardstrnad.ch/tags/ios-xe/</link>
-      <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/ios-xe/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Upgrade</title>
-      <link>https://www.richardstrnad.ch/tags/upgrade/</link>
-      <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/upgrade/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>eraseconfig setup</title>
-      <link>https://www.richardstrnad.ch/tags/eraseconfig-setup/</link>
-      <pubDate>Sat, 19 Dec 2015 17:00:38 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/eraseconfig-setup/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Factory</title>
-      <link>https://www.richardstrnad.ch/tags/factory/</link>
-      <pubDate>Sat, 19 Dec 2015 17:00:38 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/factory/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>reset</title>
-      <link>https://www.richardstrnad.ch/tags/reset/</link>
-      <pubDate>Sat, 19 Dec 2015 17:00:38 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/reset/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>1.2(1i)</title>
-      <link>https://www.richardstrnad.ch/tags/1.21i/</link>
-      <pubDate>Wed, 16 Dec 2015 14:00:46 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/1.21i/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CLI</title>
-      <link>https://www.richardstrnad.ch/tags/cli/</link>
-      <pubDate>Wed, 16 Dec 2015 14:00:46 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/cli/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>like</title>
-      <link>https://www.richardstrnad.ch/tags/like/</link>
-      <pubDate>Wed, 16 Dec 2015 14:00:46 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/like/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Production</title>
-      <link>https://www.richardstrnad.ch/tags/production/</link>
-      <pubDate>Thu, 26 Nov 2015 06:14:13 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/production/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Serial</title>
-      <link>https://www.richardstrnad.ch/tags/serial/</link>
-      <pubDate>Thu, 26 Nov 2015 06:14:13 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/serial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>1.1(2h)</title>
-      <link>https://www.richardstrnad.ch/tags/1.12h/</link>
-      <pubDate>Wed, 19 Aug 2015 12:20:14 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/1.12h/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>New Features</title>
-      <link>https://www.richardstrnad.ch/tags/new-features/</link>
-      <pubDate>Wed, 19 Aug 2015 12:20:14 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/new-features/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Software</title>
-      <link>https://www.richardstrnad.ch/tags/software/</link>
-      <pubDate>Wed, 19 Aug 2015 12:20:14 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/software/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>1.1(1o)</title>
-      <link>https://www.richardstrnad.ch/tags/1.11o/</link>
-      <pubDate>Sun, 09 Aug 2015 18:45:37 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/1.11o/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GUI</title>
-      <link>https://www.richardstrnad.ch/tags/gui/</link>
-      <pubDate>Sun, 09 Aug 2015 18:45:37 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/gui/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>5.2(1)SV3(1.5)</title>
-      <link>https://www.richardstrnad.ch/tags/5.21sv31.5/</link>
-      <pubDate>Wed, 17 Jun 2015 08:54:21 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/5.21sv31.5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AVS</title>
-      <link>https://www.richardstrnad.ch/tags/avs/</link>
-      <pubDate>Wed, 17 Jun 2015 08:54:21 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/avs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hacks</title>
-      <link>https://www.richardstrnad.ch/tags/hacks/</link>
-      <pubDate>Sun, 17 May 2015 07:35:53 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/hacks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Key Shortcut</title>
-      <link>https://www.richardstrnad.ch/tags/key-shortcut/</link>
-      <pubDate>Sun, 17 May 2015 07:35:53 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/key-shortcut/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sublime</title>
-      <link>https://www.richardstrnad.ch/tags/sublime/</link>
-      <pubDate>Sun, 17 May 2015 07:35:53 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/sublime/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ftp</title>
-      <link>https://www.richardstrnad.ch/tags/ftp/</link>
-      <pubDate>Wed, 06 May 2015 07:10:01 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/ftp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mac</title>
-      <link>https://www.richardstrnad.ch/tags/mac/</link>
-      <pubDate>Wed, 06 May 2015 07:10:01 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/mac/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>os x</title>
-      <link>https://www.richardstrnad.ch/tags/os-x/</link>
-      <pubDate>Wed, 06 May 2015 07:10:01 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/os-x/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>server</title>
-      <link>https://www.richardstrnad.ch/tags/server/</link>
-      <pubDate>Wed, 06 May 2015 07:10:01 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/server/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>twistd</title>
-      <link>https://www.richardstrnad.ch/tags/twistd/</link>
-      <pubDate>Wed, 06 May 2015 07:10:01 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/twistd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>2.1</title>
-      <link>https://www.richardstrnad.ch/tags/2.1/</link>
-      <pubDate>Tue, 05 May 2015 21:15:08 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/2.1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>2.2</title>
-      <link>https://www.richardstrnad.ch/tags/2.2/</link>
-      <pubDate>Tue, 05 May 2015 21:15:08 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/2.2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Infrastructure</title>
-      <link>https://www.richardstrnad.ch/tags/infrastructure/</link>
-      <pubDate>Tue, 05 May 2015 21:15:08 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/infrastructure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Prime</title>
-      <link>https://www.richardstrnad.ch/tags/prime/</link>
-      <pubDate>Tue, 05 May 2015 21:15:08 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/prime/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>acs</title>
-      <link>https://www.richardstrnad.ch/tags/acs/</link>
-      <pubDate>Mon, 16 Mar 2015 15:34:32 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/acs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ACSAdmin</title>
-      <link>https://www.richardstrnad.ch/tags/acsadmin/</link>
-      <pubDate>Mon, 16 Mar 2015 15:34:32 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/acsadmin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>default</title>
-      <link>https://www.richardstrnad.ch/tags/default/</link>
-      <pubDate>Mon, 16 Mar 2015 15:34:32 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/default/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>User</title>
-      <link>https://www.richardstrnad.ch/tags/user/</link>
-      <pubDate>Mon, 16 Mar 2015 15:34:32 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/user/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>5760</title>
-      <link>https://www.richardstrnad.ch/tags/5760/</link>
-      <pubDate>Thu, 05 Mar 2015 14:21:57 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/5760/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AP Count</title>
-      <link>https://www.richardstrnad.ch/tags/ap-count/</link>
-      <pubDate>Thu, 05 Mar 2015 14:21:57 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/ap-count/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Controller</title>
-      <link>https://www.richardstrnad.ch/tags/controller/</link>
-      <pubDate>Thu, 05 Mar 2015 14:21:57 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/controller/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MIB</title>
-      <link>https://www.richardstrnad.ch/tags/mib/</link>
-      <pubDate>Thu, 05 Mar 2015 14:21:57 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/mib/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>OID</title>
-      <link>https://www.richardstrnad.ch/tags/oid/</link>
-      <pubDate>Thu, 05 Mar 2015 14:21:57 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/oid/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SNMP</title>
-      <link>https://www.richardstrnad.ch/tags/snmp/</link>
-      <pubDate>Thu, 05 Mar 2015 14:21:57 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/snmp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>WLC</title>
-      <link>https://www.richardstrnad.ch/tags/wlc/</link>
-      <pubDate>Thu, 05 Mar 2015 14:21:57 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/wlc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>XE</title>
-      <link>https://www.richardstrnad.ch/tags/xe/</link>
-      <pubDate>Thu, 05 Mar 2015 14:21:57 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/xe/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>5.4</title>
-      <link>https://www.richardstrnad.ch/tags/5.4/</link>
-      <pubDate>Sun, 01 Mar 2015 11:29:29 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/5.4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>manifest file not found</title>
-      <link>https://www.richardstrnad.ch/tags/manifest-file-not-found/</link>
-      <pubDate>Sun, 01 Mar 2015 11:29:29 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/manifest-file-not-found/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>patch</title>
-      <link>https://www.richardstrnad.ch/tags/patch/</link>
-      <pubDate>Sun, 01 Mar 2015 11:29:29 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/patch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>1.0(2j)</title>
-      <link>https://www.richardstrnad.ch/tags/1.02j/</link>
-      <pubDate>Thu, 26 Feb 2015 08:09:48 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/1.02j/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>1.0(3f)</title>
-      <link>https://www.richardstrnad.ch/tags/1.03f/</link>
-      <pubDate>Thu, 26 Feb 2015 08:09:48 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/1.03f/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>websocket</title>
-      <link>https://www.richardstrnad.ch/tags/websocket/</link>
-      <pubDate>Mon, 23 Feb 2015 16:08:40 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/websocket/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>reboot</title>
-      <link>https://www.richardstrnad.ch/tags/reboot/</link>
-      <pubDate>Thu, 19 Feb 2015 15:52:24 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/reboot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>benefits</title>
-      <link>https://www.richardstrnad.ch/tags/benefits/</link>
-      <pubDate>Wed, 07 May 2014 17:02:26 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/benefits/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>number</title>
-      <link>https://www.richardstrnad.ch/tags/number/</link>
-      <pubDate>Wed, 07 May 2014 17:02:26 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/number/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>plaque</title>
-      <link>https://www.richardstrnad.ch/tags/plaque/</link>
-      <pubDate>Wed, 07 May 2014 17:02:26 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/tags/plaque/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Tags on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/</link>
+        <description>Recent content in Tags on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 28 Feb 2022 18:00:00 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>shortcuts</title>
+        <link>https://www.richardstrnad.ch/tags/shortcuts/</link>
+        <pubDate>Mon, 28 Feb 2022 18:00:00 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/shortcuts/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Text Editor</title>
+        <link>https://www.richardstrnad.ch/tags/text-editor/</link>
+        <pubDate>Mon, 28 Feb 2022 18:00:00 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/text-editor/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>VIM</title>
+        <link>https://www.richardstrnad.ch/tags/vim/</link>
+        <pubDate>Mon, 28 Feb 2022 18:00:00 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/vim/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Apple</title>
+        <link>https://www.richardstrnad.ch/tags/apple/</link>
+        <pubDate>Wed, 16 Feb 2022 07:45:46 +0100</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/apple/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>macOS</title>
+        <link>https://www.richardstrnad.ch/tags/macos/</link>
+        <pubDate>Wed, 16 Feb 2022 07:45:46 +0100</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/macos/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Sudo</title>
+        <link>https://www.richardstrnad.ch/tags/sudo/</link>
+        <pubDate>Wed, 16 Feb 2022 07:45:46 +0100</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/sudo/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>TouchID</title>
+        <link>https://www.richardstrnad.ch/tags/touchid/</link>
+        <pubDate>Wed, 16 Feb 2022 07:45:46 +0100</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/touchid/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>ACI</title>
+        <link>https://www.richardstrnad.ch/tags/aci/</link>
+        <pubDate>Thu, 10 Feb 2022 08:00:00 +0100</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/aci/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>cisco</title>
+        <link>https://www.richardstrnad.ch/tags/cisco/</link>
+        <pubDate>Thu, 10 Feb 2022 08:00:00 +0100</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/cisco/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Discoveryissues</title>
+        <link>https://www.richardstrnad.ch/tags/discoveryissues/</link>
+        <pubDate>Thu, 10 Feb 2022 08:00:00 +0100</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/discoveryissues/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Replacement</title>
+        <link>https://www.richardstrnad.ch/tags/replacement/</link>
+        <pubDate>Thu, 10 Feb 2022 08:00:00 +0100</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/replacement/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Spine</title>
+        <link>https://www.richardstrnad.ch/tags/spine/</link>
+        <pubDate>Thu, 10 Feb 2022 08:00:00 +0100</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/spine/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>API</title>
+        <link>https://www.richardstrnad.ch/tags/api/</link>
+        <pubDate>Wed, 24 Nov 2021 12:41:48 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/api/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>automation</title>
+        <link>https://www.richardstrnad.ch/tags/automation/</link>
+        <pubDate>Wed, 24 Nov 2021 12:41:48 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/automation/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Restconf</title>
+        <link>https://www.richardstrnad.ch/tags/restconf/</link>
+        <pubDate>Wed, 24 Nov 2021 12:41:48 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/restconf/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>APIC</title>
+        <link>https://www.richardstrnad.ch/tags/apic/</link>
+        <pubDate>Wed, 27 Oct 2021 05:57:36 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/apic/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Basic Parameters</title>
+        <link>https://www.richardstrnad.ch/tags/basic-parameters/</link>
+        <pubDate>Wed, 27 Oct 2021 05:57:36 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/basic-parameters/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>config</title>
+        <link>https://www.richardstrnad.ch/tags/config/</link>
+        <pubDate>Wed, 27 Oct 2021 05:57:36 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/config/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Setup</title>
+        <link>https://www.richardstrnad.ch/tags/setup/</link>
+        <pubDate>Wed, 27 Oct 2021 05:57:36 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/setup/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>ISE</title>
+        <link>https://www.richardstrnad.ch/tags/ise/</link>
+        <pubDate>Fri, 30 Jul 2021 18:05:58 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/ise/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>NDB</title>
+        <link>https://www.richardstrnad.ch/tags/ndb/</link>
+        <pubDate>Fri, 30 Jul 2021 18:05:58 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/ndb/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>TACACS</title>
+        <link>https://www.richardstrnad.ch/tags/tacacs/</link>
+        <pubDate>Fri, 30 Jul 2021 18:05:58 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/tacacs/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>custom</title>
+        <link>https://www.richardstrnad.ch/tags/custom/</link>
+        <pubDate>Wed, 16 Dec 2020 19:00:24 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/custom/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>ESX</title>
+        <link>https://www.richardstrnad.ch/tags/esx/</link>
+        <pubDate>Wed, 16 Dec 2020 19:00:24 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/esx/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Hyperflex</title>
+        <link>https://www.richardstrnad.ch/tags/hyperflex/</link>
+        <pubDate>Wed, 16 Dec 2020 19:00:24 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/hyperflex/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Image</title>
+        <link>https://www.richardstrnad.ch/tags/image/</link>
+        <pubDate>Wed, 16 Dec 2020 19:00:24 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/image/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>ISO</title>
+        <link>https://www.richardstrnad.ch/tags/iso/</link>
+        <pubDate>Wed, 16 Dec 2020 19:00:24 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/iso/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>100G</title>
+        <link>https://www.richardstrnad.ch/tags/100g/</link>
+        <pubDate>Mon, 29 Jul 2019 17:30:21 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/100g/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>40G</title>
+        <link>https://www.richardstrnad.ch/tags/40g/</link>
+        <pubDate>Mon, 29 Jul 2019 17:30:21 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/40g/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>convert</title>
+        <link>https://www.richardstrnad.ch/tags/convert/</link>
+        <pubDate>Mon, 29 Jul 2019 17:30:21 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/convert/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Downlink</title>
+        <link>https://www.richardstrnad.ch/tags/downlink/</link>
+        <pubDate>Mon, 29 Jul 2019 17:30:21 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/downlink/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Uplink</title>
+        <link>https://www.richardstrnad.ch/tags/uplink/</link>
+        <pubDate>Mon, 29 Jul 2019 17:30:21 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/uplink/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>AVI</title>
+        <link>https://www.richardstrnad.ch/tags/avi/</link>
+        <pubDate>Fri, 08 Mar 2019 21:00:20 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/avi/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>AVI Networks</title>
+        <link>https://www.richardstrnad.ch/tags/avi-networks/</link>
+        <pubDate>Fri, 08 Mar 2019 21:00:20 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/avi-networks/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>factory reset</title>
+        <link>https://www.richardstrnad.ch/tags/factory-reset/</link>
+        <pubDate>Fri, 08 Mar 2019 21:00:20 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/factory-reset/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Loadbalancer</title>
+        <link>https://www.richardstrnad.ch/tags/loadbalancer/</link>
+        <pubDate>Fri, 08 Mar 2019 21:00:20 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/loadbalancer/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>restart</title>
+        <link>https://www.richardstrnad.ch/tags/restart/</link>
+        <pubDate>Fri, 08 Mar 2019 21:00:20 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/restart/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Vantage</title>
+        <link>https://www.richardstrnad.ch/tags/vantage/</link>
+        <pubDate>Fri, 08 Mar 2019 21:00:20 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/vantage/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>10G</title>
+        <link>https://www.richardstrnad.ch/tags/10g/</link>
+        <pubDate>Mon, 01 Oct 2018 18:00:28 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/10g/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>QSFP</title>
+        <link>https://www.richardstrnad.ch/tags/qsfp/</link>
+        <pubDate>Mon, 01 Oct 2018 18:00:28 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/qsfp/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>aci mode</title>
+        <link>https://www.richardstrnad.ch/tags/aci-mode/</link>
+        <pubDate>Wed, 12 Apr 2017 21:13:17 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/aci-mode/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>nexus</title>
+        <link>https://www.richardstrnad.ch/tags/nexus/</link>
+        <pubDate>Wed, 12 Apr 2017 21:13:17 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/nexus/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Nexus 9000</title>
+        <link>https://www.richardstrnad.ch/tags/nexus-9000/</link>
+        <pubDate>Wed, 12 Apr 2017 21:13:17 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/nexus-9000/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>NX-OS</title>
+        <link>https://www.richardstrnad.ch/tags/nx-os/</link>
+        <pubDate>Wed, 12 Apr 2017 21:13:17 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/nx-os/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>standalone</title>
+        <link>https://www.richardstrnad.ch/tags/standalone/</link>
+        <pubDate>Wed, 12 Apr 2017 21:13:17 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/standalone/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>5548UP</title>
+        <link>https://www.richardstrnad.ch/tags/5548up/</link>
+        <pubDate>Thu, 30 Mar 2017 17:00:55 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/5548up/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>6324</title>
+        <link>https://www.richardstrnad.ch/tags/6324/</link>
+        <pubDate>Thu, 30 Mar 2017 17:00:55 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/6324/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>FI</title>
+        <link>https://www.richardstrnad.ch/tags/fi/</link>
+        <pubDate>Thu, 30 Mar 2017 17:00:55 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/fi/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>UCS</title>
+        <link>https://www.richardstrnad.ch/tags/ucs/</link>
+        <pubDate>Thu, 30 Mar 2017 17:00:55 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/ucs/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>UCS-Mini</title>
+        <link>https://www.richardstrnad.ch/tags/ucs-mini/</link>
+        <pubDate>Thu, 30 Mar 2017 17:00:55 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/ucs-mini/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>BFD</title>
+        <link>https://www.richardstrnad.ch/tags/bfd/</link>
+        <pubDate>Thu, 23 Mar 2017 18:30:47 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/bfd/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>BGP</title>
+        <link>https://www.richardstrnad.ch/tags/bgp/</link>
+        <pubDate>Thu, 23 Mar 2017 18:30:47 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/bgp/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Bogus</title>
+        <link>https://www.richardstrnad.ch/tags/bogus/</link>
+        <pubDate>Thu, 23 Mar 2017 18:30:47 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/bogus/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>error</title>
+        <link>https://www.richardstrnad.ch/tags/error/</link>
+        <pubDate>Thu, 23 Mar 2017 18:30:47 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/error/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>ICMP</title>
+        <link>https://www.richardstrnad.ch/tags/icmp/</link>
+        <pubDate>Thu, 23 Mar 2017 18:30:47 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/icmp/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>IP Redirect</title>
+        <link>https://www.richardstrnad.ch/tags/ip-redirect/</link>
+        <pubDate>Thu, 23 Mar 2017 18:30:47 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/ip-redirect/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>2017</title>
+        <link>https://www.richardstrnad.ch/tags/2017/</link>
+        <pubDate>Mon, 06 Feb 2017 15:23:50 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/2017/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Champion</title>
+        <link>https://www.richardstrnad.ch/tags/champion/</link>
+        <pubDate>Mon, 06 Feb 2017 15:23:50 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/champion/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>ccie</title>
+        <link>https://www.richardstrnad.ch/tags/ccie/</link>
+        <pubDate>Sun, 01 Jan 2017 07:00:39 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/ccie/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Happy New Year</title>
+        <link>https://www.richardstrnad.ch/tags/happy-new-year/</link>
+        <pubDate>Sun, 01 Jan 2017 07:00:39 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/happy-new-year/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Misc</title>
+        <link>https://www.richardstrnad.ch/tags/misc/</link>
+        <pubDate>Sun, 01 Jan 2017 07:00:39 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/misc/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Recertify</title>
+        <link>https://www.richardstrnad.ch/tags/recertify/</link>
+        <pubDate>Sun, 01 Jan 2017 07:00:39 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/recertify/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Resolutions</title>
+        <link>https://www.richardstrnad.ch/tags/resolutions/</link>
+        <pubDate>Sun, 01 Jan 2017 07:00:39 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/resolutions/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Targets</title>
+        <link>https://www.richardstrnad.ch/tags/targets/</link>
+        <pubDate>Sun, 01 Jan 2017 07:00:39 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/targets/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>255</title>
+        <link>https://www.richardstrnad.ch/tags/255/</link>
+        <pubDate>Fri, 11 Nov 2016 13:32:59 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/255/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>attach</title>
+        <link>https://www.richardstrnad.ch/tags/attach/</link>
+        <pubDate>Fri, 11 Nov 2016 13:32:59 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/attach/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>executing</title>
+        <link>https://www.richardstrnad.ch/tags/executing/</link>
+        <pubDate>Fri, 11 Nov 2016 13:32:59 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/executing/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>host key</title>
+        <link>https://www.richardstrnad.ch/tags/host-key/</link>
+        <pubDate>Fri, 11 Nov 2016 13:32:59 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/host-key/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Leaf</title>
+        <link>https://www.richardstrnad.ch/tags/leaf/</link>
+        <pubDate>Fri, 11 Nov 2016 13:32:59 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/leaf/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>command</title>
+        <link>https://www.richardstrnad.ch/tags/command/</link>
+        <pubDate>Mon, 07 Nov 2016 08:32:33 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/command/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Fabric</title>
+        <link>https://www.richardstrnad.ch/tags/fabric/</link>
+        <pubDate>Mon, 07 Nov 2016 08:32:33 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/fabric/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>remote</title>
+        <link>https://www.richardstrnad.ch/tags/remote/</link>
+        <pubDate>Mon, 07 Nov 2016 08:32:33 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/remote/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>run</title>
+        <link>https://www.richardstrnad.ch/tags/run/</link>
+        <pubDate>Mon, 07 Nov 2016 08:32:33 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/run/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>connect</title>
+        <link>https://www.richardstrnad.ch/tags/connect/</link>
+        <pubDate>Sun, 06 Nov 2016 21:06:01 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/connect/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>new way</title>
+        <link>https://www.richardstrnad.ch/tags/new-way/</link>
+        <pubDate>Sun, 06 Nov 2016 21:06:01 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/new-way/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>acitoolkit</title>
+        <link>https://www.richardstrnad.ch/tags/acitoolkit/</link>
+        <pubDate>Thu, 27 Oct 2016 16:56:16 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/acitoolkit/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>nodes</title>
+        <link>https://www.richardstrnad.ch/tags/nodes/</link>
+        <pubDate>Thu, 27 Oct 2016 16:56:16 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/nodes/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>python</title>
+        <link>https://www.richardstrnad.ch/tags/python/</link>
+        <pubDate>Thu, 27 Oct 2016 16:56:16 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/python/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>1000v</title>
+        <link>https://www.richardstrnad.ch/tags/1000v/</link>
+        <pubDate>Tue, 18 Oct 2016 10:00:02 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/1000v/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>max-ports</title>
+        <link>https://www.richardstrnad.ch/tags/max-ports/</link>
+        <pubDate>Tue, 18 Oct 2016 10:00:02 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/max-ports/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>nexus1000v</title>
+        <link>https://www.richardstrnad.ch/tags/nexus1000v/</link>
+        <pubDate>Tue, 18 Oct 2016 10:00:02 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/nexus1000v/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>port-profile</title>
+        <link>https://www.richardstrnad.ch/tags/port-profile/</link>
+        <pubDate>Tue, 18 Oct 2016 10:00:02 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/port-profile/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>AAA</title>
+        <link>https://www.richardstrnad.ch/tags/aaa/</link>
+        <pubDate>Wed, 12 Oct 2016 14:10:30 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/aaa/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>APIC-EM</title>
+        <link>https://www.richardstrnad.ch/tags/apic-em/</link>
+        <pubDate>Wed, 12 Oct 2016 14:10:30 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/apic-em/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Authentication</title>
+        <link>https://www.richardstrnad.ch/tags/authentication/</link>
+        <pubDate>Wed, 12 Oct 2016 14:10:30 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/authentication/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>external</title>
+        <link>https://www.richardstrnad.ch/tags/external/</link>
+        <pubDate>Wed, 12 Oct 2016 14:10:30 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/external/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Login</title>
+        <link>https://www.richardstrnad.ch/tags/login/</link>
+        <pubDate>Wed, 12 Oct 2016 14:10:30 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/login/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Radius</title>
+        <link>https://www.richardstrnad.ch/tags/radius/</link>
+        <pubDate>Wed, 12 Oct 2016 14:10:30 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/radius/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>decrypt</title>
+        <link>https://www.richardstrnad.ch/tags/decrypt/</link>
+        <pubDate>Wed, 12 Oct 2016 10:00:03 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/decrypt/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Password</title>
+        <link>https://www.richardstrnad.ch/tags/password/</link>
+        <pubDate>Wed, 12 Oct 2016 10:00:03 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/password/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>resolver</title>
+        <link>https://www.richardstrnad.ch/tags/resolver/</link>
+        <pubDate>Wed, 12 Oct 2016 10:00:03 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/resolver/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>type</title>
+        <link>https://www.richardstrnad.ch/tags/type/</link>
+        <pubDate>Wed, 12 Oct 2016 10:00:03 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/type/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>type7</title>
+        <link>https://www.richardstrnad.ch/tags/type7/</link>
+        <pubDate>Wed, 12 Oct 2016 10:00:03 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/type7/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>9001</title>
+        <link>https://www.richardstrnad.ch/tags/9001/</link>
+        <pubDate>Tue, 11 Oct 2016 10:02:09 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/9001/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>9006</title>
+        <link>https://www.richardstrnad.ch/tags/9006/</link>
+        <pubDate>Tue, 11 Oct 2016 10:02:09 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/9006/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>ASR</title>
+        <link>https://www.richardstrnad.ch/tags/asr/</link>
+        <pubDate>Tue, 11 Oct 2016 10:02:09 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/asr/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>IOS</title>
+        <link>https://www.richardstrnad.ch/tags/ios/</link>
+        <pubDate>Tue, 11 Oct 2016 10:02:09 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/ios/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>IOS XR</title>
+        <link>https://www.richardstrnad.ch/tags/ios-xr/</link>
+        <pubDate>Tue, 11 Oct 2016 10:02:09 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/ios-xr/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>XR</title>
+        <link>https://www.richardstrnad.ch/tags/xr/</link>
+        <pubDate>Tue, 11 Oct 2016 10:02:09 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/xr/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Backup</title>
+        <link>https://www.richardstrnad.ch/tags/backup/</link>
+        <pubDate>Thu, 22 Sep 2016 18:55:06 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/backup/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Docker</title>
+        <link>https://www.richardstrnad.ch/tags/docker/</link>
+        <pubDate>Thu, 22 Sep 2016 18:55:06 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/docker/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>MySQL</title>
+        <link>https://www.richardstrnad.ch/tags/mysql/</link>
+        <pubDate>Thu, 22 Sep 2016 18:55:06 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/mysql/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>9000</title>
+        <link>https://www.richardstrnad.ch/tags/9000/</link>
+        <pubDate>Mon, 29 Feb 2016 13:27:06 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/9000/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>mode</title>
+        <link>https://www.richardstrnad.ch/tags/mode/</link>
+        <pubDate>Mon, 29 Feb 2016 13:27:06 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/mode/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>16.1.1</title>
+        <link>https://www.richardstrnad.ch/tags/16.1.1/</link>
+        <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/16.1.1/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>3650</title>
+        <link>https://www.richardstrnad.ch/tags/3650/</link>
+        <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/3650/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>3850</title>
+        <link>https://www.richardstrnad.ch/tags/3850/</link>
+        <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/3850/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Catalyst</title>
+        <link>https://www.richardstrnad.ch/tags/catalyst/</link>
+        <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/catalyst/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Denali</title>
+        <link>https://www.richardstrnad.ch/tags/denali/</link>
+        <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/denali/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>IOS XE</title>
+        <link>https://www.richardstrnad.ch/tags/ios-xe/</link>
+        <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/ios-xe/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Upgrade</title>
+        <link>https://www.richardstrnad.ch/tags/upgrade/</link>
+        <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/upgrade/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>eraseconfig setup</title>
+        <link>https://www.richardstrnad.ch/tags/eraseconfig-setup/</link>
+        <pubDate>Sat, 19 Dec 2015 17:00:38 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/eraseconfig-setup/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Factory</title>
+        <link>https://www.richardstrnad.ch/tags/factory/</link>
+        <pubDate>Sat, 19 Dec 2015 17:00:38 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/factory/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>reset</title>
+        <link>https://www.richardstrnad.ch/tags/reset/</link>
+        <pubDate>Sat, 19 Dec 2015 17:00:38 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/reset/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>1.2(1i)</title>
+        <link>https://www.richardstrnad.ch/tags/1.21i/</link>
+        <pubDate>Wed, 16 Dec 2015 14:00:46 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/1.21i/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>CLI</title>
+        <link>https://www.richardstrnad.ch/tags/cli/</link>
+        <pubDate>Wed, 16 Dec 2015 14:00:46 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/cli/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>like</title>
+        <link>https://www.richardstrnad.ch/tags/like/</link>
+        <pubDate>Wed, 16 Dec 2015 14:00:46 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/like/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Production</title>
+        <link>https://www.richardstrnad.ch/tags/production/</link>
+        <pubDate>Thu, 26 Nov 2015 06:14:13 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/production/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Serial</title>
+        <link>https://www.richardstrnad.ch/tags/serial/</link>
+        <pubDate>Thu, 26 Nov 2015 06:14:13 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/serial/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>1.1(2h)</title>
+        <link>https://www.richardstrnad.ch/tags/1.12h/</link>
+        <pubDate>Wed, 19 Aug 2015 12:20:14 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/1.12h/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>New Features</title>
+        <link>https://www.richardstrnad.ch/tags/new-features/</link>
+        <pubDate>Wed, 19 Aug 2015 12:20:14 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/new-features/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Software</title>
+        <link>https://www.richardstrnad.ch/tags/software/</link>
+        <pubDate>Wed, 19 Aug 2015 12:20:14 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/software/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>1.1(1o)</title>
+        <link>https://www.richardstrnad.ch/tags/1.11o/</link>
+        <pubDate>Sun, 09 Aug 2015 18:45:37 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/1.11o/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>GUI</title>
+        <link>https://www.richardstrnad.ch/tags/gui/</link>
+        <pubDate>Sun, 09 Aug 2015 18:45:37 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/gui/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>5.2(1)SV3(1.5)</title>
+        <link>https://www.richardstrnad.ch/tags/5.21sv31.5/</link>
+        <pubDate>Wed, 17 Jun 2015 08:54:21 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/5.21sv31.5/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>AVS</title>
+        <link>https://www.richardstrnad.ch/tags/avs/</link>
+        <pubDate>Wed, 17 Jun 2015 08:54:21 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/avs/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>hacks</title>
+        <link>https://www.richardstrnad.ch/tags/hacks/</link>
+        <pubDate>Sun, 17 May 2015 07:35:53 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/hacks/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Key Shortcut</title>
+        <link>https://www.richardstrnad.ch/tags/key-shortcut/</link>
+        <pubDate>Sun, 17 May 2015 07:35:53 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/key-shortcut/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Sublime</title>
+        <link>https://www.richardstrnad.ch/tags/sublime/</link>
+        <pubDate>Sun, 17 May 2015 07:35:53 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/sublime/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>ftp</title>
+        <link>https://www.richardstrnad.ch/tags/ftp/</link>
+        <pubDate>Wed, 06 May 2015 07:10:01 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/ftp/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>mac</title>
+        <link>https://www.richardstrnad.ch/tags/mac/</link>
+        <pubDate>Wed, 06 May 2015 07:10:01 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/mac/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>os x</title>
+        <link>https://www.richardstrnad.ch/tags/os-x/</link>
+        <pubDate>Wed, 06 May 2015 07:10:01 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/os-x/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>server</title>
+        <link>https://www.richardstrnad.ch/tags/server/</link>
+        <pubDate>Wed, 06 May 2015 07:10:01 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/server/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>twistd</title>
+        <link>https://www.richardstrnad.ch/tags/twistd/</link>
+        <pubDate>Wed, 06 May 2015 07:10:01 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/twistd/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>2.1</title>
+        <link>https://www.richardstrnad.ch/tags/2.1/</link>
+        <pubDate>Tue, 05 May 2015 21:15:08 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/2.1/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>2.2</title>
+        <link>https://www.richardstrnad.ch/tags/2.2/</link>
+        <pubDate>Tue, 05 May 2015 21:15:08 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/2.2/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Infrastructure</title>
+        <link>https://www.richardstrnad.ch/tags/infrastructure/</link>
+        <pubDate>Tue, 05 May 2015 21:15:08 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/infrastructure/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Prime</title>
+        <link>https://www.richardstrnad.ch/tags/prime/</link>
+        <pubDate>Tue, 05 May 2015 21:15:08 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/prime/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>acs</title>
+        <link>https://www.richardstrnad.ch/tags/acs/</link>
+        <pubDate>Mon, 16 Mar 2015 15:34:32 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/acs/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>ACSAdmin</title>
+        <link>https://www.richardstrnad.ch/tags/acsadmin/</link>
+        <pubDate>Mon, 16 Mar 2015 15:34:32 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/acsadmin/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>default</title>
+        <link>https://www.richardstrnad.ch/tags/default/</link>
+        <pubDate>Mon, 16 Mar 2015 15:34:32 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/default/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>User</title>
+        <link>https://www.richardstrnad.ch/tags/user/</link>
+        <pubDate>Mon, 16 Mar 2015 15:34:32 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/user/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>5760</title>
+        <link>https://www.richardstrnad.ch/tags/5760/</link>
+        <pubDate>Thu, 05 Mar 2015 14:21:57 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/5760/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>AP Count</title>
+        <link>https://www.richardstrnad.ch/tags/ap-count/</link>
+        <pubDate>Thu, 05 Mar 2015 14:21:57 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/ap-count/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Controller</title>
+        <link>https://www.richardstrnad.ch/tags/controller/</link>
+        <pubDate>Thu, 05 Mar 2015 14:21:57 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/controller/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>MIB</title>
+        <link>https://www.richardstrnad.ch/tags/mib/</link>
+        <pubDate>Thu, 05 Mar 2015 14:21:57 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/mib/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>OID</title>
+        <link>https://www.richardstrnad.ch/tags/oid/</link>
+        <pubDate>Thu, 05 Mar 2015 14:21:57 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/oid/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>SNMP</title>
+        <link>https://www.richardstrnad.ch/tags/snmp/</link>
+        <pubDate>Thu, 05 Mar 2015 14:21:57 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/snmp/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>WLC</title>
+        <link>https://www.richardstrnad.ch/tags/wlc/</link>
+        <pubDate>Thu, 05 Mar 2015 14:21:57 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/wlc/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>XE</title>
+        <link>https://www.richardstrnad.ch/tags/xe/</link>
+        <pubDate>Thu, 05 Mar 2015 14:21:57 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/xe/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>5.4</title>
+        <link>https://www.richardstrnad.ch/tags/5.4/</link>
+        <pubDate>Sun, 01 Mar 2015 11:29:29 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/5.4/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>manifest file not found</title>
+        <link>https://www.richardstrnad.ch/tags/manifest-file-not-found/</link>
+        <pubDate>Sun, 01 Mar 2015 11:29:29 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/manifest-file-not-found/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>patch</title>
+        <link>https://www.richardstrnad.ch/tags/patch/</link>
+        <pubDate>Sun, 01 Mar 2015 11:29:29 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/patch/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>1.0(2j)</title>
+        <link>https://www.richardstrnad.ch/tags/1.02j/</link>
+        <pubDate>Thu, 26 Feb 2015 08:09:48 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/1.02j/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>1.0(3f)</title>
+        <link>https://www.richardstrnad.ch/tags/1.03f/</link>
+        <pubDate>Thu, 26 Feb 2015 08:09:48 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/1.03f/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>websocket</title>
+        <link>https://www.richardstrnad.ch/tags/websocket/</link>
+        <pubDate>Mon, 23 Feb 2015 16:08:40 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/websocket/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>reboot</title>
+        <link>https://www.richardstrnad.ch/tags/reboot/</link>
+        <pubDate>Thu, 19 Feb 2015 15:52:24 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/reboot/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>benefits</title>
+        <link>https://www.richardstrnad.ch/tags/benefits/</link>
+        <pubDate>Wed, 07 May 2014 17:02:26 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/benefits/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>number</title>
+        <link>https://www.richardstrnad.ch/tags/number/</link>
+        <pubDate>Wed, 07 May 2014 17:02:26 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/number/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>plaque</title>
+        <link>https://www.richardstrnad.ch/tags/plaque/</link>
+        <pubDate>Wed, 07 May 2014 17:02:26 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/plaque/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
 </rss>

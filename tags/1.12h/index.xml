@@ -1,21 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>1.1(2h) on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/1.12h/</link>
-    <description>Recent content in 1.1(2h) on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 19 Aug 2015 12:20:14 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/1.12h/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cisco ACI – New Features in Release 1.1(2h)</title>
-      <link>https://www.richardstrnad.ch/2015/08/19/cisco-aci-new-features-in-release-1-12h/</link>
-      <pubDate>Wed, 19 Aug 2015 12:20:14 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2015/08/19/cisco-aci-new-features-in-release-1-12h/</guid>
-      <description>Cisco just released the newest Cisco ACI Software called 1.1(2h).
-   Feature Description Guidelines and Restrictions     AES encryption for configuration files As of release 1.1(2), the secure properties of APIC configuration files can be encrypted by enabling AES-256 encryption. AES encryption is a global configuration option; all secure properties conform to the AES configuration setting. It is not possible to export just a portion of the ACI fabric such as a tenant configuration with AES encryption.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>1.1(2h) on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/1.12h/</link>
+        <description>Recent content in 1.1(2h) on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 19 Aug 2015 12:20:14 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/1.12h/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Cisco ACI – New Features in Release 1.1(2h)</title>
+        <link>https://www.richardstrnad.ch/2015/08/19/cisco-aci-new-features-in-release-1-12h/</link>
+        <pubDate>Wed, 19 Aug 2015 12:20:14 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2015/08/19/cisco-aci-new-features-in-release-1-12h/</guid>
+        <description>&lt;p&gt;Cisco just released the newest Cisco ACI Software called 1.1(2h).&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Feature&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Guidelines and Restrictions&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;AES encryption for configuration files&lt;/td&gt;
+&lt;td&gt;As of release 1.1(2), the secure properties of APIC configuration files can be encrypted by enabling AES-256 encryption.&lt;/td&gt;
+&lt;td&gt;AES encryption is a global configuration option; all secure properties conform to the AES configuration setting. It is not possible to export just a portion of the ACI fabric such as a tenant configuration with AES encryption.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SCVMM clustering support&lt;/td&gt;
+&lt;td&gt;You can now install the APIC SCVMM agent on a Highly Available System Center Virtual Machine Manager (SCVMM).&lt;/td&gt;
+&lt;td&gt;None.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows Azure Pack with L3out support&lt;/td&gt;
+&lt;td&gt;Windows Azure Pack tenants can now configure their networks to connect outside of the fabric. This is done by establishing a security contract to L3ExtOut for both incoming and outgoing traffic.See the Cisco ACI Virtualization Guide for more information.&lt;/td&gt;
+&lt;td&gt;None.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ACI Optimizer&lt;/td&gt;
+&lt;td&gt;After entering your network requirements in an Optimizer Config Template, the ACI Optimizer tells you how many leafs you will need for your network and suggests how to deploy each application and external EPG on each leaf without violating any constraints. Also, after entering your existing topology in an Optimizer Config Template, the ACI Optimizer helps you determine if you have what you need, if you are exceeding any limitations, and suggests how to deploy each application and external EPG on each leaf.&lt;/td&gt;
+&lt;td&gt;When using the ACI Optimizer, Scale constraints may be violated if the given topology is not enough.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;VMware vSphere 6.0 support&lt;/td&gt;
+&lt;td&gt;ACI now supports VMware vCenter 6.0. See the Cisco ACI Virtualization Guide for more information.&lt;/td&gt;
+&lt;td&gt;The vCenter 6.0 feature of vMotion across a vCenter/datacenter is not supported.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Definitly notable is the VMware vSphere 6.0 support!&lt;/p&gt;
+&lt;p&gt;Source:&lt;br&gt;
+&lt;a title=&#34;http://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/1-x/release/notes/apic_rn_112h.html&#34; href=&#34;http://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/1-x/release/notes/apic_rn_112h.html&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/1-x/release/notes/apic_rn_112h.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/1-x/release/notes/apic_rn_112h.html&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link to the Software:&lt;br&gt;
+&lt;a title=&#34;https://software.cisco.com/download/release.html?mdfid=285968390&amp;softwareid=286278832&amp;release=1.1(2h)&amp;relind=null&amp;rellifecycle=null&amp;reltype=null&amp;i=rn&#34; href=&#34;https://software.cisco.com/download/release.html?mdfid=285968390&amp;softwareid=286278832&amp;release=1.1(2h)&amp;relind=null&amp;rellifecycle=null&amp;reltype=null&amp;i=rn&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://software.cisco.com/download/release.html?mdfid=285968390&amp;amp;softwareid=286278832&amp;amp;release=1.1%282h%29&amp;amp;relind=null&amp;amp;rellifecycle=null&amp;amp;reltype=null&amp;amp;i=rn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://software.cisco.com/download/release.html?mdfid=285968390&amp;softwareid=286278832&amp;release=1.1(2h)&amp;relind=null&amp;rellifecycle=null&amp;reltype=null&amp;i=rn&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

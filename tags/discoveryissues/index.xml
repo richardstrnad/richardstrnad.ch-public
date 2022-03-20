@@ -1,22 +1,157 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Discoveryissues on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/discoveryissues/</link>
-    <description>Recent content in Discoveryissues on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 10 Feb 2022 08:00:00 +0100</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/discoveryissues/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ACI: Spine replacement in a single Spine fabric</title>
-      <link>https://www.richardstrnad.ch/2022/02/10/aci-spine-replacement-in-a-single-spine-fabric/</link>
-      <pubDate>Thu, 10 Feb 2022 08:00:00 +0100</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2022/02/10/aci-spine-replacement-in-a-single-spine-fabric/</guid>
-      <description>A colleague has exchanged a spine at a customer. This is a lab fabric which runs in a minimal setup, 1 x APIC, 1 x Spine, 4 x Leaf.
-In principle, the exchange of a Spine within an ACI fabric is a very simple undertaking, ACI does all the heavy lifting for you :)
-However, in a scenario where a Leaf has only one path to the APIC (thus connected to a single Spine), the exchange of the Spine leads to problems.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Discoveryissues on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/discoveryissues/</link>
+        <description>Recent content in Discoveryissues on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 10 Feb 2022 08:00:00 +0100</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/discoveryissues/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>ACI: Spine replacement in a single Spine fabric</title>
+        <link>https://www.richardstrnad.ch/2022/02/10/aci-spine-replacement-in-a-single-spine-fabric/</link>
+        <pubDate>Thu, 10 Feb 2022 08:00:00 +0100</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2022/02/10/aci-spine-replacement-in-a-single-spine-fabric/</guid>
+        <description>&lt;p&gt;A colleague has exchanged a spine at a customer.
+This is a lab fabric which runs in a minimal setup,
+1 x APIC, 1 x Spine, 4 x Leaf.&lt;/p&gt;
+&lt;p&gt;In principle, the exchange of a Spine within an ACI fabric is a very simple
+undertaking, ACI does all the heavy lifting for you :)&lt;/p&gt;
+&lt;p&gt;However, in a scenario where a Leaf has only one path to the APIC
+(thus connected to a single Spine), the exchange of the Spine leads to problems.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-plaintext&#34; data-lang=&#34;plaintext&#34;&gt;┌────────┐    ┌────────┐    ┌────────┐    ┌────────┐
+│        │    │        │    │        │    │        │
+│  APIC  ├────┤  L111  ├────┤  S101  ├────┤  L112  │
+│        │    │        │    │        │    │        │
+└────────┘    └────────┘    └────────┘    └────────┘
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;em&gt;Sample Topology&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;After replaceing the Spine, L112 wasn&amp;rsquo;t joined in the fabric anymore. On the
+switch itself it was then pretty easy to spot the issue.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-plaintext&#34; data-lang=&#34;plaintext&#34;&gt;L112# show discoveryissues
+Checking the platform type................LEAF!
+Check01 - System state - in-service                [ok]
+Check02 - DHCP status                [ok]
+    TEP IP: 10.0.200.66 Node Id: 111 Name: LEAF111
+Check03 - AV details check                [ok]
+Check04 - IP rechability to apic                [FAIL]
+    Ping from switch to 10.0.0.1 with MTU 1450 failed. Check Communication issues.
+Check05 - infra VLAN received                [ok]
+    infra vLAN:4093
+Check06 - LLDP Adjacency                [FAIL]
+    Error: wiring issue found unapproved-serialnumber on eth1/54
+Check07 - Switch version                [ok]
+    version: n9000-14.2(7f)  and apic version: 4.2(7f)
+Check08 - FPGA/BIOS out of sync test                [ok]
+Check09 - SSL check                [check]
+    SSL certificate details are valid
+Check10 - Downloading policies                [ok]
+Check11 - Checking time                [ok]
+    2022-02-09 10:33:24
+Check12 - Checking modules, power and fans                [ok]
+Check13 - Checking isis adjacencies                [FAIL]
+    No isis adjacencies found
+    Ignore if first leaf/spine in an ACI fabric or remote leaf 
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;em&gt;&lt;code&gt;show discoveryissues&lt;/code&gt; from L112&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Error: wiring issue found unapproved-serialnumber on eth1/54&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Indicates that from the Leaf perspective the new Spine is not approved to the
+fabric and because the Leaf has no path to the APIC anymore, this information
+can&amp;rsquo;t be updated.&lt;/p&gt;
+&lt;p&gt;Easiest fix we found, was to simply reset the leaf.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-plaintext&#34; data-lang=&#34;plaintext&#34;&gt;L112# setup-clean-config.sh
+In progress
+In progress
+In progress
+In progress
+In progress
+In progress
+In progress
+In progress
+In progress
+In progress
+In progress
+In progress
+In progress
+In progress
+In progress
+Done
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;And then do a reload.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-plaintext&#34; data-lang=&#34;plaintext&#34;&gt;L112# reload
+This command will reload the chassis, Proceed (y/n)? [n]: y
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Thanks to Jonas for the story &amp;amp; the outputs.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

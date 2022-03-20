@@ -1,22 +1,169 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Production on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/production/</link>
-    <description>Recent content in Production on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2015 06:14:13 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/production/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Recognise the Production Date of your Cisco Equipment based on the Serial</title>
-      <link>https://www.richardstrnad.ch/2015/11/26/recognise-the-production-date-of-your-cisco-equipment-based-on-the-serial/</link>
-      <pubDate>Thu, 26 Nov 2015 06:14:13 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2015/11/26/recognise-the-production-date-of-your-cisco-equipment-based-on-the-serial/</guid>
-      <description>Today i learnt that the Production Year and Week is &amp;lsquo;hidden&amp;rsquo; in the Cisco Serials 🙂
-The format of the serial is always like &amp;lsquo;xxxYYWWxxxx&amp;rsquo;, &amp;lsquo;YY&amp;rsquo; is Code for the Year, but not the Year itself! &amp;lsquo;WW&amp;rsquo; is the week of manufacture.
-   Code Year     01 1997   02 1998   03 1999   04 2000   05 2001   06 2002   07 2003   08 2004   09 2005   10 2006   11 2007   12 2008   13 2009   14 2010   15 2011   16 2012   17 2013   18 2014   19 2015   20 2016       Code Week     1-5 January   6-9 February   10-14 March   15-18 April   19-22 May   23-27 June   28-31 July   32-35 August   36-40 September   41-44 October   45-48 November   49-52 December    </description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Production on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/production/</link>
+        <description>Recent content in Production on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 26 Nov 2015 06:14:13 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/production/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Recognise the Production Date of your Cisco Equipment based on the Serial</title>
+        <link>https://www.richardstrnad.ch/2015/11/26/recognise-the-production-date-of-your-cisco-equipment-based-on-the-serial/</link>
+        <pubDate>Thu, 26 Nov 2015 06:14:13 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2015/11/26/recognise-the-production-date-of-your-cisco-equipment-based-on-the-serial/</guid>
+        <description>&lt;p&gt;Today i learnt that the Production Year and Week is &amp;lsquo;hidden&amp;rsquo; in the Cisco Serials 🙂&lt;/p&gt;
+&lt;p&gt;The format of the serial is always like &amp;lsquo;xxxYYWWxxxx&amp;rsquo;, &amp;lsquo;YY&amp;rsquo; is Code for the Year, but not the Year itself! &amp;lsquo;WW&amp;rsquo; is the week of manufacture.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;1997&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;02&lt;/td&gt;
+&lt;td&gt;1998&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;03&lt;/td&gt;
+&lt;td&gt;1999&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;04&lt;/td&gt;
+&lt;td&gt;2000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;05&lt;/td&gt;
+&lt;td&gt;2001&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;06&lt;/td&gt;
+&lt;td&gt;2002&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;07&lt;/td&gt;
+&lt;td&gt;2003&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;08&lt;/td&gt;
+&lt;td&gt;2004&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;09&lt;/td&gt;
+&lt;td&gt;2005&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;2006&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;2007&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;2008&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;td&gt;2009&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;2010&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;td&gt;2011&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;17&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;2015&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;2016&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;Week&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1-5&lt;/td&gt;
+&lt;td&gt;January&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6-9&lt;/td&gt;
+&lt;td&gt;February&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10-14&lt;/td&gt;
+&lt;td&gt;March&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;15-18&lt;/td&gt;
+&lt;td&gt;April&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;19-22&lt;/td&gt;
+&lt;td&gt;May&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;23-27&lt;/td&gt;
+&lt;td&gt;June&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;28-31&lt;/td&gt;
+&lt;td&gt;July&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;32-35&lt;/td&gt;
+&lt;td&gt;August&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;36-40&lt;/td&gt;
+&lt;td&gt;September&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;41-44&lt;/td&gt;
+&lt;td&gt;October&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;45-48&lt;/td&gt;
+&lt;td&gt;November&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;49-52&lt;/td&gt;
+&lt;td&gt;December&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

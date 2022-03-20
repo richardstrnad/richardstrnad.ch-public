@@ -1,24 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>plaque on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/plaque/</link>
-    <description>Recent content in plaque on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 07 May 2014 17:02:26 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/plaque/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Benefits of becoming a CCIE</title>
-      <link>https://www.richardstrnad.ch/2014/05/07/benefits-of-becoming-a-ccie/</link>
-      <pubDate>Wed, 07 May 2014 17:02:26 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2014/05/07/benefits-of-becoming-a-ccie/</guid>
-      <description>Beside of your number and that you&amp;rsquo;re recognised as CCIE you also get some small perks from Cisco:
-CCIE Certification Kit
-You will get a CCIE Certification Kit, after i got mine i will blog about it for sure!
-According to cisco it includes:
-  Congratulatory letter from John Chambers Certificate of achievement Personalized CCIE plaque CCIE badge pull CCIE sticker set Certification resource document   I will post the whole package and its content after i received my Certification Kit</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>plaque on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/plaque/</link>
+        <description>Recent content in plaque on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 07 May 2014 17:02:26 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/plaque/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Benefits of becoming a CCIE</title>
+        <link>https://www.richardstrnad.ch/2014/05/07/benefits-of-becoming-a-ccie/</link>
+        <pubDate>Wed, 07 May 2014 17:02:26 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2014/05/07/benefits-of-becoming-a-ccie/</guid>
+        <description>&lt;p&gt;Beside of your number and that you&amp;rsquo;re recognised as CCIE you also get some small perks from Cisco:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CCIE Certification Kit&lt;/strong&gt;&lt;br&gt;
+You will get a CCIE Certification Kit, after i got mine i will blog about it for sure!&lt;br&gt;
+According to cisco it includes:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Congratulatory letter from John Chambers&lt;/li&gt;
+&lt;li&gt;Certificate of achievement&lt;/li&gt;
+&lt;li&gt;Personalized CCIE plaque&lt;/li&gt;
+&lt;li&gt;CCIE badge pull&lt;/li&gt;
+&lt;li&gt;CCIE sticker set&lt;/li&gt;
+&lt;li&gt;Certification resource document&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I will post the whole package and its content after i received my Certification Kit&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CCIE Merchandise&lt;/strong&gt;&lt;br&gt;
+I now finally can shop in the &lt;a href=&#34;http://store.fullpond.com/cisco/MTOCCIEProductPaging.aspx?layout=0&amp;number=2&amp;paging=on&amp;pagesize=8&amp;sort=1&amp;catalogid=1&amp;categoryid=3945&#34; target=&#34;_blank&#34;&gt;CCIE section&lt;/a&gt; of the cisco store 😉&lt;br&gt;
+Currently i don&amp;rsquo;t think that i will order some stuff from there, but we will see&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Technical Service Requests (Case Routing)&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Service requests made to Cisco Technical Support (TS) by CCIEs in good standing, on behalf of an organization with a valid support contract, will be routed directly to the more experienced core TS support engineers. Routing is done automatically based on Cisco User ID; no special phone number or URL is required. For more information, contact Cisco Technical Support.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Who knows if this really is true? But i recognised a difference if i try to open a &lt;a href=&#34;https://tools.cisco.com/ServiceRequestTool/scm/mgmt/case?referring_site=support_mm&#34; target=&#34;_blank&#34;&gt;TAC Case&lt;/a&gt;, I can now directly open Severity 2 cases through the website.&lt;/p&gt;
+&lt;div id=&#34;attachment_59&#34; style=&#34;width: 1050px&#34; class=&#34;wp-caption alignnone&#34;&gt;
+  &lt;a href=&#34;http://www.richardstrnad.ch/wp-content/uploads/2014/05/2014-05-06_09-19-19.png&#34;&gt;&lt;img aria-describedby=&#34;caption-attachment-59&#34; loading=&#34;lazy&#34; class=&#34;size-full wp-image-59&#34; src=&#34;http://www.richardstrnad.ch/wp-content/uploads/2014/05/2014-05-06_09-19-19.png&#34; alt=&#34;Open a TAC Case&#34; width=&#34;1040&#34; height=&#34;599&#34; /&gt;&lt;/a&gt;
+  &lt;p id=&#34;caption-attachment-59&#34; class=&#34;wp-caption-text&#34;&gt;
+    Open a TAC Case as CCIE, you can use Severity 2
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;These are all nice things, but i think the most important part of it is the recognition as CCIE in the market and the company benefits.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

@@ -1,22 +1,152 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>ESX on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/esx/</link>
-    <description>Recent content in ESX on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 16 Dec 2020 19:00:24 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/esx/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Custom Hyperflex ESX Image</title>
-      <link>https://www.richardstrnad.ch/2020/12/16/custom-hyperflex-esx-image/</link>
-      <pubDate>Wed, 16 Dec 2020 19:00:24 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2020/12/16/custom-hyperflex-esx-image/</guid>
-      <description>Cisco provides a custom ESXi Image/ISO to (re)install Hyperflex Servers. As i&amp;rsquo;m currently working on fully automating the deployment of a large quantity of there servers, i looked for a way to automate the reinstall of these Hyperflex Servers.
-Unfortunately the ESXi Image provided by Cisco requires a confirmation at some point, i wanted to get rid of this. First i downloaded the current ISO file from Cisco (HX-ESXi-6.7U3-16316930-Cisco-Custom-6.7.3.5-install-only.iso).
-Create the Image 1 2 3 4 5 6 7 8 9 10 11  cd /tmp mkdir iso cd iso mkdir ro_iso mkdir custom device=$(hdiutil attach -nomount ~/Downloads/HX-ESXi-6.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>ESX on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/esx/</link>
+        <description>Recent content in ESX on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 16 Dec 2020 19:00:24 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/esx/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Custom Hyperflex ESX Image</title>
+        <link>https://www.richardstrnad.ch/2020/12/16/custom-hyperflex-esx-image/</link>
+        <pubDate>Wed, 16 Dec 2020 19:00:24 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2020/12/16/custom-hyperflex-esx-image/</guid>
+        <description>&lt;p&gt;Cisco provides a custom ESXi Image/ISO to (re)install Hyperflex Servers. As i&amp;rsquo;m currently working on fully automating the deployment of a large quantity of there servers, i looked for a way to automate the reinstall of these Hyperflex Servers.&lt;/p&gt;
+&lt;p&gt;Unfortunately the ESXi Image provided by Cisco requires a confirmation at some point, i wanted to get rid of this. First i downloaded the current ISO file from Cisco (HX-ESXi-6.7U3-16316930-Cisco-Custom-6.7.3.5-install-only.iso).&lt;/p&gt;
+&lt;h2 id=&#34;create-the-image&#34;&gt;Create the Image&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;cd /tmp
+mkdir iso
+cd iso
+mkdir ro_iso
+mkdir custom
+device=$(hdiutil attach -nomount ~/Downloads/HX-ESXi-6.7U3-16316930-Cisco-Custom-6.7.3.5-install-only.iso | \
+         egrep &amp;#39;^/dev/&amp;#39; | sed 1q | awk &amp;#39;{print $1}&amp;#39;)
+mount -t cd9660 $device /tmp/iso/ro_iso
+cd ro_iso
+tar cf - . | (cd /tmp/iso/custom; tar xfp -)
+cd ../custom
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;This mounts the original ISO to a new folder and then copies everything to another folder where we can do the changes we want. I changed the following in the ISOLINUX.CFG file.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardstrnad.ch/2020/12/16/custom-hyperflex-esx-image/unattended-esx-image-file.png&#34;
+	width=&#34;1408&#34;
+	height=&#34;922&#34;
+	srcset=&#34;https://www.richardstrnad.ch/2020/12/16/custom-hyperflex-esx-image/unattended-esx-image-file_hu0540e4d58cb74848ca45a33d4917d9da_133806_480x0_resize_box_3.png 480w, https://www.richardstrnad.ch/2020/12/16/custom-hyperflex-esx-image/unattended-esx-image-file_hu0540e4d58cb74848ca45a33d4917d9da_133806_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Custom ISOLINUX.CFG for unattended HX ESXi Installation&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;152&#34;
+		data-flex-basis=&#34;366px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;You can find the ISOLINUX.CFG file i created &lt;a href=&#34;https://gist.github.com/richardstrnad/115d16fdb93382e04fbd6a7d1d898e0b&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After that you build the image, i run the mkisofs twice to include the files that are generated bi isohybrid.pl (ISOLINUX.BIN).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;sudo mkisofs -o UNATTENDED_HX-ESXi-6.7U3-16316930-Cisco-Custom-6.7.3.5-install-only.iso \
+  -b ISOLINUX.BIN \
+  -c BOOT.CAT \
+  -no-emul-boot \
+  -boot-load-size 4 \
+  -boot-info-table \
+  -J -R -V &amp;#34;UNATTENDED_ESX&amp;#34; .
+
+wget https://gist.githubusercontent.com/jsarenik/e184b4061263dbd7d3a3/raw/861da48e3f32138400cf966ca0d498e67575ce0d/isohybrid.pl
+chmod +x isohybrid.pl
+
+sudo ./isohybrid.pl UNATTENDED_HX-ESXi-6.7U3-16316930-Cisco-Custom-6.7.3.5-install-only.iso
+
+sudo mkisofs -o UNATTENDED_HX-ESXi-6.7U3-16316930-Cisco-Custom-6.7.3.5-install-only.iso \
+  -b ISOLINUX.BIN \
+  -c BOOT.CAT \
+  -no-emul-boot \
+  -boot-load-size 4 \
+  -boot-info-table \
+  -J -R -V &amp;#34;UNATTENDED_ESX&amp;#34; .
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;After that your iso is ready. Cleanup&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;umount $device
+hdiutil detach $device
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;how-to-use-the-image-unattended&#34;&gt;How to use the Image unattended&lt;/h2&gt;
+&lt;p&gt;You have now an image which doesn&amp;rsquo;t need any confirmation, but how to use it unattended. I put it on an http server from which it can be retrieved. Then i use the following snippet on the CIMC CLI to reinstall the server.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;scope bios
+    set boot-order cdrom,hdd,fdd,pxe,efi
+    commit
+    exit
+scope vmedia
+    map-www ESX http://SERVERIP:SERVERPORT UNATTENDED_HX-ESXi-6.7U3-16316930-Cisco-Custom-6.7.3.5-install-only.iso
+    exit
+scope chassis
+    power cycle
+    y
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
 </rss>

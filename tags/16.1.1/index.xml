@@ -1,23 +1,153 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>16.1.1 on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/16.1.1/</link>
-    <description>Recent content in 16.1.1 on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 21 Dec 2015 17:00:17 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/16.1.1/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cisco IOS XE – Install the New release 16.1.1 (Denali) on 3850</title>
-      <link>https://www.richardstrnad.ch/2015/12/21/cisco-ios-xe-install-the-new-release-16-1-1-denali-on-3850/</link>
-      <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2015/12/21/cisco-ios-xe-install-the-new-release-16-1-1-denali-on-3850/</guid>
-      <description>Cisco continues its strategy to merge the whole Campus Switch platform to a single Image, the newest step in this process is IOS XE 16.1.1. Currently only available for the Cat3k Platform (3650, 3850) but releases for the other Catalyst platforms should follow.
-In this post i show you how to upgrade your Cisco 3650/3850 Switch from 3.x to 16.1.1
-Frist, grab the software here:
-IOS XE Denali 16.1.1 on Cisco.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>16.1.1 on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/16.1.1/</link>
+        <description>Recent content in 16.1.1 on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 21 Dec 2015 17:00:17 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/16.1.1/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Cisco IOS XE – Install the New release 16.1.1 (Denali) on 3850</title>
+        <link>https://www.richardstrnad.ch/2015/12/21/cisco-ios-xe-install-the-new-release-16-1-1-denali-on-3850/</link>
+        <pubDate>Mon, 21 Dec 2015 17:00:17 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2015/12/21/cisco-ios-xe-install-the-new-release-16-1-1-denali-on-3850/</guid>
+        <description>&lt;p&gt;Cisco continues its strategy to merge the whole Campus Switch platform to a single Image, the newest step in this process is IOS XE 16.1.1. Currently only available for the Cat3k Platform (3650, 3850) but releases for the other Catalyst platforms should follow.&lt;/p&gt;
+&lt;p&gt;In this post i show you how to upgrade your Cisco 3650/3850 Switch from 3.x to 16.1.1&lt;/p&gt;
+&lt;p&gt;Frist, grab the software here:&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://software.cisco.com/download/release.html?mdfid=284455380&amp;amp;softwareid=282046477&amp;amp;release=16.1.1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;IOS XE Denali 16.1.1 on Cisco.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Just copy it to your switch&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;Switch#copy ftp://x:x@10.32.31.15/cat3k_caa-universalk9.16.01.01.SPA.bin flash:
+Destination filename [cat3k_caa-universalk9.16.01.01.SPA.bin]?
+Accessing ftp://*****:*****@10.32.31.15/cat3k_caa-universalk9.16.01.01.SPA.bin...!!!!!!!
+*Dec 16 08:22:42.371: Loading cat3k_caa-universalk9.16.01.01.SPA.bin !!!!!!!!!!!!!...
+...
+!!!
+[OK - 469677062/4096 bytes]
+
+469677062 bytes copied in 432.250 secs (1086587 bytes/sec)
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;After that you can install the OS as always&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-plaintext&#34; data-lang=&#34;plaintext&#34;&gt;Switch#software install file flash:cat3k_caa-universalk9.16.01.01.SPA.bin new
+Preparing install operation ...
+[1]: Starting install operation
+[1]: Expanding bundle flash:cat3k_caa-universalk9.16.01.01.SPA.bin
+[1]: Copying package files
+[1]: Package files copied
+[1]: Finished expanding bundle flash:cat3k_caa-universalk9.16.01.01.SPA.bin
+[1]: Verifying and copying expanded package files to flash:
+[1]: Verified and copied expanded package files to flash:
+[1]: Starting compatibility checks
+[1]: Finished compatibility checks
+[1]: Starting application pre-installation processing
+[1]: Finished application pre-installation processing
+[1]: Old files list:
+    Removed cat3k_caa-base.SPA.03.03.05SE.pkg
+    Removed cat3k_caa-drivers.SPA.03.03.05SE.pkg
+    Removed cat3k_caa-infra.SPA.03.03.05SE.pkg
+    Removed cat3k_caa-iosd-universalk9.SPA.150-1.EZ5.pkg
+    Removed cat3k_caa-platform.SPA.03.03.05SE.pkg
+    Removed cat3k_caa-wcm.SPA.10.1.150.0.pkg
+[1]: New files list:
+    Added cat3k_caa-rpbase.16.01.01E.SPA.pkg
+    Added cat3k_caa-srdriver.16.01.01E.SPA.pkg
+    Added cat3k_caa-wcm.16.01.01E.SPA.pkg
+    Added cat3k_caa-webui.16.01.01E.SPA.pkg
+[1]: Creating pending provisioning file
+[1]: Finished installing software.  New software will load on reboot.
+[1]: Committing provisioning file
+
+[1]: Do you want to proceed with reload? [yes/no]: yes
+
+System configuration has been modified. Save? [yes/no]: yes
+Building configuration...
+Compressed configuration from 2991 bytes to 1553 bytes[OK]
+[1]: Reloading
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;It takes some time to boot up again, after that you can see the new Version is running&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;Switch Ports Model              SW Version        SW Image              Mode
+------ ----- -----              ----------        ----------            ----
+*    1 32    WS-C3850-24P       Denali 16.1.1     CAT3K_CAA-UNIVERSALK9 INSTALL
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;After that i created a user with priv 15&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;Switch(config)#username cisco privilege 15 secret cisco
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Now you can head to the new WebGui, i attached two impressions of the new GUI. Compared to the old cisco switch GUIs it looks really nice. But if it ever is used?… 🙂&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/12/2015-12-16_10-24-44.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/12/2015-12-16_10-24-44.png&#34; alt=&#34;Cisco IOS XE 16.1.1 Interface Configuration Part 1&#34; width=&#34;1280&#34; height=&#34;1345&#34; class=&#34;alignnone size-full wp-image-270&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/12/2015-12-16_10-25-04.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.richardstrnad.ch/wp-content/uploads/2015/12/2015-12-16_10-25-04.png&#34; alt=&#34;Cisco IOS XE 16.1.1 Interface Configuration Part 2&#34; width=&#34;1015&#34; height=&#34;1128&#34; class=&#34;alignnone size-full wp-image-271&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

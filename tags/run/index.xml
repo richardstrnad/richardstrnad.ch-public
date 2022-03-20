@@ -1,22 +1,207 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>run on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/run/</link>
-    <description>Recent content in run on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 07 Nov 2016 08:32:33 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/run/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cisco ACI – Run Commands on the Switches from your APIC</title>
-      <link>https://www.richardstrnad.ch/2016/11/07/cisco-aci-run-commands-on-the-switches-from-your-apic/</link>
-      <pubDate>Mon, 07 Nov 2016 08:32:33 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2016/11/07/cisco-aci-run-commands-on-the-switches-from-your-apic/</guid>
-      <description>With the introduction of the NX-OS like CLI Cisco also added the option to run commands on the switches directly from your apic. It&amp;rsquo;s now even easier to get some infos from one or multiple switches in your fabric.
-Show switchname on a single fabric switch
-1 2 3 4 5  apic1# fabric leaf01 show switchname ---------------------------------------------------------------- Node 101 (leaf01) ---------------------------------------------------------------- leaf01   You can also run commands on multiple devices</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>run on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/run/</link>
+        <description>Recent content in run on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 07 Nov 2016 08:32:33 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/run/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Cisco ACI – Run Commands on the Switches from your APIC</title>
+        <link>https://www.richardstrnad.ch/2016/11/07/cisco-aci-run-commands-on-the-switches-from-your-apic/</link>
+        <pubDate>Mon, 07 Nov 2016 08:32:33 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2016/11/07/cisco-aci-run-commands-on-the-switches-from-your-apic/</guid>
+        <description>&lt;p&gt;With the introduction of the &lt;a href=&#34;https://www.richardstrnad.ch/2015/12/16/cisco-aci-nx-os-style-cli/&#34; target=&#34;_blank&#34;&gt;NX-OS like CLI&lt;/a&gt; Cisco also added the option to run commands on the switches directly from your apic. It&amp;rsquo;s now even easier to get some infos from one or multiple switches in your fabric.&lt;/p&gt;
+&lt;p&gt;Show switchname on a single fabric switch&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;apic1# fabric leaf01 show switchname
+----------------------------------------------------------------
+ Node 101 (leaf01)
+----------------------------------------------------------------
+leaf01
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;You can also run commands on multiple devices&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;apic1# fabric leaf01, leaf02 show switchname
+----------------------------------------------------------------
+ Node 101 (leaf01)
+----------------------------------------------------------------
+leaf01
+----------------------------------------------------------------
+ Node 102 (leaf02)
+----------------------------------------------------------------
+leaf02
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;The list of possible commands is pretty long, just to give an idea&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;50
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;51
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;52
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;53
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;54
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;55
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;56
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;57
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;58
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;59
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;60
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;61
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;62
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;63
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;64
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;65
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;66
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;67
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;68
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;aaa               aaa
+bfd               BFD commands
+bgp               Display BGP status and configuration
+cdp               Show Cisco Discovery Protocol information
+clock             Display current Date
+coop              Show information about coop
+copp              Control Plane Policing (CoPP) information
+copyright         Copyright information
+cores             Show all core dumps for the current vdc
+dhcp              Show DHCP
+diagnostic        Diagnostic commands
+dpp               Data Plane Policing (DPP) information
+eigrp             Display EIGRP status and configuration
+endpoint          End point
+environment       Environment Information
+fc2               Show fc2 information
+fcoe              Show FCOE paramaters
+fex               Show FEX information
+forwarding        Display mfdm information
+hardware          Show hardware information
+hostname          Hostname
+hsrp              HSRP information
+interface         Show interface status and information
+inventory         system inventory information
+ip                Display IP information
+ipmgr             Show information about ipmgr
+ipv6              Show IPv6 information
+isis              Display IS-IS status and configuration
+istack            Show istack information
+lacp              LACP protocol
+lldp              Show information about lldp
+locator-led       Blink locator led on device
+logging           logging information
+mac               Mac addr information
+mcp               Show information about mcp
+mfdm              Show MFDM information
+module            Module
+monitor           Show SPAN information
+npv               Show Npv information
+ntp               Show NTP information
+oam               Show information about oam
+ospfv3            Display OSPFv3 status and configuration
+port-channel      Show port-channel information
+porttrack         Port Tracking
+processes         Show processes
+radius-server     Radius-server
+redundancy        Show system redundancy status
+resource          Show resource configuration for VDC
+route-map         Route-map information
+routing           Display routing information
+san-port-channel  Show san-port-channel information
+service           Display service information
+snmp              Display SNMP information
+sprom             show SPROM contents
+stats_manager     Show information about stats_manager
+switchname        Show the system&amp;#39;s hostname
+system            System-related commands
+tacacs-server     Tacacs-server
+tunnel            Show information about Tunnel
+users             Show users logged onto the system and their sessions
+vdc               Show information about vdc_mgr
+version           Show running firmware version and basic system information
+vlan              VLAN status
+vpc               Virtual Port Channel configuration
+vrf               Display VRF information
+vsan              Show vsan information
+zoning-filter     Display Zoning-Filter information
+zoning-rule       Display Zoning-Rule information
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;This can be a really nice way to collect some quick info from different nodes
+in a ACI fabric.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

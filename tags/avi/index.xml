@@ -1,21 +1,122 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>AVI on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/avi/</link>
-    <description>Recent content in AVI on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 08 Mar 2019 21:00:20 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/avi/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AVI Networks – Reset Controller</title>
-      <link>https://www.richardstrnad.ch/2019/03/08/avi-networks-reset-controller/</link>
-      <pubDate>Fri, 08 Mar 2019 21:00:20 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2019/03/08/avi-networks-reset-controller/</guid>
-      <description>Sometimes it&amp;rsquo;s required to reset a controller, this can be done from the cli. First login to the controller you wish to reset
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  → ssh admin@192.168.128.8 Avi Cloud Controller Avi Networks software, Copyright (C) 2013-2017 by Avi Networks, Inc. All rights reserved. Version: 18.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>AVI on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/avi/</link>
+        <description>Recent content in AVI on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Fri, 08 Mar 2019 21:00:20 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/avi/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>AVI Networks – Reset Controller</title>
+        <link>https://www.richardstrnad.ch/2019/03/08/avi-networks-reset-controller/</link>
+        <pubDate>Fri, 08 Mar 2019 21:00:20 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2019/03/08/avi-networks-reset-controller/</guid>
+        <description>&lt;p&gt;Sometimes it&amp;rsquo;s required to reset a controller, this can be done from the cli.
+First login to the controller you wish to reset&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;→ ssh admin@192.168.128.8
+Avi Cloud Controller
+
+Avi Networks software, Copyright (C) 2013-2017 by Avi Networks, Inc.
+All rights reserved.
+
+Version:      18.2.2
+Date:         2019-03-06 09:07:37 UTC
+Build:        9224
+Management:   192.168.128.8/24                UP
+Gateway:      192.168.128.1                   UP
+
+
+
+admin@192.168.128.8&amp;#39;s password:
+
+
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under
+license. Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or the GNU
+Lesser General Public License (LGPL) Version 2.1. A copy of each
+such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://www.opensource.org/licenses/lgpl-2.1.php
+admin@192-168-128-8:~$
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;After that you need to switch to the AVI Shell and there you can issue the &lt;code&gt;reboot clean&lt;/code&gt; command. Credentials for the AVI Shell are the same as for the SSH Login.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;admin@192-168-128-8:~$ shell
+Login: admin
+Password:
+
+[admin:192-168-128-8]: &amp;gt; reboot clean
+
+This will erase the entire configuration and reboot the cluster
+
+Would you like to proceed? (yes/no): yes
+
+This may take 2-3 minutes to complete. Please wait...
+
+Lost connectivity to the controller -- Retrying to connect
+Re-established connectivity -- Please retry the command
+
+Broadcast message from root@192-168-128-8 (somewhere) (Fri Mar  8 16:46:51 2019)
+
+Rebooting this VM because of the cluster event &amp;#39;clean reboot&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
 </rss>

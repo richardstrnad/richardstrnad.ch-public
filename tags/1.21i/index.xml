@@ -1,39 +1,444 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>1.2(1i) on RichardStrnad.ch</title>
-    <link>https://www.richardstrnad.ch/tags/1.21i/</link>
-    <description>Recent content in 1.2(1i) on RichardStrnad.ch</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 16 Dec 2015 14:00:46 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/1.21i/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cisco ACI – NX-OS Style CLI</title>
-      <link>https://www.richardstrnad.ch/2015/12/16/cisco-aci-nx-os-style-cli/</link>
-      <pubDate>Wed, 16 Dec 2015 14:00:46 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2015/12/16/cisco-aci-nx-os-style-cli/</guid>
-      <description>Cisco introduced a NX-OS like CLI for the Cisco ACI Solution with release 1.2(1i).
-In this post i will demonstrate some of the things that can be achieved through the NX-OS CLI.
-!Important!
-There is no safety net, if you issue something like &amp;lsquo;no tenant XXX&amp;rsquo; the configuration is gone!
-No commit, warning or similar!
-!Important!
-Basics The NX-OS like CLI is the new default if you connect via SSH to the APIC</description>
-    </item>
-    
-    <item>
-      <title>Cisco ACI – New Features in Release 1.2(1i)</title>
-      <link>https://www.richardstrnad.ch/2015/12/13/cisco-aci-new-features-in-release-1-21i/</link>
-      <pubDate>Sun, 13 Dec 2015 14:48:47 +0000</pubDate>
-      
-      <guid>https://www.richardstrnad.ch/2015/12/13/cisco-aci-new-features-in-release-1-21i/</guid>
-      <description>Cisco released the newest ACI Software this Week, called 1.2(1i).
-There are a lot of great new features that i will try to cover in more detail in the future, for now the overview from the release notes.
-To install this new software, you can follow one of my blog posts:
-Through GUI or Through CLI
-   Feature Description Guidelines and Restrictions     Basic GUI and Advanced GUI for the APIC The APIC GUI now has two operating modes: the Basic GUI and Advanced GUI.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>1.2(1i) on RichardStrnad.ch</title>
+        <link>https://www.richardstrnad.ch/tags/1.21i/</link>
+        <description>Recent content in 1.2(1i) on RichardStrnad.ch</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 16 Dec 2015 14:00:46 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/1.21i/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Cisco ACI – NX-OS Style CLI</title>
+        <link>https://www.richardstrnad.ch/2015/12/16/cisco-aci-nx-os-style-cli/</link>
+        <pubDate>Wed, 16 Dec 2015 14:00:46 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2015/12/16/cisco-aci-nx-os-style-cli/</guid>
+        <description>&lt;p&gt;Cisco introduced a NX-OS like CLI for the Cisco ACI Solution with release 1.2(1i).&lt;br&gt;
+In this post i will demonstrate some of the things that can be achieved through the NX-OS CLI.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!Important!&lt;br&gt;
+There is no safety net, if you issue something like &amp;lsquo;no tenant &lt;em&gt;XXX&lt;/em&gt;&amp;rsquo; the configuration is gone!&lt;br&gt;
+No commit, warning or similar!&lt;br&gt;
+!Important!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;
+&lt;p&gt;The NX-OS like CLI is the new default if you connect via SSH to the APIC&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;→ ssh admin@10.127.129.50
+Application Policy Infrastructure Controller
+admin@10.127.129.50&amp;#39;s password:
+apic1#
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;If you wan to access the Linux CLI you can go there through &amp;lsquo;bash&amp;rsquo; and go back with &amp;lsquo;exit&amp;rsquo;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;apic1# bash
+admin@apic1:
+
+...
+
+admin@apic1:
+exit
+apic1#
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;configurations&#34;&gt;Configurations&lt;/h2&gt;
+&lt;h3 id=&#34;tenant&#34;&gt;Tenant&lt;/h3&gt;
+&lt;p&gt;Configure a Tenant, Application Profile and End Point Group&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;apic1# configure
+apic1(config)# tenant nxos_cli
+apic1(config-tenant)# application app_1
+apic1(config-tenant-app)# epg epg_1
+apic1(config-tenant-app-epg)# exit
+apic1(config-tenant-app)# epg epg_2
+apic1(config-tenant-app-epg)# end
+
+...
+
+apic1# show running-config tenant nxos_cli
+# Command: show running-config tenant nxos_cli
+# Time: Sun Dec 13 16:44:58 2015
+  tenant nxos_cli
+    application app_1
+      epg epg_1
+        exit
+      epg epg_2
+        exit
+      exit
+    exit
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;I&amp;rsquo;m sure that this configuration style is straight forward for all network engineers, and for some tasks i think this is a great way to get things done!&lt;/p&gt;
+&lt;h3 id=&#34;networking&#34;&gt;Networking&lt;/h3&gt;
+&lt;p&gt;Example of adding a new Subnet to a VRF.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;apic1(config)# tenant nxos_cli
+apic1(config-tenant)# vrf context vrf_1
+apic1(config-tenant-vrf)# exit
+apic1(config-tenant)# bridge-domain bd_1
+apic1(config-tenant-bd)# vrf member vrf_1
+apic1(config-tenant-bd)# exit
+apic1(config-tenant)# interface bridge-domain bd_1
+apic1(config-tenant-interface)# ip address 172.20.20.1/24
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;complete-tenant-example&#34;&gt;Complete Tenant example&lt;/h3&gt;
+&lt;p&gt;This is how one of my tenants look in the CLI&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;50
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;51
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;52
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;53
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;54
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;55
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;56
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;57
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;58
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;59
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;60
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;61
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;62
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;63
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;64
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;65
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;66
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;67
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;68
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;69
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;70
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;71
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;72
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;73
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;74
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;75
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;76
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;77
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;78
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;79
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;80
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;81
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;82
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;83
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;84
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;85
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;86
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;87
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;tenant PoC
+  vrf context Net_1
+    contract enforce egress
+    exit
+  application SimpleWebServer
+    epg sqlServers
+      bridge-domain member BD_1
+      contract provider mgmt_contract
+      contract provider SQL_Contract
+      vmware-domain member vmware_dom deploy immediate
+      exit
+    epg webServers
+      bridge-domain member BD_1
+      contract consumer SQL_Contract
+      contract provider Web_Contract
+      contract provider mgmt_contract
+      vmware-domain member vmware_dom deploy immediate
+      exit
+    exit
+  contract Allow_ANY
+    subject Allow_ANY_Subj
+      access-group IP_ANY both
+      exit
+    exit
+  contract SQL_Contract
+    subject SQL_Subject
+      access-group SQL_Filter both
+      exit
+    exit
+  contract Ubuntu_to_Ext
+    subject external_con
+      access-group IP_ANY in
+      access-group IP_ANY out
+      exit
+    exit
+  contract Web_Contract
+    subject Web_Subject
+      access-group Web_Filter both
+      exit
+    exit
+  contract mgmt_contract
+    subject allow_icmp
+      access-group icmp both
+      exit
+    subject allow_ssh
+      access-group filter_telnet both
+      access-group ssh both
+      exit
+    exit
+  external-l3 epg L3_Out:ext_all
+    vrf member Net_1
+    match ip 0.0.0.0/0
+    contract consumer mgmt_contract
+    contract consumer Web_Contract
+    contract provider Ubuntu_to_Ext
+    exit
+  access-list DNS
+    match udp dest 53
+    exit
+  access-list IP_ANY
+    match raw ANY_TCP etherT ip prot 6 stateful yes
+    match udp
+    exit
+  access-list SQL_Filter
+    match tcp dest 3306
+    exit
+  access-list Web_Filter
+    match tcp dest 80
+    exit
+  access-list filter_telnet
+    match tcp dest 23
+    exit
+  access-list icmp
+    match icmp
+    exit
+  access-list ssh
+    match raw ssh dFromPort 22 dToPort 22 etherT ip prot 6 stateful yes
+    exit
+  bridge-domain BD_1
+    arp flooding
+    l2-unknown-unicast flood
+    vrf member Net_1
+    exit
+  interface bridge-domain BD_1
+    ip address 10.127.200.1/24 secondary scope public
+    exit
+  exit
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Cisco ACI – New Features in Release 1.2(1i)</title>
+        <link>https://www.richardstrnad.ch/2015/12/13/cisco-aci-new-features-in-release-1-21i/</link>
+        <pubDate>Sun, 13 Dec 2015 14:48:47 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/2015/12/13/cisco-aci-new-features-in-release-1-21i/</guid>
+        <description>&lt;p&gt;Cisco released the newest ACI Software this Week, called 1.2(1i).&lt;br&gt;
+There are a lot of great new features that i will try to cover in more detail in the future, for now the overview from the release notes.&lt;/p&gt;
+&lt;p&gt;To install this new software, you can follow one of my blog posts:&lt;br&gt;
+&lt;a href=&#34;http://www.richardstrnad.ch/2015/08/09/cisco-aci-the-new-and-nice-gui-way-to-upgrade-your-aci-fabric/&#34; target=&#34;_blank&#34;&gt;Through GUI&lt;/a&gt; or &lt;a href=&#34;http://www.richardstrnad.ch/2015/02/26/cisco-aci-upgrade-your-aci-fabric-1-02j-to-1-03f/&#34; target=&#34;_blank&#34;&gt;Through CLI&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Feature&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Guidelines and Restrictions&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Basic GUI and Advanced GUI for the APIC&lt;/td&gt;
+&lt;td&gt;The APIC GUI now has two operating modes: the Basic GUI and Advanced GUI.The Basic GUI is simplified compared to the Advanced GUI, which provides for easier and faster configuration of ACI constructs. The Basic GUI has intelligence embedded that enables the APIC to create some of the ACI model constructs automatically for you, and the Basic GUI provides validations to ensure consistency in the configuration. This functionality reduces and prevents faults.The Advanced GUI is equivalent to the GUI of the previous releases. You should use the Advanced GUI to manage any policy that you created prior to release 1.2.For more information, see the Cisco APIC Getting Started Guide.&lt;/td&gt;
+&lt;td&gt;The performance for some Layer 3 configurations using the Basic GUI can be slow.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;NX-OS-Style CLI for APIC&lt;/td&gt;
+&lt;td&gt;The APIC CLI is now similar to the NX-OS CLI. The NX-OS CLI has intelligence embedded that enables the APIC to create some of the ACI model constructs automatically for you, and the CLI provides validations to ensure consistency in the configuration. This functionality reduces and prevents faults.For more information, see the Cisco APIC Getting Started Guide and Cisco APIC NX-OS Style Command-Line Interface Configuration Guide.&lt;/td&gt;
+&lt;td&gt;The performance for some CLI commands can be slow in a scale setup. For more information, see Verified Scalability Limits.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Common Pervasive Gateway&lt;/td&gt;
+&lt;td&gt;This feature enables you to configure multiple ACI fabrics with an IPv4 common gateway on a per bridge domain basis. Doing so enables moving one or more virtual machine (VM) or conventional hosts across the fabrics while the host retains its IP address. VM host moves across fabrics can be done automatically by the VM hypervisor. The ACI fabrics can be co-located, or provisioned across multiple sites. The Layer 2 connection between the ACI fabrics can be a local link, or can be across a routed WAN link.&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Common Tenant&lt;/td&gt;
+&lt;td&gt;In the troubleshooting wizard, you can now configure a session with a bridge domain and context in the “Common” tenant.&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Class of Service Preservation&lt;/td&gt;
+&lt;td&gt;The ACI fabric enables preserving 802.1p class of service (CoS) within the fabric. Enable the fabric global QoS policy dot1p-preserve option to guarantee that the 802.1p value in packets which enter and transit the ACI fabric is preserved.&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Direct Server Return&lt;/td&gt;
+&lt;td&gt;The direct server return feature enables a server to respond directly to clients without having to go through the load balancer, which eliminates a bottleneck in the server-to-client path.For more information, see the Cisco APIC Layer 4 to Layer 7 Services Deployment Guide.&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ingress Policy Enforcement for Layer 3 Out Scale&lt;/td&gt;
+&lt;td&gt;Starting with release 1.2(1), ingress-based policy enforcement enables defining policy enforcement for Layer 3 Out traffic with regard to egress and ingress directions. The default is ingress. During an upgrade to release 1.2(1) or higher, existing Layer 3 Out configurations are set to egress so that the behavior is consistent with the existing configuration; no special upgrade sequence needs to be planned. After the upgrade, an administrator changes the global property value to ingress. Once changed, the system reprograms the rules and prefix entries. Rules are removed from the egress leaf and installed on the ingress leaf, if not already present. If not already configured, an Actrl prefix entry is installed on the ingress leaf. Direct server return (DSR), and attribute-based EPGs require ingress-based policy enforcement. vzAny and taboo ignore ingress-based policy enforcement. Transit rules are applied at ingress.In Ingress Policy enforcement mode, if a contract is defined between an L3InstP and an endpoint group, all of the prefixes of the L3InstP are installed in a non-border leaf where that endpoint group is present.&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Local Policy Enforcement&lt;/td&gt;
+&lt;td&gt;This feature enforces a physical leaf’s policy on traffic that is across the fabric.&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Maximum Prefix Limit&lt;/td&gt;
+&lt;td&gt;Tenant networking protocol policies for BGP l3extOut connections can be configured with a maximum prefix limit that enables monitoring and restricting the number of route prefixes received from a peer. Once the max prefix limit is exceeded, a log entry can be recorded, further prefixes can be rejected, the connection can be restarted if the count drops below the threshold in a fixed interval, or the connection is shut down. Only one option can be used at a time. The default setting is a limit of 20,000 prefixes, after which new prefixes are rejected. When the reject option is deployed, BGP accepts one more prefix beyond the configured limit and the APIC raises a fault.&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Microsegmentation for Microsoft Virtualization&lt;/td&gt;
+&lt;td&gt;This feature supports virtual machine attribute-based endpoint groups for virtual endpoints that are attached to a VMM domain that has Microsoft SCVMM associated with it.This feature is dependent the Microsoft System Center UR9 release and the appropriate APIC agent.For more information, see the Cisco ACI Virtualization Guide.&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Microsegmentation with IP-based Endpoint Groups&lt;/td&gt;
+&lt;td&gt;This feature supports IP-based endpoint groups for physical or virtual endpoints as they are admitted into the fabric. This policy is applied at the physical node level.For more information, see the Cisco ACI Virtualization Guide.&lt;/td&gt;
+&lt;td&gt;You must use any of the following hardware to use this feature:· Nexus 9372PX-E· Nexus 9372TX-E· N9K-M6PQ-E&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Role-Based Access Control Rule Enhancements&lt;/td&gt;
+&lt;td&gt;Layer 4 to Layer 7 policy configurations in a multi-tenant environment required administrator intervention to create certain objects that cannot be created by tenant administrators using the classic role-based access control (RBAC) domains and roles model definition. An Application Policy Infrastructure Controller (APIC) provides more granular RBAC privileges in the management information tree (MIT) such that you can grant tenant administrators the privileges that are required to create the objects. Tenant administrators can also create RBAC rules through self-service without administrator intervention to grant permissions for resources under their tenant subtree to other tenants and users in the system.For more information, see the Cisco APIC Layer 4 to Layer 7 Services Deployment Guide.&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shared Layer 3 Out&lt;/td&gt;
+&lt;td&gt;A shared Layer 3 Out configuration provides routed connectivity to external networks as a shared service. An l3extInstP endpoint group (EPG) provides routed connectivity to external networks. It can be can be provisioned as a shared service in any tenant (user, common, infra, or mgmt.). Prior to release 1.2(1x), this configuration was only supported in the user and common tenants. An EPG in any tenant can use a shared services contract to connect with an l3extInstP EPG regardless of where in the fabric that l3extInstP EPG is provisioned. This simplifies the provisioning of routed connectivity to external networks; multiple tenants can share a single l3extInstP EPG for routed connectivity to external networks. Sharing an l3extInstP EPG is more efficient because it consumes only one session on the switch regardless of how many EPGs use the single shared l3extInstP EPG.&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Simple Network Management Protocol support for APIC&lt;/td&gt;
+&lt;td&gt;The Simple Network Management Protocol (SNMP) is now supported for APIC.&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fabric Secure Mode&lt;/td&gt;
+&lt;td&gt;Fabric secure mode enhances physical fabric security by enforcing checks for leafs, spines, and APICs that join the fabric by requiring manual approval before they can join the fabric.&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Static Route with Weights&lt;/td&gt;
+&lt;td&gt;The ACI fabric static route preference feature keeps static route preferences intact across leaf switches so that route selection happens based on this preference.&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Unmanaged Mode&lt;/td&gt;
+&lt;td&gt;The unmanaged mode for services enables you to choose the APIC&amp;rsquo;s behavior for allocating network resources and programming the fabric. When enabled, the unmanaged mode restricts the APIC to allocate only the network resources for a service appliance and to program only the fabric (leaf). The configuration of the device is left to be done externally by you.For more information, see the Cisco APIC Layer 4 to Layer 7 Services Deployment Guide.&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;vRealize Integration&lt;/td&gt;
+&lt;td&gt;You can integrate ACI with VMWare&amp;rsquo;s vRealize Orchestration (vRO), vRealize Automation (vRA), and vCenter.For more information, see the Cisco ACI Virtualization Guide.&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;vSphere vMotion support across two vSphere Distributed Switches (vDSs)vSphere vMotion support across two vCenters&lt;/td&gt;
+&lt;td&gt;vSphere vMotion capabilities have been enhanced in this release, enabling users to perform live migration of virtual machines across virtual switches, and vCenter Server systems.For more information, see the VMware vSphere 6.0 Release Notes.&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Source:&lt;br&gt;
+&lt;a href=&#34;http://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/1-x/release/notes/apic_rn_121i.html&#34; target=&#34;_blank&#34;&gt;Release Notes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link to the Software:&lt;br&gt;
+&lt;a href=&#34;https://software.cisco.com/download/release.html?i=!y&amp;mdfid=285968390&amp;softwareid=286278832&amp;release=1.2(1i)&#34; target=&#34;_blank&#34;&gt;Cisco Download Page&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>
