@@ -6,7 +6,47 @@
         <description>Recent content in Tags on RichardStrnad.ch</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 28 Feb 2022 18:00:00 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 20 Mar 2022 18:25:29 +0000</lastBuildDate><atom:link href="https://www.richardstrnad.ch/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>ACI</title>
+        <link>https://www.richardstrnad.ch/tags/aci/</link>
+        <pubDate>Sun, 20 Mar 2022 18:25:29 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/aci/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>APIC</title>
+        <link>https://www.richardstrnad.ch/tags/apic/</link>
+        <pubDate>Sun, 20 Mar 2022 18:25:29 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/apic/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>cisco</title>
+        <link>https://www.richardstrnad.ch/tags/cisco/</link>
+        <pubDate>Sun, 20 Mar 2022 18:25:29 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/cisco/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>F381328</title>
+        <link>https://www.richardstrnad.ch/tags/f381328/</link>
+        <pubDate>Sun, 20 Mar 2022 18:25:29 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/f381328/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Fault</title>
+        <link>https://www.richardstrnad.ch/tags/fault/</link>
+        <pubDate>Sun, 20 Mar 2022 18:25:29 +0000</pubDate>
+        
+        <guid>https://www.richardstrnad.ch/tags/fault/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>shortcuts</title>
         <link>https://www.richardstrnad.ch/tags/shortcuts/</link>
         <pubDate>Mon, 28 Feb 2022 18:00:00 +0000</pubDate>
@@ -63,22 +103,6 @@
         <description></description>
         </item>
         <item>
-        <title>ACI</title>
-        <link>https://www.richardstrnad.ch/tags/aci/</link>
-        <pubDate>Thu, 10 Feb 2022 08:00:00 +0100</pubDate>
-        
-        <guid>https://www.richardstrnad.ch/tags/aci/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>cisco</title>
-        <link>https://www.richardstrnad.ch/tags/cisco/</link>
-        <pubDate>Thu, 10 Feb 2022 08:00:00 +0100</pubDate>
-        
-        <guid>https://www.richardstrnad.ch/tags/cisco/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>Discoveryissues</title>
         <link>https://www.richardstrnad.ch/tags/discoveryissues/</link>
         <pubDate>Thu, 10 Feb 2022 08:00:00 +0100</pubDate>
@@ -124,14 +148,6 @@
         <pubDate>Wed, 24 Nov 2021 12:41:48 +0000</pubDate>
         
         <guid>https://www.richardstrnad.ch/tags/restconf/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>APIC</title>
-        <link>https://www.richardstrnad.ch/tags/apic/</link>
-        <pubDate>Wed, 27 Oct 2021 05:57:36 +0000</pubDate>
-        
-        <guid>https://www.richardstrnad.ch/tags/apic/</guid>
         <description></description>
         </item>
         <item>

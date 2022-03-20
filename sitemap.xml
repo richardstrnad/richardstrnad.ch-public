@@ -2,8 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.richardstrnad.ch/tags/aci/</loc>
+    <lastmod>2022-03-20T18:25:29+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/categories/aci/</loc>
+    <lastmod>2022-03-20T18:25:29+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/posts/aci-clear-crc-fault-f381328/</loc>
+    <lastmod>2022-03-20T18:25:29+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/tags/apic/</loc>
+    <lastmod>2022-03-20T18:25:29+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/categories/apic/</loc>
+    <lastmod>2022-03-20T18:25:29+00:00</lastmod>
+  </url><url>
     <loc>https://www.richardstrnad.ch/categories/</loc>
-    <lastmod>2022-02-28T18:00:00+00:00</lastmod>
+    <lastmod>2022-03-20T18:25:29+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/categories/cisco/</loc>
+    <lastmod>2022-03-20T18:25:29+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/tags/cisco/</loc>
+    <lastmod>2022-03-20T18:25:29+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/tags/f381328/</loc>
+    <lastmod>2022-03-20T18:25:29+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/tags/fault/</loc>
+    <lastmod>2022-03-20T18:25:29+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/posts/</loc>
+    <lastmod>2022-03-20T18:25:29+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/</loc>
+    <lastmod>2022-03-20T18:25:29+00:00</lastmod>
+  </url><url>
+    <loc>https://www.richardstrnad.ch/tags/</loc>
+    <lastmod>2022-03-20T18:25:29+00:00</lastmod>
   </url><url>
     <loc>https://www.richardstrnad.ch/categories/macos/</loc>
     <lastmod>2022-02-28T18:00:00+00:00</lastmod>
@@ -11,16 +47,10 @@
     <loc>https://www.richardstrnad.ch/post/</loc>
     <lastmod>2022-02-28T18:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.richardstrnad.ch/</loc>
-    <lastmod>2022-02-28T18:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.richardstrnad.ch/tags/shortcuts/</loc>
     <lastmod>2022-02-28T18:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.richardstrnad.ch/2022/02/28/some-nice-and-helpful-vim-shortcuts/</loc>
-    <lastmod>2022-02-28T18:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.richardstrnad.ch/tags/</loc>
     <lastmod>2022-02-28T18:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.richardstrnad.ch/tags/text-editor/</loc>
@@ -47,19 +77,7 @@
     <loc>https://www.richardstrnad.ch/tags/touchid/</loc>
     <lastmod>2022-02-16T07:45:46+01:00</lastmod>
   </url><url>
-    <loc>https://www.richardstrnad.ch/tags/aci/</loc>
-    <lastmod>2022-02-10T08:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://www.richardstrnad.ch/categories/aci/</loc>
-    <lastmod>2022-02-10T08:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://www.richardstrnad.ch/2022/02/10/aci-spine-replacement-in-a-single-spine-fabric/</loc>
-    <lastmod>2022-02-10T08:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://www.richardstrnad.ch/categories/cisco/</loc>
-    <lastmod>2022-02-10T08:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://www.richardstrnad.ch/tags/cisco/</loc>
     <lastmod>2022-02-10T08:00:00+01:00</lastmod>
   </url><url>
     <loc>https://www.richardstrnad.ch/tags/discoveryissues/</loc>
@@ -88,9 +106,6 @@
   </url><url>
     <loc>https://www.richardstrnad.ch/tags/restconf/</loc>
     <lastmod>2021-11-24T12:41:48+00:00</lastmod>
-  </url><url>
-    <loc>https://www.richardstrnad.ch/tags/apic/</loc>
-    <lastmod>2021-10-27T05:57:36+00:00</lastmod>
   </url><url>
     <loc>https://www.richardstrnad.ch/tags/basic-parameters/</loc>
     <lastmod>2021-10-27T05:57:36+00:00</lastmod>
