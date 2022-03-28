@@ -741,6 +741,63 @@ vrf definition TEST
  exit-address-family
 </code></pre></td></tr></table>
 </div>
+</div><h3 id="special-case---no-switchport">Special Case - No Switchport</h3>
+<p>For people that work in the network area, the <code>no switchport</code> config should be well known.
+It changes a switched port to a routed port, on platforms that support it.
+This is normally done directly on an interface and a simple task. But through restconf, I
+struggled a bit to find the right configuration and path. First strange thing was, that in no
+output that I read out from the switches, the <code>no switchport</code> was visible. With a lot of
+testing i finally found a way to do it.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">def main():
+    INTERFACE = requests.utils.quote(&#34;1/0/26&#34;, safe=&#39;&#39;)
+    url = f&#39;https://{HOST}:{PORT}/restconf/data/Cisco-IOS-XE-native:native/interface/HundredGigE={INTERFACE}/switchport-conf&#39;
+
+    headers = {
+        &#39;Content-Type&#39;: &#39;application/yang-data+json&#39;,
+        &#39;Accept&#39;: &#39;application/yang-data+json&#39;
+    }
+
+    data = {
+        &#34;Cisco-IOS-XE-native:switchport-conf&#34;: {
+            &#34;switchport&#34;: False
+        }
+    }
+
+    response = requests.patch(
+        url,
+        auth=(USER, PASS),
+        headers=headers,
+        verify=False,
+        json=data
+    )
+</code></pre></td></tr></table>
+</div>
 </div>
 </section>
 
@@ -1010,6 +1067,7 @@ vrf definition TEST
       <ol>
         <li><a href="#create-a-new-vrf">Create a new VRF</a></li>
         <li><a href="#update-a-vrf">Update a VRF</a></li>
+        <li><a href="#special-case---no-switchport">Special Case - No Switchport</a></li>
       </ol>
     </li>
   </ol>

@@ -831,6 +831,63 @@ vrf definition TEST
  exit-address-family
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;special-case---no-switchport&#34;&gt;Special Case - No Switchport&lt;/h3&gt;
+&lt;p&gt;For people that work in the network area, the &lt;code&gt;no switchport&lt;/code&gt; config should be well known.
+It changes a switched port to a routed port, on platforms that support it.
+This is normally done directly on an interface and a simple task. But through restconf, I
+struggled a bit to find the right configuration and path. First strange thing was, that in no
+output that I read out from the switches, the &lt;code&gt;no switchport&lt;/code&gt; was visible. With a lot of
+testing i finally found a way to do it.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;def main():
+    INTERFACE = requests.utils.quote(&amp;#34;1/0/26&amp;#34;, safe=&amp;#39;&amp;#39;)
+    url = f&amp;#39;https://{HOST}:{PORT}/restconf/data/Cisco-IOS-XE-native:native/interface/HundredGigE={INTERFACE}/switchport-conf&amp;#39;
+
+    headers = {
+        &amp;#39;Content-Type&amp;#39;: &amp;#39;application/yang-data+json&amp;#39;,
+        &amp;#39;Accept&amp;#39;: &amp;#39;application/yang-data+json&amp;#39;
+    }
+
+    data = {
+        &amp;#34;Cisco-IOS-XE-native:switchport-conf&amp;#34;: {
+            &amp;#34;switchport&amp;#34;: False
+        }
+    }
+
+    response = requests.patch(
+        url,
+        auth=(USER, PASS),
+        headers=headers,
+        verify=False,
+        json=data
+    )
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
 &lt;/div&gt;</description>
         </item>
         <item>
